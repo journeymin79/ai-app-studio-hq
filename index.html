@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI App Studio HQ</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div>
+          <strong>AI APP STUDIO</strong>
+          <span>CEO Command Center</span>
+        </div>
+      </div>
+
+      <nav id="sidebar-nav" class="sidebar-nav" aria-label="회사 메뉴"></nav>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        <span>Company memory connected</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow" id="view-eyebrow">COMPANY</p>
+          <h1 id="view-title">Company Overview</h1>
+          <p id="view-subtitle">AI 기반 앱 스튜디오 전체 운영 현황</p>
+        </div>
+        <div class="topbar-actions">
+          <div class="date-chip" id="today-label"></div>
+          <button type="button" class="ghost-button" id="refresh-btn">현황 새로고침</button>
+        </div>
+      </header>
+
+      <section id="content" class="content" aria-live="polite"></section>
+    </main>
+  </div>
+
+  <div id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-backdrop" data-close-drawer></div>
+    <section class="drawer-panel">
+      <button type="button" class="drawer-close" data-close-drawer aria-label="닫기">×</button>
+      <div id="drawer-content"></div>
+    </section>
+  </div>
+
+  <script src="data/dashboard-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
