@@ -124,15 +124,27 @@ Decision은 최종 결정이 내려졌을 때만 DECIDED 상태로 변경한다.
 ## 5. CEO Command 처리 흐름
 
 1. CEO가 지시한다.
-2. COO 역할이 Command를 등록한다.
-3. 지시를 실행 가능한 Task로 분해한다.
-4. 각 Task에 Team / Role / App / Priority를 지정한다.
-5. 실제 작업이 발생할 때 Activity를 추가한다.
-6. 결과물이 만들어지면 Artifact를 등록한다.
-7. 판단이 필요한 항목은 Decision을 생성한다.
-8. 가설 검증이 필요하면 Experiment를 생성한다.
-9. 모든 핵심 Task와 Decision이 종료되면 Command를 COMPLETED 처리한다.
-10. Daily Summary에 그날의 핵심 변화가 반영된다.
+2. COO 역할이 지시의 목적과 범위를 정리한다.
+3. 바로 최종 문서화하지 않고, 필요한 조사·분석 결과와 주요 선택지를 먼저 대화로 공유한다.
+4. CEO와 AI가 의견을 주고받아 방향, 우선순위, 가설을 조정한다.
+5. 아직 합의되지 않은 내용은 HYPOTHESIS 또는 ANALYSIS로만 취급하고 DECISION으로 기록하지 않는다.
+6. 방향이 합의되면 Command와 실행 Task를 확정한다.
+7. 각 Task에 Team / Role / App / Priority를 지정한다.
+8. 실제 작업이 발생할 때 Activity를 추가한다.
+9. 합의되었거나 완료된 결과만 Artifact 문서로 정리한다.
+10. 판단이 필요한 항목은 Decision을 생성하고 CEO 확인 후 DECIDED 처리한다.
+11. 가설 검증이 필요하면 Experiment를 생성한다.
+12. 모든 핵심 Task와 Decision이 종료되면 Command를 COMPLETED 처리한다.
+13. Daily Summary에 그날의 핵심 변화가 반영된다.
+
+### 5.1 Discussion-First 원칙
+
+기획, 전략, 리뉴얼 방향, 기능 추가·삭제, 포지셔닝과 같이 판단이 중요한 업무는 다음 순서를 기본으로 한다.
+
+`지시 → 조사/분석 → 의견 교환 → 가설 조정 → 합의 → 문서화 → 실행`
+
+문서를 먼저 만들고 나중에 방향을 맞추는 방식을 피한다.
+초기 조사 문서가 필요한 경우에도 초안 또는 Working Note임을 명확히 하고, 합의 전 내용을 확정안처럼 기록하지 않는다.
 
 ---
 
