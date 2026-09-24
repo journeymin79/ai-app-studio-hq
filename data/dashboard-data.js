@@ -43,13 +43,22 @@ window.HQ_DATA = {
     {id:"OPS-002",title:"오늘 업무 마감 및 Daily Brief 작성",app:"Saytence",team:"COO",role:"COO",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"}
   ],
   activities:[
-    {time:"오늘",app:"Saytence",team:"CEO",title:"운영 원칙 확정",summary:"Discussion First, Existing Product First, Constructive Challenge 원칙 적용",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"Discovery",title:"시장·경쟁사 조사",summary:"JLPT 공식 통계와 주요 경쟁 앱 5개 군을 조사",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"Product",title:"현행 앱 분석",summary:"CEO 제공 최신 화면 7종을 기준으로 학습/내 자료/설정/기록 구조를 파악",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"Product",title:"역할별 의견 회의",summary:"Product·UX·Red Team을 포함해 독립 의견과 반대 의견을 정리",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"Growth",title:"포지셔닝 의견",summary:"JLPT 중심 유입과 다국어 확장 가치의 메시지 분리를 제안",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"Data",title:"측정 우선 원칙",summary:"기능 확대 전 Activation·D1/D7·카드 평가·음성 사용 계측 필요 의견",command:"CMD-001"},
-    {time:"오늘",app:"Saytence",team:"COO",title:"Daily Close",summary:"시장조사·제품 Audit·부서 의견을 문서화하고 목데이터 없는 대시보드로 마감",command:"CMD-001"}
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"CEO",title:"CMD-002 단일 Command 운영 확정",summary:"한 가지 일을 정하면 전체 부서가 같은 Command를 중심으로 움직이는 운영 원칙을 확정",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Product",title:"자유 회독형 개선 방향 확정",summary:"강한 일일 할당 대신 자유 회독형(B)을 Next Release 기준으로 채택",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Product",title:"시작 UX 1안 확정",summary:"별도 목적 선택 화면 없이 바로 이어서 학습 + 빠른 세션 선택을 기본 방향으로 확정",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Product",title:"Next Release Flow 상세화",summary:"빠른 시작 → 기존 카드 회독 → 세션 완료 → 약한 카드 재진입 흐름을 개선 릴리스 기준으로 구체화",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Discovery",title:"결정 방향 검증",summary:"경쟁 메시지와 사용자 신호를 검토해 짧은 세션 자체보다 낮은 진입 마찰·3단계 판단·약한 카드 재회독 조합을 검증",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Growth",title:"Threads 성장 실행안 설계",summary:"문제/대화형 콘텐츠 → 현재 기능 증명 → 개선 릴리스 경험 연결의 2주 파일럿 구조를 설계",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Data",title:"Renewal 측정 Funnel 정의",summary:"Threads → Store → 설치 → 첫 학습 → 세션 완료 → 약한 카드 재복습 → D1/D7 흐름을 측정 기준으로 정의",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Engineering",title:"Source Audit 대기",summary:"연결된 GitHub에서 Saytence 소스 저장소가 확인되지 않아 구현 추측 없이 Source Audit을 대기 상태로 유지",command:"CMD-002"},
+    {date:"2026-09-24",time:"09/24",app:"Saytence",team:"Engineering",title:"QA 회귀 기준 정리",summary:"카드 뒤집기·3방향 스와이프·오디오·녹음·이어서 학습·복습·언어·import/backup 보존 검증 항목을 정리",command:"CMD-002"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"CEO",title:"운영 원칙 확정",summary:"Discussion First, Existing Product First, Constructive Challenge 원칙 적용",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"Discovery",title:"시장·경쟁사 조사",summary:"JLPT 공식 통계와 주요 경쟁 앱 군을 조사",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"Product",title:"현행 앱 분석",summary:"CEO 제공 최신 화면 7종을 기준으로 학습/내 자료/설정/기록 구조를 파악",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"Product",title:"역할별 의견 회의",summary:"Product·UX·Red Team을 포함해 독립 의견과 반대 의견을 정리",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"Growth",title:"포지셔닝 의견",summary:"JLPT 중심 유입과 다국어 확장 가치의 메시지 분리를 제안",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"Data",title:"측정 우선 원칙",summary:"기능 확대 전 Activation·D1/D7·카드 평가·음성 사용 계측 필요 의견",command:"CMD-001"},
+    {date:"2026-09-23",time:"09/23",app:"Saytence",team:"COO",title:"Daily Close",summary:"시장조사·제품 Audit·부서 의견을 문서화하고 실제 데이터 기반 대시보드로 마감",command:"CMD-001"}
   ],
   decisions:[
     {id:"DEC-001",app:"Saytence",title:"JLPT 중심 포지셔닝 최종 채택",team:"Product / Growth",status:"REQUIRED",summary:"현재 가장 유력한 가설이나 CEO와 추가 논의 후 결정"},
@@ -63,7 +72,7 @@ window.HQ_DATA = {
     {id:"ART-003",title:"Saytence Product Discussion",app:"Saytence",team:"Product",type:"Discussion",date:"2026-09-23",summary:"JLPT 회독 가설과 역할별 1차 의견 기록",url:"https://docs.google.com/document/d/1v2v7KjyI-MtG1TX4iU_c3bzbopJhwNcXBoN8wCmkT4w/edit"},
     {id:"ART-004",title:"Daily Brief 2026-09-23",app:"Saytence",team:"COO",type:"Daily Report",date:"2026-09-23",summary:"오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",url:"https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"}
   ],
-  experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
+  experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",date:"2026-09-24",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
   findings:[
     {type:"DECISION",text:"CEO는 자유 회독형(B)을 선택했다."},
     {type:"DECISION",text:"CEO는 세션 시작 UX 안 1 바로 이어서 + 빠른 세션 선택을 선택했다."},
