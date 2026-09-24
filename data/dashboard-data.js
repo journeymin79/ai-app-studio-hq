@@ -28,9 +28,9 @@ window.HQ_DATA = {
   tasks:[
     {id:"PRD-003",title:"자유 회독형 Next Release 개선계획",app:"Saytence",team:"Product",role:"Product Manager",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
     {id:"UX-001",title:"시작 UX 1안·세션 종료·약한 카드 Flow 상세화",app:"Saytence",team:"Product",role:"UX",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
-    {id:"RES-003",title:"결정된 개선 방향 경쟁·사용자 검증",app:"Saytence",team:"Discovery",role:"Competitor Intelligence",command:"CMD-002",status:"IN_PROGRESS",progress:60,updated:"2026-09-24"},
+    {id:"RES-003",title:"결정된 개선 방향 경쟁·사용자 검증",app:"Saytence",team:"Discovery",role:"Competitor Intelligence",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
     {id:"GRO-001",title:"Threads 2주 성장 실행안",app:"Saytence",team:"Growth",role:"Content Marketing",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-24"},
-    {id:"GRO-002",title:"현재 Store/ASO 진단",app:"Saytence",team:"Growth",role:"ASO",command:"CMD-002",status:"IN_PROGRESS",progress:35,updated:"2026-09-24"},
+    {id:"GRO-002",title:"현재 Store/ASO 진단",app:"Saytence",team:"Growth",role:"ASO",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
     {id:"DAT-001",title:"Renewal 전후 측정 Funnel",app:"Saytence",team:"Data",role:"Product Analytics",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
     {id:"QA-001",title:"자유 회독 변경 회귀 시나리오",app:"Saytence",team:"Engineering",role:"QA",command:"CMD-002",status:"COMPLETED",progress:100,updated:"2026-09-25"},
     {id:"ENG-001",title:"Saytence Source Audit",app:"Saytence",team:"Engineering",role:"Tech Lead / Codex",command:"CMD-002",status:"WAITING",progress:0,updated:"2026-09-24"},
@@ -43,6 +43,8 @@ window.HQ_DATA = {
     {id:"OPS-002",title:"오늘 업무 마감 및 Daily Brief 작성",app:"Saytence",team:"COO",role:"COO",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"}
   ],
   activities:[
+    {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Discovery",title:"CMD-002 경쟁·사용자 검증 완료",summary:"공식 JLPT 정책, 최신 경쟁 listing, 2025~2026 커뮤니티 신호를 검토해 자유 회독형 방향 유지와 검증 리스크를 정리",command:"CMD-002"},
+    {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Growth",title:"Store/ASO Audit 완료",summary:"현재 공개 listing의 JLPT+영어회화 혼합 메시지를 진단하고 JLPT 반복 중심 title/short description/첫 3 screenshot 실험안을 작성",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Product",title:"Next Release 개선계획 완료",summary:"AS-IS→TO-BE, 세션 경계, 완료 경험, 약한 카드 재진입, Scope/Hold를 정식 계획으로 확정",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"UX",title:"자유 회독 상세 Flow 완료",summary:"즉시 이어하기를 보존하고 빠른 세션→카드 평가→완료→약한 카드 재진입 흐름과 경계 규칙을 정리",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Data",title:"Renewal 측정 계획 완료",summary:"Threads→Store→설치→학습→세션 완료→약한 카드 복습→D1/D7 Funnel과 이벤트 후보를 정의",command:"CMD-002"},
@@ -78,7 +80,9 @@ window.HQ_DATA = {
     {id:"ART-004",title:"Daily Brief 2026-09-23",app:"Saytence",team:"COO",type:"Daily Report",date:"2026-09-23",summary:"오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",url:"https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"},
     {id:"ART-005",title:"Saytence Threads Marketing Plan 2026-09-24",app:"Saytence",team:"Growth",type:"Marketing Plan",date:"2026-09-24",summary:"Threads 2주 파일럿, 실제 게시글 14개, 콘텐츠 비율, CTA, 소재, 측정 Funnel, Red Team 기준을 포함한 실행 보고서",url:"https://docs.google.com/document/d/1F09GjtlQEzb7HKFPkdsMPlamGex37u1HuOn7ScOjKs0/edit"},
     {id:"ART-006",title:"Saytence Next Release Plan 2026-09-25",app:"Saytence",team:"Product",type:"Product Plan",date:"2026-09-25",summary:"자유 회독형 AS-IS→TO-BE, 상세 Flow, 세션 경계, QA, Scope/Hold 및 Engineering blocker",url:"https://docs.google.com/document/d/1mLD3g2WtRHy85ZecOzpLtirqft6uRUSqbhEpHZ-IhfE/edit"},
-    {id:"ART-007",title:"Saytence Measurement & QA Plan 2026-09-25",app:"Saytence",team:"Data / QA",type:"Measurement & QA",date:"2026-09-25",summary:"Renewal Funnel, event 후보, KPI, before/after 기준, 회귀 시나리오와 Release Gate",url:"https://docs.google.com/document/d/1rpvb3XCVmrtKHtqt4HxflEB6135bGPdFiU7MtInIsKw/edit"}
+    {id:"ART-007",title:"Saytence Measurement & QA Plan 2026-09-25",app:"Saytence",team:"Data / QA",type:"Measurement & QA",date:"2026-09-25",summary:"Renewal Funnel, event 후보, KPI, before/after 기준, 회귀 시나리오와 Release Gate",url:"https://docs.google.com/document/d/1rpvb3XCVmrtKHtqt4HxflEB6135bGPdFiU7MtInIsKw/edit"},
+    {id:"ART-008",title:"Saytence Research Validation 2026-09-25",app:"Saytence",team:"Discovery",type:"Research Validation",date:"2026-09-25",summary:"공식 JLPT 정책, 경쟁 앱, 커뮤니티 review 부담 신호로 CMD-002 방향을 검증하고 반대 리스크를 정리",url:"https://docs.google.com/document/d/19GbdLnZ6Hlvy9Y5_97BtU-peTt4L9apGEipGaZsmsJ4/edit"},
+    {id:"ART-009",title:"Saytence Store ASO Audit 2026-09-25",app:"Saytence",team:"Growth",type:"ASO Audit",date:"2026-09-25",summary:"현재 Store 메시지 진단과 JLPT 반복 중심 title/short description/첫 3 screenshot 실험 후보",url:"https://docs.google.com/document/d/1iH0E7ZCAtuR7x6iCEIl_znWd6zAaJx40aNPwgu5z5Gw/edit"}
   ],
   experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",date:"2026-09-24",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
   findings:[
