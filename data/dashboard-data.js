@@ -70,7 +70,8 @@ window.HQ_DATA = {
     {id:"ART-001",title:"Saytence Market & Competitor Research",app:"Saytence",team:"Discovery",type:"Research",date:"2026-09-23",summary:"JLPT 시장 규모와 Migii, renshuu, Kanji Study, AnkiDroid, Bunpo 경쟁 구도",url:"https://docs.google.com/document/d/1psWBOzEwMIgnxN5w9Mg0NwLQslAg3KS-1gHwpAFpkTQ/edit"},
     {id:"ART-002",title:"Current App Audit & Department Review",app:"Saytence",team:"Product",type:"Product Review",date:"2026-09-23",summary:"실제 화면 기준 현행 구조, 강점·마찰, 전 부서/직원 의견과 미결정 쟁점",url:"https://docs.google.com/document/d/10zJVwbSH3pY9bkvrHfqLyqGllA5qxeCWhBGSPUrbJmQ/edit"},
     {id:"ART-003",title:"Saytence Product Discussion",app:"Saytence",team:"Product",type:"Discussion",date:"2026-09-23",summary:"JLPT 회독 가설과 역할별 1차 의견 기록",url:"https://docs.google.com/document/d/1v2v7KjyI-MtG1TX4iU_c3bzbopJhwNcXBoN8wCmkT4w/edit"},
-    {id:"ART-004",title:"Daily Brief 2026-09-23",app:"Saytence",team:"COO",type:"Daily Report",date:"2026-09-23",summary:"오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",url:"https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"}
+    {id:"ART-004",title:"Daily Brief 2026-09-23",app:"Saytence",team:"COO",type:"Daily Report",date:"2026-09-23",summary:"오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",url:"https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"},
+    {id:"ART-005",title:"Saytence Threads Marketing Plan 2026-09-24",app:"Saytence",team:"Growth",type:"Marketing Plan",date:"2026-09-24",summary:"Threads 2주 파일럿, 실제 게시글 14개, 콘텐츠 비율, CTA, 소재, 측정 Funnel, Red Team 기준을 포함한 실행 보고서",url:"https://docs.google.com/document/d/1F09GjtlQEzb7HKFPkdsMPlamGex37u1HuOn7ScOjKs0/edit"}
   ],
   experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",date:"2026-09-24",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
   findings:[
