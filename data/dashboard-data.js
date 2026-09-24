@@ -1,6 +1,6 @@
 window.HQ_DATA = {
-  company:{name:"AI APP STUDIO",mission:"시장 검증 → 제품 개선 → 성장 → 수익화를 반복하는 AI 기반 앱 스튜디오",apps:"1 / 3",activeTeams:7,activeTasks:0,completedToday:7,experiments:0,ceoDecisions:0,todaySummary:"AI APP STUDIO 실제 운영 첫날. Saytence를 대상으로 JLPT 시장과 주요 경쟁 앱을 조사하고, CEO가 제공한 최신 앱 화면을 기준으로 현행 학습 구조를 분석했습니다. 각 부서와 역할이 독립 의견을 냈으며 제품 방향은 아직 확정하지 않고 가설과 쟁점을 남긴 상태로 오늘 업무를 마감했습니다."},
-  apps:[{id:"saytence",name:"Saytence",stage:"Discovery / Product Review",status:"reviewing",goal:"JLPT 중심 포지셔닝과 현행 회독 경험의 경쟁력 검증",today:7,active:0,experiments:0,decisions:0,updated:"2026-09-23",description:"JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"}],
+  company:{name:"AI APP STUDIO",mission:"시장 검증 → 제품 개선 → 성장 → 수익화를 반복하는 AI 기반 앱 스튜디오",apps:"1 / 3",activeTeams:7,activeTasks:8,completedToday:6,experiments:1,ceoDecisions:2,todaySummary:"CMD-002 하나에 전 부서를 연결해 Saytence 자유 회독형 개선 릴리스를 준비 중입니다. 자유 회독형(B)과 시작 UX 1안을 기준으로 Product 개선계획과 Threads 성장방안을 병렬 진행합니다."},
+  apps:[{id:"saytence",name:"Saytence",stage:"Product Renewal / Growth",status:"active",goal:"자유 회독형 개선 릴리스 준비와 Threads 성장 실행안 수립",today:6,active:8,experiments:1,decisions:2,updated:"2026-09-24",description:"JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"}],
   teams:[
     {id:"coo",name:"COO",icon:"🤖",role:"회사 운영 조율, 우선순위와 CEO 지시 분해",ai:"ChatGPT",status:"reviewing",apps:["Saytence"],done:2,doing:0,waiting:0,summary:"새 기능 대량 추가보다 기존 엔진의 강점을 보존하고 가치 전달·학습 구조·측정을 먼저 정리해야 한다."},
     {id:"discovery",name:"Discovery",icon:"🔬",role:"시장·경쟁서비스·사용자 문제 탐색",ai:"ChatGPT Research + Gemini",status:"reviewing",apps:["Saytence"],done:2,doing:0,waiting:0,summary:"JLPT 시장은 충분히 크지만 경쟁도 강하다. N3는 좋은 진입점이나 기존 강자의 기능을 모두 따라가면 안 된다."},
@@ -25,7 +25,16 @@ window.HQ_DATA = {
     {id:"content",name:"Content Marketing",team:"Growth",ai:"ChatGPT",mission:"사용자 문제 중심 유입 콘텐츠 기획",status:"waiting",app:"Saytence",task:"콘텐츠 타깃 가설",opinion:"'외워도 계속 잊어버리는 사람', '문제풀이 전에 어휘가 안 잡히는 사람'을 기능보다 먼저 이야기하는 콘텐츠가 적합하다."}
   ],
   commands:[{id:"CMD-001",title:"Saytence 경쟁력 재분석 및 리뉴얼 방향 검토",app:"Saytence",time:"2026-09-23",status:"COMPLETED",progress:100,teams:["COO","Discovery","Product","Engineering","Growth","Data","Revenue"],text:"경쟁사와 시장을 조사하고 현행 앱을 실제 화면 기준으로 파악한 뒤 각 부서가 독립 의견을 제시한다. 오늘은 방향을 확정하지 않고 조사와 논의를 마감한다.",result:["JLPT 시장/경쟁군 조사","현행 화면·학습 구조 분석","전 부서/직원 의견 수렴","JLPT 회독 포지셔닝 가설","미결정 쟁점 정리","Daily Report 작성","대시보드 실제 데이터 전환"]}],
+  commands:[{id:"CMD-002",title:"Saytence 자유 회독형 개선 릴리스 준비",app:"Saytence",time:"2026-09-24",status:"ACTIVE",progress:55,teams:["COO","Discovery","Product","Engineering","Growth","Data","Revenue"],text:"자유 회독형(B)+시작 UX 1안을 기준으로 Product 개선계획과 Threads 성장방안을 포함해 전 부서가 하나의 개선 릴리스를 준비한다.",result:["자유 회독형 B 결정","시작 UX 1안 결정","Renewal Flow v0.1","경쟁 메시지 Matrix 1차","Threads 2주 파일럿 구조"]}],
   tasks:[
+    {id:"PRD-003",title:"자유 회독형 Next Release 개선계획",app:"Saytence",team:"Product",role:"Product Manager",command:"CMD-002",status:"IN_PROGRESS",progress:70,updated:"2026-09-24"},
+    {id:"UX-001",title:"시작 UX 1안·세션 종료·약한 카드 Flow 상세화",app:"Saytence",team:"Product",role:"UX",command:"CMD-002",status:"IN_PROGRESS",progress:65,updated:"2026-09-24"},
+    {id:"RES-003",title:"결정된 개선 방향 경쟁·사용자 검증",app:"Saytence",team:"Discovery",role:"Competitor Intelligence",command:"CMD-002",status:"IN_PROGRESS",progress:60,updated:"2026-09-24"},
+    {id:"GRO-001",title:"Threads 2주 성장 실행안",app:"Saytence",team:"Growth",role:"Content Marketing",command:"CMD-002",status:"IN_PROGRESS",progress:55,updated:"2026-09-24"},
+    {id:"GRO-002",title:"현재 Store/ASO 진단",app:"Saytence",team:"Growth",role:"ASO",command:"CMD-002",status:"IN_PROGRESS",progress:35,updated:"2026-09-24"},
+    {id:"DAT-001",title:"Renewal 전후 측정 Funnel",app:"Saytence",team:"Data",role:"Product Analytics",command:"CMD-002",status:"IN_PROGRESS",progress:50,updated:"2026-09-24"},
+    {id:"QA-001",title:"자유 회독 변경 회귀 시나리오",app:"Saytence",team:"Engineering",role:"QA",command:"CMD-002",status:"IN_PROGRESS",progress:40,updated:"2026-09-24"},
+    {id:"ENG-001",title:"Saytence Source Audit",app:"Saytence",team:"Engineering",role:"Tech Lead / Codex",command:"CMD-002",status:"WAITING",progress:0,updated:"2026-09-24"},
     {id:"RES-001",title:"JLPT 시장 조사",app:"Saytence",team:"Discovery",role:"Market Research",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"},
     {id:"RES-002",title:"주요 경쟁 앱 분석",app:"Saytence",team:"Discovery",role:"Competitor Intelligence",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"},
     {id:"PRD-001",title:"현행 Saytence 화면 및 학습 구조 분석",app:"Saytence",team:"Product",role:"UX",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"},
@@ -55,8 +64,11 @@ window.HQ_DATA = {
     {id:"ART-003",title:"Saytence Product Discussion",app:"Saytence",team:"Product",type:"Discussion",date:"2026-09-23",summary:"JLPT 회독 가설과 역할별 1차 의견 기록",url:"https://docs.google.com/document/d/1v2v7KjyI-MtG1TX4iU_c3bzbopJhwNcXBoN8wCmkT4w/edit"},
     {id:"ART-004",title:"Daily Brief 2026-09-23",app:"Saytence",team:"COO",type:"Daily Report",date:"2026-09-23",summary:"오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",url:"https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"}
   ],
-  experiments:[],
+  experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
   findings:[
+    {type:"DECISION",text:"CEO는 자유 회독형(B)을 선택했다."},
+    {type:"DECISION",text:"CEO는 세션 시작 UX 안 1 바로 이어서 + 빠른 세션 선택을 선택했다."},
+    {type:"BLOCKER",text:"현재 연결된 GitHub에서 Saytence 소스 저장소가 확인되지 않아 Engineering Source Audit/구현은 대기 중이다."},
     {type:"FACT",text:"JLPT 2025년 전체 신청자는 1,940,852명이며 2024년보다 약 12.9% 증가했다."},
     {type:"FACT",text:"2025년 7월과 12월 모두 N3 신청자가 레벨 중 가장 많았다."},
     {type:"FACT",text:"현재 Saytence 화면에서 JLPT N3 카드, 듣기, 느리게 듣기, 녹음, 3방향 스와이프, 복습/검색/통계/언어전환/JSON import/백업 기능을 확인했다."},
