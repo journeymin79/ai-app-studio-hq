@@ -43,6 +43,8 @@ window.HQ_DATA = {
     {id:"OPS-002",title:"오늘 업무 마감 및 Daily Brief 작성",app:"Saytence",team:"COO",role:"COO",command:"CMD-001",status:"COMPLETED",progress:100,updated:"2026-09-23"}
   ],
   activities:[
+    {date:"2026-09-25",time:"09/25",app:"Saytence",team:"COO",title:"첫 전사 Weekly Plan 수립",summary:"CMD-002 하나를 기준으로 전 팀의 목표·업무·산출물·의존성·완료기준·리스크와 9/25~10/1 일정을 수립",command:"CMD-002"},
+    {date:"2026-09-25",time:"09/25",app:"Saytence",team:"COO",title:"CEO Weekly Brief 발행",summary:"이번 주 회사 목표, 핵심 업무, Engineering blocker, Decision Gate와 10/1 보고 항목을 CEO용으로 압축",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Discovery",title:"CMD-002 경쟁·사용자 검증 완료",summary:"공식 JLPT 정책, 최신 경쟁 listing, 2025~2026 커뮤니티 신호를 검토해 자유 회독형 방향 유지와 검증 리스크를 정리",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Growth",title:"Store/ASO Audit 완료",summary:"현재 공개 listing의 JLPT+영어회화 혼합 메시지를 진단하고 JLPT 반복 중심 title/short description/첫 3 screenshot 실험안을 작성",command:"CMD-002"},
     {date:"2026-09-25",time:"09/25",app:"Saytence",team:"Product",title:"Next Release 개선계획 완료",summary:"AS-IS→TO-BE, 세션 경계, 완료 경험, 약한 카드 재진입, Scope/Hold를 정식 계획으로 확정",command:"CMD-002"},
@@ -82,7 +84,9 @@ window.HQ_DATA = {
     {id:"ART-006",title:"Saytence Next Release Plan 2026-09-25",app:"Saytence",team:"Product",type:"Product Plan",date:"2026-09-25",summary:"자유 회독형 AS-IS→TO-BE, 상세 Flow, 세션 경계, QA, Scope/Hold 및 Engineering blocker",url:"https://docs.google.com/document/d/1mLD3g2WtRHy85ZecOzpLtirqft6uRUSqbhEpHZ-IhfE/edit"},
     {id:"ART-007",title:"Saytence Measurement & QA Plan 2026-09-25",app:"Saytence",team:"Data / QA",type:"Measurement & QA",date:"2026-09-25",summary:"Renewal Funnel, event 후보, KPI, before/after 기준, 회귀 시나리오와 Release Gate",url:"https://docs.google.com/document/d/1rpvb3XCVmrtKHtqt4HxflEB6135bGPdFiU7MtInIsKw/edit"},
     {id:"ART-008",title:"Saytence Research Validation 2026-09-25",app:"Saytence",team:"Discovery",type:"Research Validation",date:"2026-09-25",summary:"공식 JLPT 정책, 경쟁 앱, 커뮤니티 review 부담 신호로 CMD-002 방향을 검증하고 반대 리스크를 정리",url:"https://docs.google.com/document/d/19GbdLnZ6Hlvy9Y5_97BtU-peTt4L9apGEipGaZsmsJ4/edit"},
-    {id:"ART-009",title:"Saytence Store ASO Audit 2026-09-25",app:"Saytence",team:"Growth",type:"ASO Audit",date:"2026-09-25",summary:"현재 Store 메시지 진단과 JLPT 반복 중심 title/short description/첫 3 screenshot 실험 후보",url:"https://docs.google.com/document/d/1iH0E7ZCAtuR7x6iCEIl_znWd6zAaJx40aNPwgu5z5Gw/edit"}
+    {id:"ART-009",title:"Saytence Store ASO Audit 2026-09-25",app:"Saytence",team:"Growth",type:"ASO Audit",date:"2026-09-25",summary:"현재 Store 메시지 진단과 JLPT 반복 중심 title/short description/첫 3 screenshot 실험 후보",url:"https://docs.google.com/document/d/1iH0E7ZCAtuR7x6iCEIl_znWd6zAaJx40aNPwgu5z5Gw/edit"},
+    {id:"ART-010",title:"Weekly Plan 2026-09-25 to 2026-10-01",app:"Saytence",team:"COO",type:"Weekly Plan",date:"2026-09-25",summary:"CMD-002 기준 COO/Product/UX/Discovery/Growth/ASO/Data/Engineering/QA/Red Team/Revenue 전 팀 주간 실행계획",url:"https://docs.google.com/document/d/1etffY7Lu5am6crd5hpQ8icTcLiefXvBGN2BGqgwFMaA/edit"},
+    {id:"ART-011",title:"CEO Weekly Brief 2026-09-25",app:"Saytence",team:"COO",type:"CEO Brief",date:"2026-09-25",summary:"이번 주 목표, 팀별 핵심, blocker, CEO decision gate와 10/1 보고 항목을 압축한 CEO용 주간 보고",url:"https://docs.google.com/document/d/1etmyrq9hvjzL7DRO6OnPFgI3itsgj6iMSWJQzyny0mM/edit"}
   ],
   experiments:[{id:"EXP-001",app:"Saytence",title:"Threads 문제/메시지 2주 파일럿",team:"Growth",date:"2026-09-24",status:"PLANNED",summary:"현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."}],
   findings:[
