@@ -493,6 +493,15 @@
       "time": "09/26",
       "app": "Company",
       "team": "COO",
+      "title": "Company Organization 메뉴 추가",
+      "summary": "Company 메뉴에 Organization을 추가하고 CEO→COO→Discovery/Product/Engineering/Growth/Data/Revenue 및 독립 Red Team의 역할·현재 Task·Reports·구성 역할을 조직도 형태로 연결",
+      "command": "CMD-002"
+    },
+    {
+      "date": "2026-09-26",
+      "time": "09/26",
+      "app": "Company",
+      "team": "COO",
       "title": "CEO Dashboard v2.1 Operating Cockpit 적용",
       "summary": "Overview를 현재 상태·준비 완료·병목·CEO Inbox·Critical Path·Google Docs Reports·Live Feed·누적 Timeline 중심으로 고도화하고 카드·수치·Stage·Drawer 애니메이션을 강화",
       "command": "CMD-002"
@@ -1043,5 +1052,5 @@
   "metrics": [],
   "backlog": [],
   "issues": [],
-  "dashboardVersion": "2.1"
+  "dashboardVersion": "2.2"
 }
