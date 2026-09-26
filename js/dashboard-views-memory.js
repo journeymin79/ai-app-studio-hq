@@ -58,7 +58,83 @@ H.views.organization=()=>{
   H.anim();
 };
 
-H.openTeam=id=>{const t=D().teams.find(x=>x.id===id||x.name===id);if(!t)return;const ts=D().tasks.filter(x=>x.team===t.name), reps=D().artifacts.filter(x=>String(x.team).includes(t.name)), acts=D().activities.filter(x=>String(x.team).includes(t.name)), people=D().agents.filter(x=>x.team===t.name);H.el.dc.innerHTML=`<span class="kicker">TEAM · ${H.e(t.name)}</span><h2>${H.e(t.icon||'')} ${H.e(t.name)}</h2><p class="big-summary">${H.e(t.role)}</p><div class="inline">${H.badge(t.status||'','blue')}${H.badge(t.ai||'','violet')}</div><h3>Current Position</h3><div class="card"><p class="big-summary">${H.e(t.summary)}</p></div><h3>Members / Roles</h3><div class="grid-2">${people.map(a=>`<article class="card"><div class="card-title"><h3>${H.e(a.name)}</h3>${H.badge(a.status,H.tone(a.status))}</div><p class="section-note">${H.e(a.ai)}</p><p class="big-summary">${H.e(a.opinion)}</p></article>`).join('')||H.empty('등록 역할 없음')}</div><h3>Tasks</h3><div class="list">${ts.map(H.task).join('')||H.empty('Task 없음')}</div><h3>Reports</h3><div class="grid-2">${reps.map(H.report).join('')||H.empty('Report 없음')}</div><h3>History</h3>${H.timeline(acts)}`;H.openDrawer();H.bindDrawer();H.anim()};
+H.openTeam=id=>{
+  const t=D().teams.find(x=>x.id===id||x.name===id); if(!t)return;
+  const people=D().agents.filter(x=>x.team===t.name);
+  const labels=[t.name,...people.map(x=>x.name)];
+  const belongs=v=>labels.some(label=>String(v||'').split(/\s*\/\s*/).some(token=>token===label||token.includes(label)));
+  const taskBelongs=x=>x.team===t.name||belongs(x.role)||(x.participants||[]).some(p=>belongs(p));
+  const tasks=D().tasks.filter(taskBelongs);
+  const openTasks=tasks.filter(H.isOpenTask);
+  const completedTasks=tasks.filter(x=>x.status==='COMPLETED').sort((a,b)=>String(b.updated||'').localeCompare(String(a.updated||'')));
+  const reports=D().artifacts.filter(x=>belongs(x.team));
+  const decisions=D().decisions.filter(x=>belongs(x.team));
+  const activities=D().activities.filter(x=>belongs(x.team));
+  const discussions=(D().discussions||[]).filter(x=>belongs(x.team)||tasks.some(tk=>tk.id===x.taskId));
+  const timeline=[
+    ...activities.map(x=>({...x,type:'ACTIVITY'})),
+    ...reports.map(x=>({date:x.date,team:x.team,title:x.title,summary:x.summary,type:'REPORT'})),
+    ...decisions.map(x=>({date:x.date,team:x.team,title:x.title,summary:x.summary,type:'DECISION'}))
+  ].sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).slice(0,10);
+  const goal=t.currentGoal||t.goal||t.summary||t.role;
+  const cmd=H.cmd();
+  const memberCards=people.map(a=>`<article class="team-member-card">
+    <div class="team-member-head"><div class="team-avatar">${H.e((a.name||'?').slice(0,2))}</div><div class="grow"><strong>${H.e(a.name)}</strong><span>${H.e(a.ai||'')}</span></div>${H.badge(a.status||'','blue')}</div>
+    <p class="team-member-mission">${H.e(a.mission||'')}</p>
+    <div class="team-member-work"><span>현재 역할/업무</span><strong>${H.e(a.task||'등록된 업무 없음')}</strong></div>
+    ${a.opinion?`<p class="team-member-opinion">“${H.e(a.opinion)}”</p>`:''}
+  </article>`).join('')||H.empty('등록 역할 없음');
+  const activeTaskHtml=openTasks.length?openTasks.map(H.task).join(''):H.empty('현재 진행 중 Task 없음','이 팀이 참여할 다음 Task는 Sprint Planning 또는 관련 Task 협의에서 생성됩니다.');
+  const completedTaskHtml=completedTasks.length?completedTasks.slice(0,5).map(H.task).join(''):H.empty('최근 완료 Task 없음');
+  const reportHtml=reports.length?reports.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).map(H.report).join(''):H.empty('작성 Report 없음');
+  const decisionHtml=decisions.length?decisions.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))).map(H.decision).join(''):H.empty('참여 Decision 없음');
+  H.el.dc.innerHTML=`<div class="team-detail">
+    <div class="team-detail-hero">
+      <div class="team-detail-icon">${H.e(t.icon||'•')}</div>
+      <div class="grow"><span class="kicker">TEAM · ${H.e(t.id||t.name)}</span><h2>${H.e(t.name)}</h2><p>${H.e(t.role)}</p><div class="inline">${H.badge(t.status||'','blue')}${H.badge(t.ai||'','violet')}${cmd?H.badge(cmd.id,'blue'):''}</div></div>
+    </div>
+    <div class="team-goal-card"><span>TEAM GOAL</span><strong>${H.e(goal)}</strong><p>${H.e(t.summary||'')}</p></div>
+    <div class="team-kpis">
+      <div><span>Members / Roles</span><strong data-count="${people.length}">${people.length}</strong></div>
+      <div><span>Open Tasks</span><strong data-count="${openTasks.length}">${openTasks.length}</strong></div>
+      <div><span>Reports</span><strong data-count="${reports.length}">${reports.length}</strong></div>
+      <div><span>Decisions</span><strong data-count="${decisions.length}">${decisions.length}</strong></div>
+      <div><span>Discussions</span><strong data-count="${discussions.length}">${discussions.length}</strong></div>
+      <div><span>Timeline</span><strong data-count="${timeline.length}">${timeline.length}</strong></div>
+    </div>
+    <div class="drawer-tabs team-tabs">
+      <button class="drawer-tab active" data-tab="team-overview">Overview</button>
+      <button class="drawer-tab" data-tab="team-members">Members ${people.length}</button>
+      <button class="drawer-tab" data-tab="team-tasks">Tasks ${tasks.length}</button>
+      <button class="drawer-tab" data-tab="team-reports">Reports ${reports.length}</button>
+      <button class="drawer-tab" data-tab="team-decisions">Decisions ${decisions.length}</button>
+      <button class="drawer-tab" data-tab="team-timeline">Timeline</button>
+    </div>
+
+    <div data-p="team-overview">
+      <div class="team-overview-grid">
+        <section class="card"><div class="card-title"><h3>Current Objective</h3>${H.badge(cmd?.status||'PLANNING',H.tone(cmd?.status||'PLANNING'))}</div><p class="big-summary">${H.e(goal)}</p><p class="section-note">${cmd?H.e(cmd.id+' · '+cmd.title):'Active Command 없음'}</p></section>
+        <section class="card"><div class="card-title"><h3>Work Status</h3>${H.badge(openTasks.length?'ACTIVE':'READY',openTasks.length?'yellow':'green')}</div><div class="status-stack"><div class="status-row"><div class="status-icon">⚡</div><div><strong>진행 중</strong><p>${openTasks.length?H.e(openTasks[0].title):'현재 열린 Task 없음'}</p></div></div><div class="status-row"><div class="status-icon">📄</div><div><strong>최근 Report</strong><p>${reports.length?H.e(reports.slice().sort((a,b)=>String(b.date||'').localeCompare(String(a.date||'')))[0].title):'작성 Report 없음'}</p></div></div></div></section>
+      </div>
+      <h3>Active Tasks</h3><div class="list">${activeTaskHtml}</div>
+      <h3>Recent Team Timeline</h3>${H.timeline(timeline.slice(0,6))}
+    </div>
+
+    <div data-p="team-members" hidden><div class="team-member-grid">${memberCards}</div></div>
+
+    <div data-p="team-tasks" hidden>
+      <h3>In Progress / Open</h3><div class="list">${activeTaskHtml}</div>
+      <h3>Recently Completed</h3><div class="list">${completedTaskHtml}</div>
+    </div>
+
+    <div data-p="team-reports" hidden><div class="grid-2">${reportHtml}</div></div>
+
+    <div data-p="team-decisions" hidden><div class="list">${decisionHtml}</div></div>
+
+    <div data-p="team-timeline" hidden>${H.timeline(timeline)}</div>
+  </div>`;
+  H.openDrawer(); H.bindDrawer(); H.anim();
+};
 
 H.views.teams=()=>{H.head('ORGANIZATION','Teams','조직도가 아니라 각 팀이 어떤 일에 참여했고 무엇을 보고했는지 확인');const xs=D().teams;H.el.root.innerHTML=`<div class="page-enter"><section class="grid-3">${xs.map(t=>{const ts=D().tasks.filter(x=>x.team===t.name),rp=D().artifacts.filter(x=>String(x.team).includes(t.name)),ac=D().activities.filter(x=>String(x.team).includes(t.name));return `<article class="card clickable" data-team="${H.e(t.id)}"><div class="card-title"><div><div class="card-label">${H.e(t.ai)}</div><h3>${H.e(t.icon||'')} ${H.e(t.name)}</h3></div>${H.badge(t.status||'','blue')}</div><p class="big-summary">${H.e(t.summary)}</p><div class="mini-stats"><div class="mini-stat"><span>Tasks</span><strong>${ts.length}</strong></div><div class="mini-stat"><span>Reports</span><strong>${rp.length}</strong></div><div class="mini-stat"><span>History</span><strong>${ac.length}</strong></div></div></article>`}).join('')}</section></div>`;H.el.root.querySelectorAll('[data-team]').forEach(x=>x.onclick=()=>H.openTeam(x.dataset.team))};
 
