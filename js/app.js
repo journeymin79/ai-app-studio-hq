@@ -2,7 +2,7 @@ window.HQ=window.HQ||{};
 (H=>{
 const navSpec=()=>[
  {title:'Company',items:[['company','🏠','Overview'],['current','⚡','Current Work'],['commands','⭐','CEO Commands']]},
- {title:'Execution',items:[['sprints','🏃','Sprints'],['tasks','📋','Tasks'],['discussions','💬','Discussions'],['decisions','✅','Decisions']]},
+ {title:'Execution',items:[['sprints','🏃','Sprints'],['features','🧩','Features'],['tasks','📋','Tasks'],['discussions','💬','Discussions'],['decisions','✅','Decisions']]},
  {title:'Knowledge & Growth',items:[['reports','📄','Reports'],['experiments','🧪','Experiments'],['metrics','📊','Metrics']]},
  {title:'Company Memory',items:[['teams','🏢','Teams'],['timeline','🕒','Timeline'],['releases','🚀','Releases'],['apps','📱','Apps'],['backlog','📚','Backlog']]}
 ];
