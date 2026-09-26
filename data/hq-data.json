@@ -337,7 +337,13 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data"
+      ]
     },
     {
       "id": "UX-001",
@@ -348,7 +354,12 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Product",
+        "Engineering",
+        "Data"
+      ]
     },
     {
       "id": "RES-003",
@@ -359,7 +370,12 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Discovery",
+        "Product",
+        "Growth"
+      ]
     },
     {
       "id": "GRO-001",
@@ -370,7 +386,13 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-24"
+      "updated": "2026-09-24",
+      "participants": [
+        "Growth",
+        "Product",
+        "Discovery",
+        "Data"
+      ]
     },
     {
       "id": "GRO-002",
@@ -381,7 +403,13 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Growth",
+        "Product",
+        "Discovery",
+        "Data"
+      ]
     },
     {
       "id": "DAT-001",
@@ -392,7 +420,13 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Data",
+        "Product",
+        "Growth",
+        "Engineering"
+      ]
     },
     {
       "id": "QA-001",
@@ -403,7 +437,12 @@
       "command": "CMD-002",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-25"
+      "updated": "2026-09-25",
+      "participants": [
+        "Engineering",
+        "Product",
+        "Data"
+      ]
     },
     {
       "id": "ENG-001",
@@ -414,7 +453,12 @@
       "command": "CMD-002",
       "status": "WAITING",
       "progress": 0,
-      "updated": "2026-09-24"
+      "updated": "2026-09-24",
+      "participants": [
+        "Engineering",
+        "Product",
+        "Data"
+      ]
     },
     {
       "id": "RES-001",
@@ -425,7 +469,11 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "Discovery",
+        "Product"
+      ]
     },
     {
       "id": "RES-002",
@@ -436,7 +484,12 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "Discovery",
+        "Product",
+        "Growth"
+      ]
     },
     {
       "id": "PRD-001",
@@ -447,7 +500,11 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "Product",
+        "Engineering"
+      ]
     },
     {
       "id": "PRD-002",
@@ -458,7 +515,13 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "Product",
+        "Discovery",
+        "Growth",
+        "Data"
+      ]
     },
     {
       "id": "RED-001",
@@ -469,7 +532,12 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "Product",
+        "Discovery",
+        "Growth"
+      ]
     },
     {
       "id": "OPS-001",
@@ -480,7 +548,12 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "COO",
+        "Product",
+        "Engineering"
+      ]
     },
     {
       "id": "OPS-002",
@@ -491,10 +564,28 @@
       "command": "CMD-001",
       "status": "COMPLETED",
       "progress": 100,
-      "updated": "2026-09-23"
+      "updated": "2026-09-23",
+      "participants": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ]
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-26",
+      "time": "09/26",
+      "app": "Company",
+      "team": "COO",
+      "title": "Organization 팀 협업 관계 데이터 연결",
+      "summary": "Task participants와 Decision participantTeams를 구조화해 팀 상세에서 협업 팀·공유 Task·참여 Decision·협업 흐름을 추적할 수 있도록 확장",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-26",
       "time": "09/26",
@@ -792,7 +883,11 @@
       "team": "Product / Growth",
       "status": "REQUIRED",
       "summary": "현재 가장 유력한 가설이나 CEO와 추가 논의 후 결정",
-      "date": "2026-09-23"
+      "date": "2026-09-23",
+      "participantTeams": [
+        "Product",
+        "Growth"
+      ]
     },
     {
       "id": "DEC-002",
@@ -803,7 +898,10 @@
       "summary": "홈 개편부터 확정하지 않고 전체 학습 Flow 분석 후 결정",
       "date": "2026-09-23",
       "command": "CMD-001",
-      "supersededBy": "DEC-006"
+      "supersededBy": "DEC-006",
+      "participantTeams": [
+        "Product"
+      ]
     },
     {
       "id": "DEC-003",
@@ -812,7 +910,11 @@
       "team": "Product / ASO",
       "status": "REQUIRED",
       "summary": "확장 가치는 유지하되 JLPT 핵심 메시지를 흐리지 않는 수준 결정 필요",
-      "date": "2026-09-23"
+      "date": "2026-09-23",
+      "participantTeams": [
+        "Product",
+        "Growth"
+      ]
     },
     {
       "id": "DEC-004",
@@ -821,7 +923,11 @@
       "team": "Product / Data",
       "status": "REQUIRED",
       "summary": "실제 사용률 계측 전 핵심 차별점으로 확정하지 않음",
-      "date": "2026-09-23"
+      "date": "2026-09-23",
+      "participantTeams": [
+        "Product",
+        "Data"
+      ]
     },
     {
       "id": "DEC-005",
@@ -831,7 +937,10 @@
       "status": "DECIDED",
       "summary": "강한 일일 할당 대신 사용자가 가능한 만큼 회독하는 방향을 Next Release 기준으로 채택",
       "date": "2026-09-24",
-      "command": "CMD-002"
+      "command": "CMD-002",
+      "participantTeams": [
+        "Product"
+      ]
     },
     {
       "id": "DEC-006",
@@ -841,7 +950,10 @@
       "status": "DECIDED",
       "summary": "별도 목적 선택 화면 없이 바로 이어서 학습을 Primary로 유지하고 빠른 세션 선택을 보조로 둔다.",
       "date": "2026-09-24",
-      "command": "CMD-002"
+      "command": "CMD-002",
+      "participantTeams": [
+        "Product"
+      ]
     },
     {
       "id": "DEC-007",
@@ -851,7 +963,10 @@
       "status": "DECIDED",
       "summary": "CEO와 COO가 하나의 핵심 일을 정하고 1~2주 일정으로 관련 부서가 함께 달리는 Agile 운영방식을 적용한다.",
       "date": "2026-09-26",
-      "command": "CMD-002"
+      "command": "CMD-002",
+      "participantTeams": [
+        "COO"
+      ]
     },
     {
       "id": "DEC-008",
@@ -861,7 +976,10 @@
       "status": "DECIDED",
       "summary": "각 Task 안에서 관련 팀이 의견·반론·검증·합의를 주고받고, 그 결과로 실행과 산출물이 이어지도록 운영한다.",
       "date": "2026-09-26",
-      "command": "CMD-002"
+      "command": "CMD-002",
+      "participantTeams": [
+        "COO"
+      ]
     }
   ],
   "artifacts": [
@@ -1068,5 +1186,5 @@
   "metrics": [],
   "backlog": [],
   "issues": [],
-  "dashboardVersion": "2.3"
+  "dashboardVersion": "2.4"
 }
