@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
   <title>AI App Studio HQ</title>
-  <link rel="stylesheet" href="css/style.css?v=20260924-2">
+  <link rel="stylesheet" href="css/style.css?v=20260926-1">
 </head>
 <body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
   <div class="app-shell">
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="brand">
         <div class="brand-mark">AI</div>
-        <div>
+        <div class="brand-copy">
           <strong>AI APP STUDIO</strong>
-          <span>CEO Command Center</span>
+          <span>CEO Operating System</span>
         </div>
       </div>
 
@@ -21,20 +25,30 @@
 
       <div class="sidebar-footer">
         <span class="status-dot"></span>
-        <span>Company memory connected</span>
+        <span>Operational memory connected</span>
       </div>
     </aside>
 
+    <button class="mobile-scrim" id="mobile-scrim" aria-label="메뉴 닫기"></button>
+
     <main class="main">
       <header class="topbar">
-        <div>
-          <p class="eyebrow" id="view-eyebrow">COMPANY</p>
-          <h1 id="view-title">Company Overview</h1>
-          <p id="view-subtitle">AI 기반 앱 스튜디오 전체 운영 현황</p>
+        <div class="topbar-heading">
+          <button type="button" class="menu-button" id="menu-button" aria-label="메뉴 열기">☰</button>
+          <div>
+            <p class="eyebrow" id="view-eyebrow">COMPANY</p>
+            <h1 id="view-title">Company Overview</h1>
+            <p id="view-subtitle">회사 전체 운영 현황</p>
+          </div>
         </div>
+
         <div class="topbar-actions">
-          <select class="date-chip" id="date-filter" aria-label="조회 날짜"></select>
-          <button type="button" class="ghost-button" id="refresh-btn">현황 새로고침</button>
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="search-input" type="search" placeholder="회사 전체 검색" autocomplete="off">
+          </label>
+          <select class="control" id="date-filter" aria-label="조회 날짜"></select>
+          <button type="button" class="ghost-button" id="refresh-btn">새로고침</button>
         </div>
       </header>
 
@@ -44,13 +58,12 @@
 
   <div id="drawer" class="drawer" aria-hidden="true">
     <div class="drawer-backdrop" data-close-drawer></div>
-    <section class="drawer-panel">
+    <section class="drawer-panel" role="dialog" aria-modal="true" aria-label="상세 정보">
       <button type="button" class="drawer-close" data-close-drawer aria-label="닫기">×</button>
       <div id="drawer-content"></div>
     </section>
   </div>
 
-  <script src="data/dashboard-data.js?v=20260924-2"></script>
-  <script src="js/app.js?v=20260924-2"></script>
+  <script src="js/app.js?v=20260926-1"></script>
 </body>
 </html>
