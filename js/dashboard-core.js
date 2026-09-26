@@ -8,7 +8,7 @@ H.tone=s=>({ACTIVE:'blue',PLANNING:'yellow',DISCUSSING:'yellow',NEEDS_RESEARCH:'
 H.badge=(s,c='')=>`<span class="badge ${c}">${H.e(s)}</span>`;
 H.dateOf=x=>x?.date||x?.updated||(/^\d{4}-\d{2}-\d{2}$/.test(x?.time||'')?x.time:'');
 H.match=x=>(H.s.date==='ALL'||H.dateOf(x)===H.s.date)&&(!H.s.query||JSON.stringify(x).toLowerCase().includes(H.s.query.toLowerCase()));
-H.visible=a=>(a||[]).filter(H.match); H.openTask=t=>!['COMPLETED','CANCELLED'].includes(t.status);
+H.visible=a=>(a||[]).filter(H.match); H.isOpenTask=t=>!['COMPLETED','CANCELLED'].includes(t.status);
 H.cmd=()=>H.s.data.commands?.find(x=>x.status==='ACTIVE')||H.s.data.commands?.at(-1); H.sprint=()=>H.s.data.sprints?.find(x=>x.status==='ACTIVE');
 H.head=(a,h,s)=>{H.el.eye.textContent=a;H.el.title.textContent=h;H.el.sub.textContent=s};
 H.empty=(h,p='')=>`<div class="empty"><strong>${H.e(h)}</strong>${p?`<p>${H.e(p)}</p>`:''}</div>`;
