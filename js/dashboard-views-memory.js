@@ -52,7 +52,6 @@ H.views.organization=()=>{
       <div><span>05</span><strong>Review</strong><p>Metric·사용자 반응을 다음 Sprint로 환류</p></div>
     </div>`)}
 
-    ${section('Departments','팀 카드를 누르면 구성 역할·Task·보고서·이력을 확인',`<div class="grid-3 stagger">${departments.map(orgCard).join('')}</div>`)}
   </div>`;
   H.el.root.querySelectorAll('[data-team]').forEach(x=>x.onclick=()=>H.openTeam(x.dataset.team));
   H.anim();
