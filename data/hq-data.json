@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "CEO+COO가 1~2주 Sprint 기반 운영과 Task 중심 부서간 협업 방식을 합의했습니다. 대시보드는 현재 상태뿐 아니라 과거 이력, 팀별 보고서, 논의와 결정까지 한 곳에서 추적하도록 개편 중입니다."
+    "todaySummary": "CEO+COO가 1~2주 Sprint 기반 운영과 Task 중심 부서간 협업 방식을 합의했고, CEO Dashboard를 현재 상태·진행업무·Discussion·Decision·Google Docs Reports·Timeline·조직·앱 이력까지 통합하는 v2 운영판으로 개편했습니다. 다음 Gate는 CEO+COO의 첫 Sprint Goal·기간·포함 Feature 합의입니다."
   },
   "apps": [
     {
@@ -493,6 +493,15 @@
       "time": "09/26",
       "app": "Company",
       "team": "COO",
+      "title": "CEO Dashboard v2 반영 완료",
+      "summary": "GitHub JSON 운영 DB, Current Work·Sprints·Features·Tasks·Discussions·Decisions·Reports·Metrics·Teams·Timeline·Releases·Apps·Backlog 메뉴, Google Docs 내장 Viewer, 날짜/검색/모바일/애니메이션 UI를 실제 대시보드에 반영",
+      "command": "CMD-002"
+    },
+    {
+      "date": "2026-09-26",
+      "time": "09/26",
+      "app": "Company",
+      "team": "COO",
       "title": "CEO Dashboard 정보구조 개편",
       "summary": "현재 상태·진행업무·논의·결정·보고서·조직·Timeline·앱 이력을 한 곳에서 추적하는 운영판으로 재설계",
       "command": "CMD-002"
@@ -830,7 +839,8 @@
       "type": "Research",
       "date": "2026-09-23",
       "summary": "JLPT 시장 규모와 Migii, renshuu, Kanji Study, AnkiDroid, Bunpo 경쟁 구도",
-      "url": "https://docs.google.com/document/d/1psWBOzEwMIgnxN5w9Mg0NwLQslAg3KS-1gHwpAFpkTQ/edit"
+      "url": "https://docs.google.com/document/d/1psWBOzEwMIgnxN5w9Mg0NwLQslAg3KS-1gHwpAFpkTQ/edit",
+      "command": "CMD-001"
     },
     {
       "id": "ART-002",
@@ -840,7 +850,8 @@
       "type": "Product Review",
       "date": "2026-09-23",
       "summary": "실제 화면 기준 현행 구조, 강점·마찰, 전 부서/직원 의견과 미결정 쟁점",
-      "url": "https://docs.google.com/document/d/10zJVwbSH3pY9bkvrHfqLyqGllA5qxeCWhBGSPUrbJmQ/edit"
+      "url": "https://docs.google.com/document/d/10zJVwbSH3pY9bkvrHfqLyqGllA5qxeCWhBGSPUrbJmQ/edit",
+      "command": "CMD-001"
     },
     {
       "id": "ART-003",
@@ -850,7 +861,8 @@
       "type": "Discussion",
       "date": "2026-09-23",
       "summary": "JLPT 회독 가설과 역할별 1차 의견 기록",
-      "url": "https://docs.google.com/document/d/1v2v7KjyI-MtG1TX4iU_c3bzbopJhwNcXBoN8wCmkT4w/edit"
+      "url": "https://docs.google.com/document/d/1v2v7KjyI-MtG1TX4iU_c3bzbopJhwNcXBoN8wCmkT4w/edit",
+      "command": "CMD-001"
     },
     {
       "id": "ART-004",
@@ -860,7 +872,8 @@
       "type": "Daily Report",
       "date": "2026-09-23",
       "summary": "오늘 수행한 시장조사, 앱 분석, 부서 의견, 가설, 반대 의견, 다음 업무 종합",
-      "url": "https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit"
+      "url": "https://docs.google.com/document/d/1MY_KZmOg2saNI6AppMNhP_8CioXOsyOHx6lQ0savS5A/edit",
+      "command": "CMD-001"
     },
     {
       "id": "ART-005",
@@ -870,7 +883,8 @@
       "type": "Marketing Plan",
       "date": "2026-09-24",
       "summary": "Threads 2주 파일럿, 실제 게시글 14개, 콘텐츠 비율, CTA, 소재, 측정 Funnel, Red Team 기준을 포함한 실행 보고서",
-      "url": "https://docs.google.com/document/d/1F09GjtlQEzb7HKFPkdsMPlamGex37u1HuOn7ScOjKs0/edit"
+      "url": "https://docs.google.com/document/d/1F09GjtlQEzb7HKFPkdsMPlamGex37u1HuOn7ScOjKs0/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-006",
@@ -880,7 +894,8 @@
       "type": "Product Plan",
       "date": "2026-09-25",
       "summary": "자유 회독형 AS-IS→TO-BE, 상세 Flow, 세션 경계, QA, Scope/Hold 및 Engineering blocker",
-      "url": "https://docs.google.com/document/d/1mLD3g2WtRHy85ZecOzpLtirqft6uRUSqbhEpHZ-IhfE/edit"
+      "url": "https://docs.google.com/document/d/1mLD3g2WtRHy85ZecOzpLtirqft6uRUSqbhEpHZ-IhfE/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-007",
@@ -890,7 +905,8 @@
       "type": "Measurement & QA",
       "date": "2026-09-25",
       "summary": "Renewal Funnel, event 후보, KPI, before/after 기준, 회귀 시나리오와 Release Gate",
-      "url": "https://docs.google.com/document/d/1rpvb3XCVmrtKHtqt4HxflEB6135bGPdFiU7MtInIsKw/edit"
+      "url": "https://docs.google.com/document/d/1rpvb3XCVmrtKHtqt4HxflEB6135bGPdFiU7MtInIsKw/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-008",
@@ -900,7 +916,8 @@
       "type": "Research Validation",
       "date": "2026-09-25",
       "summary": "공식 JLPT 정책, 경쟁 앱, 커뮤니티 review 부담 신호로 CMD-002 방향을 검증하고 반대 리스크를 정리",
-      "url": "https://docs.google.com/document/d/19GbdLnZ6Hlvy9Y5_97BtU-peTt4L9apGEipGaZsmsJ4/edit"
+      "url": "https://docs.google.com/document/d/19GbdLnZ6Hlvy9Y5_97BtU-peTt4L9apGEipGaZsmsJ4/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-009",
@@ -910,7 +927,8 @@
       "type": "ASO Audit",
       "date": "2026-09-25",
       "summary": "현재 Store 메시지 진단과 JLPT 반복 중심 title/short description/첫 3 screenshot 실험 후보",
-      "url": "https://docs.google.com/document/d/1iH0E7ZCAtuR7x6iCEIl_znWd6zAaJx40aNPwgu5z5Gw/edit"
+      "url": "https://docs.google.com/document/d/1iH0E7ZCAtuR7x6iCEIl_znWd6zAaJx40aNPwgu5z5Gw/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-010",
@@ -920,7 +938,8 @@
       "type": "Weekly Plan",
       "date": "2026-09-25",
       "summary": "CMD-002 기준 COO/Product/UX/Discovery/Growth/ASO/Data/Engineering/QA/Red Team/Revenue 전 팀 주간 실행계획",
-      "url": "https://docs.google.com/document/d/1etffY7Lu5am6crd5hpQ8icTcLiefXvBGN2BGqgwFMaA/edit"
+      "url": "https://docs.google.com/document/d/1etffY7Lu5am6crd5hpQ8icTcLiefXvBGN2BGqgwFMaA/edit",
+      "command": "CMD-002"
     },
     {
       "id": "ART-011",
@@ -930,7 +949,8 @@
       "type": "CEO Brief",
       "date": "2026-09-25",
       "summary": "이번 주 목표, 팀별 핵심, blocker, CEO decision gate와 10/1 보고 항목을 압축한 CEO용 주간 보고",
-      "url": "https://docs.google.com/document/d/1etmyrq9hvjzL7DRO6OnPFgI3itsgj6iMSWJQzyny0mM/edit"
+      "url": "https://docs.google.com/document/d/1etmyrq9hvjzL7DRO6OnPFgI3itsgj6iMSWJQzyny0mM/edit",
+      "command": "CMD-002"
     }
   ],
   "experiments": [
@@ -941,7 +961,8 @@
       "team": "Growth",
       "date": "2026-09-24",
       "status": "PLANNED",
-      "summary": "현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다."
+      "summary": "현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다.",
+      "command": "CMD-002"
     }
   ],
   "findings": [
@@ -1012,5 +1033,6 @@
   "releases": [],
   "metrics": [],
   "backlog": [],
-  "issues": []
+  "issues": [],
+  "dashboardVersion": "2.0"
 }
