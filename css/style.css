@@ -368,3 +368,33 @@ tbody tr.clickable:hover{background:#152036}
   .team-tabs{overflow:auto;flex-wrap:nowrap}
   .team-tabs .drawer-tab{flex:0 0 auto}
 }
+
+
+/* --- Team collaboration visualization --- */
+.collab-team-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.collab-team-card{display:flex;align-items:center;gap:10px;text-align:left;width:100%;padding:11px;border:1px solid var(--line-soft);border-radius:12px;background:#0f1828;color:var(--text);cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.collab-team-card:hover{transform:translateY(-2px);border-color:#405474;background:#132036}
+.collab-team-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#19263d;flex:0 0 auto}
+.collab-team-card strong{display:block;font-size:11px}
+.collab-team-card p{margin:3px 0 0;color:var(--muted);font-size:9px}
+.collab-score{min-width:27px;height:27px;border-radius:999px;display:grid;place-items:center;background:rgba(124,140,255,.13);border:1px solid rgba(124,140,255,.25);font-size:10px;font-weight:800;color:#cdd6ff}
+
+.collab-flow{display:grid;grid-template-columns:minmax(130px,.85fr) 24px minmax(150px,1.1fr) 24px minmax(150px,1fr) 24px minmax(150px,1.05fr);align-items:start;gap:5px;padding:14px;border:1px solid var(--line-soft);border-radius:14px;background:linear-gradient(145deg,rgba(10,17,30,.74),rgba(14,23,39,.82));overflow:auto}
+.collab-flow-col{display:flex;flex-direction:column;gap:7px;min-width:0}
+.collab-flow-label{font-size:8px;font-weight:800;letter-spacing:.12em;color:var(--muted);margin-bottom:1px}
+.collab-flow-arrow{align-self:center;text-align:center;color:#617391;font-size:20px;padding-top:25px;animation:collabArrow 1.9s ease-in-out infinite}
+@keyframes collabArrow{0%,100%{opacity:.42;transform:translateX(0)}50%{opacity:1;transform:translateX(3px)}}
+.collab-flow-node{display:block;width:100%;text-align:left;padding:9px 10px;border:1px solid var(--line-soft);border-radius:10px;background:#111b2d;color:var(--text);min-height:54px}
+button.collab-flow-node{cursor:pointer}
+button.collab-flow-node:hover{border-color:#405474;background:#152238}
+.collab-flow-node.strong{border-color:rgba(80,214,201,.27);background:linear-gradient(145deg,rgba(80,214,201,.08),rgba(17,27,45,.94))}
+.collab-flow-node>span{display:inline-block;margin-right:5px}
+.collab-flow-node strong{display:block;font-size:10px;line-height:1.35}
+.collab-flow-node small{display:block;color:var(--muted);font-size:8px;line-height:1.4;margin-top:4px;white-space:normal}
+.collab-flow-empty{padding:11px 9px;border:1px dashed var(--line);border-radius:10px;color:var(--muted);font-size:9px;text-align:center}
+
+@media(max-width:900px){
+  .collab-team-list{grid-template-columns:1fr}
+  .collab-flow{grid-template-columns:1fr;gap:7px;overflow:visible}
+  .collab-flow-arrow{padding:0;transform:rotate(90deg);animation:none}
+}
