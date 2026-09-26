@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "CEO+COO가 1~2주 Sprint 기반 운영과 Task 중심 부서간 협업 방식을 합의했고, CEO Dashboard를 현재 상태·진행업무·Discussion·Decision·Google Docs Reports·Timeline·조직·앱 이력까지 통합하는 v2 운영판으로 개편했습니다. 다음 Gate는 CEO+COO의 첫 Sprint Goal·기간·포함 Feature 합의입니다."
+    "todaySummary": "CEO Dashboard를 회사 전체 운영 Cockpit으로 확장했습니다. 현재 상태·준비 완료·병목·CEO 판단·Critical Path·Google Docs 보고서·당일 Live Feed·누적 Timeline을 한 화면에서 연결해 보고, Sprint/Feature/Task/Discussion/Decision/Report 이력은 별도 메뉴에서 계속 추적합니다."
   },
   "apps": [
     {
@@ -488,6 +488,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-26",
+      "time": "09/26",
+      "app": "Company",
+      "team": "COO",
+      "title": "CEO Dashboard v2.1 Operating Cockpit 적용",
+      "summary": "Overview를 현재 상태·준비 완료·병목·CEO Inbox·Critical Path·Google Docs Reports·Live Feed·누적 Timeline 중심으로 고도화하고 카드·수치·Stage·Drawer 애니메이션을 강화",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-26",
       "time": "09/26",
@@ -1034,5 +1043,5 @@
   "metrics": [],
   "backlog": [],
   "issues": [],
-  "dashboardVersion": "2.0"
+  "dashboardVersion": "2.1"
 }
