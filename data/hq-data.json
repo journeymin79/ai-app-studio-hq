@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Product + Engineering이 Saytence private main 소스를 기준으로 AS-IS를 재검증했습니다. 기존 pre-source 가정 일부가 현재 코드와 달랐고, JLPT N5/N4/N3 콘텐츠·3개 학습 Mode·SRS·Pack 완료·Library/Stats/Recording 구조를 실제 코드로 확정했습니다. Source Audit은 75%이며 Fresh Build/Test, Production Parity, Runtime Smoke 3개 Gate를 통과한 뒤 최종 완료합니다."
+    "todaySummary": "Saytence 1.0.5 (12)를 출시했고 제품 Analytics 수집이 정상 동작하는 것을 확인했습니다. Engineering의 Source Audit/구현 단계는 완료됐으며, 이제 CMD-002의 후반부는 Growth 유입 실행, Data 성과 해석, Product 사용자 행동 검토, Discovery VOC 수집과 Red Team 검증에 집중합니다."
   },
   "apps": [
     {
@@ -307,7 +307,7 @@
       "app": "Saytence",
       "time": "2026-09-24",
       "status": "ACTIVE",
-      "progress": 55,
+      "progress": 75,
       "teams": [
         "COO",
         "Discovery",
@@ -323,7 +323,9 @@
         "시작 UX 1안 결정",
         "Renewal Flow v0.1",
         "경쟁 메시지 Matrix 1차",
-        "Threads 2주 파일럿 구조"
+        "Threads 2주 파일럿 구조",
+        "Saytence 1.0.5 (12) 출시",
+        "제품 Analytics 수집 정상 확인"
       ]
     }
   ],
@@ -451,8 +453,8 @@
       "team": "Engineering",
       "role": "Tech Lead / Codex",
       "command": "CMD-002",
-      "status": "IN_PROGRESS",
-      "progress": 75,
+      "status": "COMPLETED",
+      "progress": 100,
       "updated": "2026-09-28",
       "participants": [
         "Engineering",
@@ -577,6 +579,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-28",
+      "time": "09/28",
+      "app": "Saytence",
+      "team": "Product / Engineering / Data",
+      "title": "Saytence 1.0.5 (12) 출시",
+      "summary": "JLPT 목표 학습·내 자료 진입·5분/10분/20장 세션·복습 경험 개선 버전을 출시했고 Analytics 이벤트 수집 정상 동작을 확인",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-28",
       "time": "09/28",
@@ -1261,7 +1272,19 @@
       "content": "현재 '복습하기'는 한 번이라도 본 카드 전체, '약한 카드만'은 FAILED 또는 DIFFICULT/REVIEW, '다시 볼 카드'는 due 또는 explicit weak다. 같은 복습 계열 용어가 서로 다른 집합을 뜻하므로 개선 전에 사용자 의미와 측정 기준을 통일해야 한다."
     }
   ],
-  "releases": [],
+  "releases": [
+    {
+      "id": "REL-001",
+      "app": "Saytence",
+      "version": "1.0.5 (12)",
+      "title": "JLPT 목표 학습과 짧은 세션 추가",
+      "date": "2026-09-28",
+      "status": "RELEASED",
+      "command": "CMD-002",
+      "summary": "일본어 JLPT N5/N4/N3 또는 내 자료 학습 진입, 5분·10분·20장 세션, 세션 결과 분리, 세션 약한 카드 즉시 복습, Home/Library 복습 기준 통합, custom 일본어 사용자의 JLPT fallback 방지, 세션 기록 정합성 개선",
+      "analyticsStatus": "VERIFIED"
+    }
+  ],
   "metrics": [],
   "backlog": [],
   "issues": [
@@ -1299,5 +1322,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "2.7"
+  "dashboardVersion": "2.9"
 }
