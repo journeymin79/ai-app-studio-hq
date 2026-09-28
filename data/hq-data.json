@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "CEO Dashboard를 회사 전체 운영 Cockpit으로 확장했습니다. 현재 상태·준비 완료·병목·CEO 판단·Critical Path·Google Docs 보고서·당일 Live Feed·누적 Timeline을 한 화면에서 연결해 보고, Sprint/Feature/Task/Discussion/Decision/Report 이력은 별도 메뉴에서 계속 추적합니다."
+    "todaySummary": "CEO가 Saytence의 제품·유입 중심축을 JLPT N5·N4·N3로 확정했습니다. 영어회화·다국어는 전면 포지셔닝이 아니라 확장 가치로 두며, 다음 COO 과제는 이 기준으로 Sprint #1 Goal·기간·포함 Feature를 제안하는 것입니다."
   },
   "apps": [
     {
@@ -16,12 +16,12 @@
       "name": "Saytence",
       "stage": "Product Renewal / Growth",
       "status": "active",
-      "goal": "자유 회독형 개선 릴리스 준비와 Threads 성장 실행안 수립",
+      "goal": "JLPT N5·N4·N3 중심의 자유 회독 학습 경험을 개선하고 실제 유입·학습 행동으로 검증",
       "today": 6,
       "active": 8,
       "experiments": 1,
       "decisions": 2,
-      "updated": "2026-09-24",
+      "updated": "2026-09-28",
       "description": "JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"
     }
   ],
@@ -578,6 +578,15 @@
   ],
   "activities": [
     {
+      "date": "2026-09-28",
+      "time": "09/28",
+      "app": "Saytence",
+      "team": "CEO",
+      "title": "JLPT N5·N4·N3 중심 포지셔닝 확정",
+      "summary": "Saytence의 제품·Store·Threads 유입 중심축을 JLPT N5·N4·N3로 확정하고 영어회화·다국어는 확장 가치로 후순위 배치",
+      "command": "CMD-002"
+    },
+    {
       "date": "2026-09-26",
       "time": "09/26",
       "app": "Company",
@@ -881,13 +890,16 @@
       "app": "Saytence",
       "title": "JLPT 중심 포지셔닝 최종 채택",
       "team": "Product / Growth",
-      "status": "REQUIRED",
-      "summary": "현재 가장 유력한 가설이나 CEO와 추가 논의 후 결정",
-      "date": "2026-09-23",
+      "status": "DECIDED",
+      "summary": "Saytence의 1차 제품·유입 포지셔닝을 JLPT 중심으로 확정하고, 우선 대상 레벨을 N5·N4·N3로 운영한다.",
+      "date": "2026-09-28",
       "participantTeams": [
         "Product",
-        "Growth"
-      ]
+        "Growth",
+        "Discovery"
+      ],
+      "command": "CMD-002",
+      "decidedBy": "CEO"
     },
     {
       "id": "DEC-002",
@@ -908,13 +920,15 @@
       "app": "Saytence",
       "title": "다국어 메시지 노출 수준",
       "team": "Product / ASO",
-      "status": "REQUIRED",
-      "summary": "확장 가치는 유지하되 JLPT 핵심 메시지를 흐리지 않는 수준 결정 필요",
-      "date": "2026-09-23",
+      "status": "DECIDED",
+      "summary": "Store·Threads 등 전면 메시지는 JLPT N5·N4·N3를 중심으로 두고, 영어회화·다국어는 제품의 확장 가치로 후순위 노출한다.",
+      "date": "2026-09-28",
       "participantTeams": [
         "Product",
         "Growth"
-      ]
+      ],
+      "command": "CMD-002",
+      "decidedBy": "CEO"
     },
     {
       "id": "DEC-004",
@@ -1120,6 +1134,10 @@
   "findings": [
     {
       "type": "DECISION",
+      "text": "Saytence의 1차 제품·유입 포지셔닝을 JLPT 중심 N5·N4·N3로 확정했다. 영어회화·다국어는 확장 가치로 둔다."
+    },
+    {
+      "type": "DECISION",
       "text": "CEO는 자유 회독형(B)을 선택했다."
     },
     {
@@ -1147,16 +1165,12 @@
       "text": "현재 카드 플레이어 자체는 유지 가치가 높으며 기능 부족보다 가치 전달, 학습 진입, 단기 목표와 성과 체감이 더 큰 문제 후보다."
     },
     {
-      "type": "HYPOTHESIS",
-      "text": "Saytence를 'JLPT 단어·문장을 실제로 외워지게 만드는 회독 앱'으로 두고 다국어는 확장 가치로 두는 방향을 우선 검토한다."
-    },
-    {
       "type": "RED TEAM",
       "text": "메시지만 바꾸면 부족하다. 약한 카드 감소와 기억 성과가 실제로 보이지 않으면 Anki의 단순 버전으로 보일 위험이 있다."
     }
   ],
   "schemaVersion": "2.0",
-  "updatedAt": "2026-09-26",
+  "updatedAt": "2026-09-28",
   "operatingModel": {
     "mode": "SPRINT_BASED",
     "sprintLength": "1~2주",
@@ -1186,5 +1200,5 @@
   "metrics": [],
   "backlog": [],
   "issues": [],
-  "dashboardVersion": "2.4"
+  "dashboardVersion": "2.5"
 }
