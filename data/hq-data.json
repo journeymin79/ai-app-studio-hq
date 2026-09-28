@@ -1346,6 +1346,18 @@
       "summary": "Private main 소스 기준 제품 구조·JLPT N5/N4/N3 콘텐츠·학습 모드·스와이프 평가·SRS·복습 의미·Pack 완료·Library·Stats·Settings·Recording·Analytics·DB·테스트 범위를 Product+Engineering 공동으로 재검증한 현행 기준 문서",
       "url": "https://docs.google.com/document/d/1GkAWTr5OLhjk-gvEWSB8uUngKYRB3mhA6QR4ZNFxaMk/edit",
       "command": "CMD-002"
+    },
+    {
+      "id": "ART-013",
+      "title": "Saytence 100 Install Growth Sprint",
+      "app": "Saytence",
+      "team": "Growth / Product / Discovery / Data / COO",
+      "type": "Growth Sprint Plan",
+      "date": "2026-09-28",
+      "summary": "2026-09-29~10-12 동안 Store ASO 전면 개편과 Threads organic acquisition에 전 팀을 집중해 누적 설치 8→100을 목표로 운영하는 14일 실행계획",
+      "url": "https://docs.google.com/document/d/1zIo0xQJOx0Q-GAhSpkD7eVdhXeK8kVdmRri6nMdwP7Y/edit",
+      "command": "CMD-002",
+      "sprintId": "SPR-001"
     }
   ],
   "experiments": [
@@ -1620,5 +1632,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.0"
+  "dashboardVersion": "3.1"
 }
