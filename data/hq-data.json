@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Saytence 1.0.5 (12)를 출시했고 제품 Analytics 수집이 정상 동작하는 것을 확인했습니다. Engineering의 Source Audit/구현 단계는 완료됐으며, 이제 CMD-002의 후반부는 Growth 유입 실행, Data 성과 해석, Product 사용자 행동 검토, Discovery VOC 수집과 Red Team 검증에 집중합니다."
+    "todaySummary": "Saytence 1.0.5 출시와 Analytics 정상 수집 확인 후, 다음 2주를 100 Install Growth Sprint로 전환했습니다. 현재 8 installs에서 누적 100(+92)을 목표로 Store ASO 전면 개편과 Threads organic acquisition에 전 팀이 집중합니다."
   },
   "apps": [
     {
@@ -307,7 +307,7 @@
       "app": "Saytence",
       "time": "2026-09-24",
       "status": "ACTIVE",
-      "progress": 75,
+      "progress": 80,
       "teams": [
         "COO",
         "Discovery",
@@ -325,7 +325,9 @@
         "경쟁 메시지 Matrix 1차",
         "Threads 2주 파일럿 구조",
         "Saytence 1.0.5 (12) 출시",
-        "제품 Analytics 수집 정상 확인"
+        "제품 Analytics 수집 정상 확인",
+        "100 Install Growth Sprint 계획",
+        "Store ASO + Threads 14일 집중 실행"
       ]
     }
   ],
@@ -576,9 +578,176 @@
         "Data",
         "Revenue"
       ]
+    },
+    {
+      "id": "GRO-003",
+      "title": "Store ASO 1.0.5 전면 개편",
+      "app": "Saytence",
+      "team": "Growth",
+      "role": "ASO",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-001",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Growth",
+        "Product",
+        "Discovery",
+        "Data",
+        "Engineering"
+      ],
+      "summary": "앱명·간단한 설명·전체 설명 상단·첫 3개 스크린샷을 JLPT N5/N4/N3·짧은 회독·약한 카드 복습 중심으로 개편"
+    },
+    {
+      "id": "GRO-004",
+      "title": "Threads 14일 유입 실행",
+      "app": "Saytence",
+      "team": "Growth",
+      "role": "Content Marketing",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Growth",
+        "Discovery",
+        "Product",
+        "Data",
+        "COO"
+      ],
+      "summary": "1일 1개 핵심 게시물+관련 대화 참여를 기본 cadence로 14일간 실행하고 링크 클릭·설치 변화를 기록"
+    },
+    {
+      "id": "RES-004",
+      "title": "JLPT Threads 대화·문제 신호 발굴",
+      "app": "Saytence",
+      "team": "Discovery",
+      "role": "User/Market Research",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Discovery",
+        "Growth",
+        "Product"
+      ],
+      "summary": "JLPT N5/N4/N3 학습자의 실제 암기·복습·회독 고민을 매일 수집해 게시물 소재와 댓글 참여 대상을 Growth에 공급"
+    },
+    {
+      "id": "PRD-005",
+      "title": "Acquisition Message Product Guard",
+      "app": "Saytence",
+      "team": "Product",
+      "role": "Product Manager",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-001",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Product",
+        "Growth",
+        "Discovery",
+        "Red Team"
+      ],
+      "summary": "Store/Threads 메시지가 실제 1.0.5 기능과 정확히 일치하도록 검토하고 JLPT-first 포지셔닝을 유지"
+    },
+    {
+      "id": "DAT-002",
+      "title": "100 Install Daily Funnel",
+      "app": "Saytence",
+      "team": "Data",
+      "role": "Growth Analytics",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Data",
+        "Growth",
+        "Product",
+        "COO"
+      ],
+      "summary": "현재 설치 8을 baseline으로 Store 방문·Threads link click·신규 설치·첫 학습·session complete를 매일 같은 정의로 기록"
+    },
+    {
+      "id": "ENG-002",
+      "title": "Growth Tracking Support",
+      "app": "Saytence",
+      "team": "Engineering",
+      "role": "Engineering Support",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Engineering",
+        "Data",
+        "Growth"
+      ],
+      "summary": "Analytics가 이미 정상 수집되는 상태를 유지하고 유입/링크/스토어 측정에 기술 blocker가 생길 때만 지원; 신규 제품 기능 개발은 하지 않음"
+    },
+    {
+      "id": "RED-002",
+      "title": "ASO·Threads 메시지 반박 검토",
+      "app": "Saytence",
+      "team": "Product",
+      "role": "Red Team",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-001",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Product",
+        "Growth",
+        "Discovery"
+      ],
+      "summary": "과장·오해·경쟁사와의 비차별 메시지를 공격적으로 검토하고 실제 설치 동기가 약한 카피를 제거"
+    },
+    {
+      "id": "REV-001",
+      "title": "Growth Sprint Monetization Guard",
+      "app": "Saytence",
+      "team": "Revenue",
+      "role": "Revenue",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Revenue",
+        "Product",
+        "Data"
+      ],
+      "summary": "14일 실험 동안 수익화 변경은 하지 않고 광고/수익 요소가 신규 학습 진입을 방해하는 신호만 관찰"
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-28",
+      "time": "09/28",
+      "app": "Saytence",
+      "team": "CEO / COO",
+      "title": "100 Install Growth Sprint 합의",
+      "summary": "현재 설치 8을 baseline으로 누적 100(+92)을 목표로 Store ASO 전면 개편과 Threads 14일 유입 실험에 전 팀을 집중 배치",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-28",
       "time": "09/28",
@@ -1023,6 +1192,26 @@
       "participantTeams": [
         "COO"
       ]
+    },
+    {
+      "id": "DEC-009",
+      "app": "Saytence",
+      "title": "2주 Growth Sprint 설치 목표",
+      "team": "CEO / COO / Growth",
+      "status": "DECIDED",
+      "summary": "현재 누적 설치 8을 기준으로 Store ASO 개편과 Threads 14일 유입 실험에 전 팀이 집중해 누적 설치 100(+92)을 Sprint 목표로 둔다.",
+      "date": "2026-09-28",
+      "command": "CMD-002",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -1165,10 +1354,11 @@
       "app": "Saytence",
       "title": "Threads 문제/메시지 2주 파일럿",
       "team": "Growth",
-      "date": "2026-09-24",
-      "status": "PLANNED",
-      "summary": "현재 기능과 사용자 문제를 중심으로 Threads 반응을 관찰하고 개선 릴리스 후 실제 자유 회독 경험과 연결한다.",
-      "command": "CMD-002"
+      "date": "2026-09-29",
+      "status": "ACTIVE",
+      "summary": "Store ASO 개편과 연결해 Threads 14일 동안 문제/학습법/개발이유/실사용 흐름 메시지를 테스트하고 link clicks→install 변화를 관찰한다.",
+      "command": "CMD-002",
+      "sprintId": "SPR-001"
     }
   ],
   "findings": [
@@ -1241,8 +1431,67 @@
     "collaborationRule": "Task는 단순 작업 항목이 아니라 관련 팀의 의견·반론·합의·산출물·결정을 연결하는 협업 공간으로 운영한다.",
     "historyRule": "현재 상태와 과거 이력을 분리하고 Command/Sprint/Task/Decision/Report/Activity를 삭제하지 않고 누적한다."
   },
-  "sprints": [],
-  "features": [],
+  "sprints": [
+    {
+      "id": "SPR-001",
+      "app": "Saytence",
+      "title": "100 Install Growth Sprint",
+      "goal": "Store ASO와 Threads 유입에 전 팀이 집중해 누적 설치 8 → 100을 만든다.",
+      "startDate": "2026-09-29",
+      "endDate": "2026-10-12",
+      "status": "PLANNED",
+      "command": "CMD-002",
+      "owner": "COO",
+      "target": "누적 설치 100 (+92)",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ],
+      "featureIds": [
+        "FEAT-001",
+        "FEAT-002"
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "FEAT-001",
+      "sprintId": "SPR-001",
+      "app": "Saytence",
+      "title": "Store ASO Conversion",
+      "status": "TODO",
+      "goal": "JLPT N5·N4·N3 중심의 실제 제품 경험을 Store title·short description·첫 3 screenshots에 일치시켜 방문→설치 전환을 높인다.",
+      "participants": [
+        "Growth",
+        "Product",
+        "Discovery",
+        "Data",
+        "Engineering",
+        "Red Team"
+      ]
+    },
+    {
+      "id": "FEAT-002",
+      "sprintId": "SPR-001",
+      "app": "Saytence",
+      "title": "Threads Organic Acquisition",
+      "status": "TODO",
+      "goal": "JLPT 암기·복습 문제 중심의 대화형 콘텐츠와 댓글 참여로 Threads→Store 신규 유입을 만든다.",
+      "participants": [
+        "Growth",
+        "Discovery",
+        "Product",
+        "Data",
+        "COO",
+        "Red Team"
+      ]
+    }
+  ],
   "discussions": [
     {
       "id": "DISC-001",
@@ -1285,7 +1534,56 @@
       "analyticsStatus": "VERIFIED"
     }
   ],
-  "metrics": [],
+  "metrics": [
+    {
+      "id": "MET-001",
+      "app": "Saytence",
+      "sprintId": "SPR-001",
+      "name": "누적 설치",
+      "baseline": 8,
+      "target": 100,
+      "current": 8,
+      "unit": "installs",
+      "owner": "Data",
+      "status": "TRACKING"
+    },
+    {
+      "id": "MET-002",
+      "app": "Saytence",
+      "sprintId": "SPR-001",
+      "name": "Threads 링크 클릭",
+      "baseline": null,
+      "target": null,
+      "current": null,
+      "unit": "clicks",
+      "owner": "Growth / Data",
+      "status": "TRACKING"
+    },
+    {
+      "id": "MET-003",
+      "app": "Saytence",
+      "sprintId": "SPR-001",
+      "name": "첫 학습 시작",
+      "baseline": null,
+      "target": null,
+      "current": null,
+      "unit": "users",
+      "owner": "Data",
+      "status": "TRACKING"
+    },
+    {
+      "id": "MET-004",
+      "app": "Saytence",
+      "sprintId": "SPR-001",
+      "name": "세션 완료",
+      "baseline": null,
+      "target": null,
+      "current": null,
+      "unit": "users",
+      "owner": "Data",
+      "status": "TRACKING"
+    }
+  ],
   "backlog": [],
   "issues": [
     {
@@ -1322,5 +1620,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "2.9"
+  "dashboardVersion": "3.0"
 }
