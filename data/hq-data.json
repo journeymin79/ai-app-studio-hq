@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Saytence private GitHub repository 접근이 확인되어 Engineering Source Audit이 WAITING에서 IN_PROGRESS로 전환되었습니다. 초기 확인 결과 Flutter/Riverpod/GoRouter/Drift 기반이며 학습 세션·진도·약한 카드·5카드 재노출 로직이 실제 소스에 존재합니다. 다음 단계는 Source Audit을 완료해 Sprint #1 구현 범위를 확정하는 것입니다."
+    "todaySummary": "Product + Engineering이 Saytence private main 소스를 기준으로 AS-IS를 재검증했습니다. 기존 pre-source 가정 일부가 현재 코드와 달랐고, JLPT N5/N4/N3 콘텐츠·3개 학습 Mode·SRS·Pack 완료·Library/Stats/Recording 구조를 실제 코드로 확정했습니다. Source Audit은 75%이며 Fresh Build/Test, Production Parity, Runtime Smoke 3개 Gate를 통과한 뒤 최종 완료합니다."
   },
   "apps": [
     {
@@ -452,7 +452,7 @@
       "role": "Tech Lead / Codex",
       "command": "CMD-002",
       "status": "IN_PROGRESS",
-      "progress": 15,
+      "progress": 75,
       "updated": "2026-09-28",
       "participants": [
         "Engineering",
@@ -577,6 +577,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-28",
+      "time": "09/28",
+      "app": "Saytence",
+      "team": "Product / Engineering",
+      "title": "AS-IS Product + Tech Deep Audit 기준선 작성",
+      "summary": "Private main 소스와 기존 Research/문서를 대조해 현재 제품 기능·학습 상태·JLPT 콘텐츠·SRS·Library·Stats·Recording·DB·Analytics 현황을 재정의하고 Google Docs 기준 문서를 생성",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-28",
       "time": "09/28",
@@ -1126,6 +1135,17 @@
       "summary": "이번 주 목표, 팀별 핵심, blocker, CEO decision gate와 10/1 보고 항목을 압축한 CEO용 주간 보고",
       "url": "https://docs.google.com/document/d/1etmyrq9hvjzL7DRO6OnPFgI3itsgj6iMSWJQzyny0mM/edit",
       "command": "CMD-002"
+    },
+    {
+      "id": "ART-012",
+      "title": "Saytence AS-IS Product + Tech Audit 2026-09-28",
+      "app": "Saytence",
+      "team": "Product / Engineering",
+      "type": "AS-IS Source Audit",
+      "date": "2026-09-28",
+      "summary": "Private main 소스 기준 제품 구조·JLPT N5/N4/N3 콘텐츠·학습 모드·스와이프 평가·SRS·복습 의미·Pack 완료·Library·Stats·Settings·Recording·Analytics·DB·테스트 범위를 Product+Engineering 공동으로 재검증한 현행 기준 문서",
+      "url": "https://docs.google.com/document/d/1GkAWTr5OLhjk-gvEWSB8uUngKYRB3mhA6QR4ZNFxaMk/edit",
+      "command": "CMD-002"
     }
   ],
   "experiments": [
@@ -1143,7 +1163,15 @@
   "findings": [
     {
       "type": "FACT",
-      "text": "Private GitHub repository journeymin79/saytence 접근이 확인되었고, Flutter/Dart 소스와 pubspec.yaml, main/router, 학습·DB 코드를 읽을 수 있어 ENG-001 Source Audit을 시작했다."
+      "text": "현재 private main 소스에는 JLPT N5/N4/N3 단어·문장 Pack과 일본어 기초 문법을 합쳐 일본어 7,104 cards가 번들되어 있다."
+    },
+    {
+      "type": "FACT",
+      "text": "현재 Home에는 이어서 학습·복습하기·약한 카드만 3개 Mode와 Pack 종료 완료 화면이 이미 존재하며, FAILED만 약 5카드 뒤 1회 재삽입된다."
+    },
+    {
+      "type": "ENGINEERING",
+      "text": "현재 generalized Pack 경로의 study_session은 UI Pack End와 DB COMPLETED/ended_at/duration_seconds 연결이 불완전한 정합성 이슈가 확인되었다."
     },
     {
       "type": "DECISION",
@@ -1204,10 +1232,72 @@
   },
   "sprints": [],
   "features": [],
-  "discussions": [],
+  "discussions": [
+    {
+      "id": "DISC-001",
+      "taskId": "ENG-001",
+      "date": "2026-09-28",
+      "team": "Product",
+      "authorRole": "Product Manager",
+      "type": "FINDING",
+      "content": "소스 접근 전 작성한 Renewal 가정 일부가 현재 앱과 다르다. 현재 앱에는 이미 Pack 완료 화면, 3개 StudyMode, N5/N4/N3 기본 콘텐츠가 존재하므로 기존 개선안을 AS-IS 기준으로 다시 검증해야 한다."
+    },
+    {
+      "id": "DISC-002",
+      "taskId": "ENG-001",
+      "date": "2026-09-28",
+      "team": "Engineering",
+      "authorRole": "Tech Lead / Codex",
+      "type": "FINDING",
+      "content": "현재 generalized Pack 학습 경로는 study_session totalCount=0으로 시작하고 saveItemRating에서 isComplete=false를 고정한다. UI Pack End와 DB session 완료/ended_at/duration_seconds가 연결되지 않는 정합성 이슈를 확인했다."
+    },
+    {
+      "id": "DISC-003",
+      "taskId": "ENG-001",
+      "date": "2026-09-28",
+      "team": "Product / Data",
+      "authorRole": "Product + Analytics",
+      "type": "ISSUE",
+      "content": "현재 '복습하기'는 한 번이라도 본 카드 전체, '약한 카드만'은 FAILED 또는 DIFFICULT/REVIEW, '다시 볼 카드'는 due 또는 explicit weak다. 같은 복습 계열 용어가 서로 다른 집합을 뜻하므로 개선 전에 사용자 의미와 측정 기준을 통일해야 한다."
+    }
+  ],
   "releases": [],
   "metrics": [],
   "backlog": [],
-  "issues": [],
-  "dashboardVersion": "2.6"
+  "issues": [
+    {
+      "id": "ISSUE-001",
+      "taskId": "ENG-001",
+      "app": "Saytence",
+      "team": "Engineering",
+      "status": "OPEN",
+      "type": "VALIDATION_GATE",
+      "title": "Fresh Build/Test Gate",
+      "summary": "현재 main 기준 flutter analyze, flutter test, content validator, Android/iOS build 결과를 새로 확인해야 source audit을 최종 완료할 수 있다.",
+      "date": "2026-09-28"
+    },
+    {
+      "id": "ISSUE-002",
+      "taskId": "ENG-001",
+      "app": "Saytence",
+      "team": "Product / Engineering",
+      "status": "OPEN",
+      "type": "VALIDATION_GATE",
+      "title": "Production Parity Gate",
+      "summary": "Play Store 실제 배포 version/build와 main의 1.0.4+11, 그리고 ADS_ENABLED/CONTENT_BASE_URL 등 release build flag를 대조해야 한다.",
+      "date": "2026-09-28"
+    },
+    {
+      "id": "ISSUE-003",
+      "taskId": "ENG-001",
+      "app": "Saytence",
+      "team": "Product / Engineering",
+      "status": "OPEN",
+      "type": "VALIDATION_GATE",
+      "title": "Runtime Smoke Gate",
+      "summary": "신규 온보딩, N5/N4/N3 Pack, 3방향 평가, 5카드 재등장, resume, review/difficult/library review, recording, stats, backup, notification, Pack End를 실기기에서 최종 확인해야 한다.",
+      "date": "2026-09-28"
+    }
+  ],
+  "dashboardVersion": "2.7"
 }
