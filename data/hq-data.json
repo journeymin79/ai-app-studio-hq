@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Saytence 1.0.5 출시와 Analytics 정상 수집 확인 후, 다음 2주를 100 Install Growth Sprint로 전환했습니다. 현재 8 installs에서 누적 100(+92)을 목표로 Store ASO 전면 개편과 Threads organic acquisition에 전 팀이 집중합니다."
+    "todaySummary": "2026-09-28 업무 마감. Saytence 1.0.5 출시와 Analytics 정상 수집을 확인했고, 2026-09-29~10-12 100 Install Growth Sprint를 준비했습니다. Baseline 8 → Target 100, 집중축은 Store ASO와 Threads입니다. Threads는 @journeymin.creator 계정을 사용하며, 세부 운영안은 오늘 확정하지 않고 다음 업무 시작 시 전 팀 Round Table에서 수렴합니다."
   },
   "apps": [
     {
@@ -736,9 +736,40 @@
         "Data"
       ],
       "summary": "14일 실험 동안 수익화 변경은 하지 않고 광고/수익 요소가 신규 학습 진입을 방해하는 신호만 관찰"
+    },
+    {
+      "id": "GRO-005",
+      "title": "Threads 계정 Current-State Round Table 준비",
+      "app": "Saytence",
+      "team": "Growth",
+      "role": "Growth / Cross-functional",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "featureId": "FEAT-002",
+      "status": "TODO",
+      "progress": 0,
+      "updated": "2026-09-28",
+      "participants": [
+        "Growth",
+        "Discovery",
+        "Product",
+        "Data",
+        "COO",
+        "Red Team"
+      ],
+      "summary": "@journeymin.creator의 기존 계정 톤·콘텐츠·반응을 공통 입력으로 검토하고, 각 팀이 독립 의견을 준비한 뒤 Round Table에서 Threads 실행안을 수렴한다. 오늘은 세부 대안을 확정하지 않는다."
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-28",
+      "time": "09/28",
+      "app": "Company",
+      "team": "COO",
+      "title": "2026-09-28 회사 업무 마감",
+      "summary": "Saytence 1.0.5 출시 및 Analytics 정상 확인, 100 Install Growth Sprint 계획, Store ASO 방향 정리, Threads 운영 계정 @journeymin.creator 확정. 세부 Threads 대안은 다음 Round Table까지 보류",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-28",
       "time": "09/28",
@@ -1358,6 +1389,17 @@
       "url": "https://docs.google.com/document/d/1zIo0xQJOx0Q-GAhSpkD7eVdhXeK8kVdmRri6nMdwP7Y/edit",
       "command": "CMD-002",
       "sprintId": "SPR-001"
+    },
+    {
+      "id": "ART-014",
+      "title": "AI APP STUDIO Daily Summary 2026-09-28",
+      "app": "Saytence",
+      "team": "COO",
+      "type": "Daily Summary",
+      "date": "2026-09-28",
+      "summary": "Source Audit·구현검증·1.0.5 출시·Analytics 확인·100 Install Growth Sprint 전환·Threads @journeymin.creator 계정 채널 확정까지 오늘 업무 마감 정리",
+      "url": "https://docs.google.com/document/d/1as1jNRQ-XcofVjDw4xMrdNZnPZtoD_87TdcihF3J23o/edit",
+      "command": "CMD-002"
     }
   ],
   "experiments": [
@@ -1531,6 +1573,15 @@
       "authorRole": "Product + Analytics",
       "type": "ISSUE",
       "content": "현재 '복습하기'는 한 번이라도 본 카드 전체, '약한 카드만'은 FAILED 또는 DIFFICULT/REVIEW, '다시 볼 카드'는 due 또는 explicit weak다. 같은 복습 계열 용어가 서로 다른 집합을 뜻하므로 개선 전에 사용자 의미와 측정 기준을 통일해야 한다."
+    },
+    {
+      "id": "DISC-007",
+      "taskId": "GRO-005",
+      "date": "2026-09-28",
+      "team": "CEO / COO",
+      "authorRole": "CEO / COO",
+      "type": "INPUT",
+      "content": "Threads Growth는 @journeymin.creator 계정을 사용한다. 오늘은 세부 대안을 확정하지 않고, 다음 업무 시작 시 Growth·Discovery·Product·Data·Red Team이 동일 계정을 먼저 검토한 뒤 Round Table에서 실행안을 수렴한다."
     }
   ],
   "releases": [
@@ -1632,5 +1683,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.1"
+  "dashboardVersion": "3.2"
 }
