@@ -203,11 +203,18 @@ Next:
 - 다음 콘텐츠는 반응 후 결정
 
 ### RES-004 — JLPT Threads 대화·문제 신호 발굴
-Status: TODO
+Status: IN_PROGRESS
+Progress: 30%
+
+Initial signal:
+- 외운 단어가 자꾸 빠짐
+- 전체 교재를 다시 훑는 복습 부담
+- 플래시카드 제작 자체의 번거로움
+- 랜덤 단어 반복 학습 피로
 
 Next:
-- 실제 암기/복습/회독 언어 수집
-- Growth copy 원재료 제공
+- 실제 Threads/커뮤니티 반응에서 같은 문제 언어 추가 수집
+- Growth 첫 Adaptive 콘텐츠의 문제 framing 원재료 제공
 
 ### PRD-005 — Acquisition Message Product Guard
 Status: IN_PROGRESS
