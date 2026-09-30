@@ -1753,6 +1753,33 @@
       "authorRole": "CEO report",
       "type": "FINDING",
       "content": "CEO 보고: 기존 제안대로 Store ASO 문구·설명을 수정 완료. 수정된 정확한 최종 문구·공개 listing 노출·스크린샷 변경은 이번 보고로 확인되지 않아 GRO-003 전체는 REVIEW로 전환. 같은 문구 개편 작업을 중복 수행하지 않고 콘텐츠 유입 실행을 우선한다."
+    },
+    {
+      "id": "DISC-19",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "Growth",
+      "authorRole": "독립 AI 팀 검토자",
+      "type": "DISCUSSION",
+      "content": "독립 AI 검토: 제작이야기 단독보다 JLPT 한 수준·한 학습상황+실제 사용흐름 추천. Product에 기능 설명만으로 설치 이유가 생기지 않는다고 반론. Discovery 반론에 따라 짧은 세션 매력은 가설로 인정, 학습자 반응과 개발자 공감 구분."
+    },
+    {
+      "id": "DISC-20",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "Discovery / Research",
+      "authorRole": "독립 AI 팀 검토자",
+      "type": "DISCUSSION",
+      "content": "독립 AI 검토: 기술 중심 Tistory 독자를 JLPT 학습자로 간주할 수 없음. 제작이야기 중심 유입에 반론. 반응자 학습 여부/급수는 자발적으로 밝힌 근거만 사용, 실제 언급 문제 수집, 클릭·설치의 인과 추정 금지."
+    },
+    {
+      "id": "DISC-21",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "Product / UX / Data / Red Team",
+      "authorRole": "독립 AI 팀 검토자",
+      "type": "DISCUSSION",
+      "content": "독립 AI 검토: 학습상황 하나·기능 하나·행동 요청 하나로 좁힌 첫 실험 권고. 학습 고민은 가설. 5분 학습 효과 보장 대신 5분 세션 선택 경험 제시. 게시 직전 baseline와 24/72시간 비교, 이벤트 정의 통일, 미확인 null 유지."
     }
   ],
   "releases": [
