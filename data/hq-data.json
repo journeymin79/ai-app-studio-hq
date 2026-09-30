@@ -619,7 +619,7 @@
         "Data",
         "COO"
       ],
-      "summary": "@journeymin.creator의 기존 개발자/1인개발 결을 유지하며 7일치 고정 게시물 대신 핵심 4개 콘텐츠를 순차 실행한다. 첫 게시 후 실제 반응이 다음 게시물을 결정하며, 앱 광고성 반복 게시와 커뮤니티 침투는 하지 않는다."
+      "summary": "@journeymin.creator의 기존 개발자/1인개발 결을 유지하며 7일치 고정 게시물 대신 핵심 4개 콘텐츠를 순차 실행한다. 첫 게시 후 실제 반응이 다음 게시물을 결정하며, 앱 광고성 반복 게시와 커뮤니티 침투는 하지 않는다. CEO 결정에 따라 콘텐츠 채널은 Tistory와 개인 Threads로 제한하며 Brunch는 제외."
     },
     {
       "id": "RES-004",
@@ -761,6 +761,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Saytence",
+      "team": "CEO / COO / Growth",
+      "title": "Tistory·개인 Threads 채널 집중 확정",
+      "summary": "Brunch를 이번 Growth 콘텐츠 실행 범위에서 제외하고 Tistory·@journeymin.creator에 집중. 기존 Store ASO 전환 지원은 유지.",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-30",
       "time": "09/30",
@@ -1279,6 +1288,24 @@
         "Revenue"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-010",
+      "app": "Saytence",
+      "title": "Growth 콘텐츠 채널을 Tistory·개인 Threads로 제한",
+      "team": "CEO / COO / Growth",
+      "status": "DECIDED",
+      "summary": "CEO 결정: Brunch는 이번 마케팅에 맞지 않아 실행 범위에서 제외. 보유한 Tistory https://journeylabs.tistory.com 과 개인 Threads https://www.threads.com/@journeymin.creator 를 사용. 기존 Store ASO는 설치 전환 지원으로 유지.",
+      "date": "2026-09-30",
+      "command": "CMD-002",
+      "participantTeams": [
+        "COO",
+        "Growth",
+        "Discovery",
+        "Product",
+        "Data"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -1699,6 +1726,15 @@
       "authorRole": "COO가 정리한 팀별 1차 검토 관점",
       "type": "DISCUSSION",
       "content": "개발자에게 공감받는 제작 이야기가 학습자 설치로 이어진다는 가정에 반론. 개발 이야기만 남기지 말고 실제 학습 문제·제품 경험으로 연결해야 한다. 목표 100은 유지하되 소표본 1개 게시물 성과로 채널 성공/실패를 확정하지 않는다."
+    },
+    {
+      "id": "DISC-017",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "CEO / COO / Growth",
+      "authorRole": "CEO decision / COO execution",
+      "type": "DECISION",
+      "content": "콘텐츠 실행 채널은 Tistory와 개인 Threads. Brunch 활용안은 종료. Threads에서 작은 콘텐츠 실험으로 문제·메시지 반응을 관찰하고 Tistory는 설명·실제 사용법·데이터 기반 회고로 연결하는 역할안을 구체화한다. Store ASO는 기존 Sprint의 설치 전환 작업으로 유지."
     }
   ],
   "releases": [
