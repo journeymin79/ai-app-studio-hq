@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-09-30 Saytence 1.0.6 (13) hotfix 출시 완료. JLPT 학습 진입 오류와 기존 설치 Base 데이터 누락 문제를 수정했습니다. 제품 개발은 다시 동결하고 100 Install Growth Sprint를 ACTIVE로 전환합니다. 다음 실행은 @journeymin.creator에서 첫 Growth 콘텐츠 1개를 게시하고 실제 반응·설치·첫 학습 데이터를 확인한 뒤 다음 콘텐츠를 결정하는 것입니다."
+    "todaySummary": "Saytence 1.0.6 출시 후 100 Install Growth Sprint를 진행 중입니다. 회사 기억 구조를 OPERATING_CONTEXT(장기 운영 규칙) + CURRENT_STATE(현재 실행 상태) + Live Dashboard/Drive로 분리했고, Sprint 종료 또는 대화 장기화 시 이 구조로 새 Chat에 인계합니다."
   },
   "apps": [
     {
@@ -581,7 +581,7 @@
     },
     {
       "id": "GRO-003",
-      "title": "Store ASO 1.0.5 전면 개편",
+      "title": "Store ASO 현재 버전 개편",
       "app": "Saytence",
       "team": "Growth",
       "role": "ASO",
@@ -658,7 +658,7 @@
         "Discovery",
         "Red Team"
       ],
-      "summary": "Store/Threads 메시지가 실제 1.0.5 기능과 정확히 일치하도록 검토하고 JLPT-first 포지셔닝을 유지"
+      "summary": "Store/Threads/Tistory 메시지가 실제 Saytence 1.0.6 기능과 정확히 일치하도록 검토하고 JLPT-first 포지셔닝을 유지한다."
     },
     {
       "id": "DAT-002",
@@ -761,6 +761,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Company",
+      "team": "CEO / COO",
+      "title": "Company Memory 2-Layer Handoff 도입",
+      "summary": "OPERATING_CONTEXT(장기 규칙)와 CURRENT_STATE(현재 실행 상태)를 GitHub Company HQ에 분리 저장. Sprint 종료 또는 대화 장기화 시 Dashboard·Drive와 함께 새 Chat으로 업무를 인계하는 구조를 도입.",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-30",
       "time": "09/30",
@@ -1315,6 +1324,20 @@
         "Data"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-011",
+      "app": "Company",
+      "title": "2계층 회사 메모리 및 Sprint 단위 Chat Handoff 운영",
+      "team": "CEO / COO",
+      "status": "DECIDED",
+      "summary": "회사 장기 운영 규칙은 OPERATING_CONTEXT, 현재 실행 상태는 CURRENT_STATE로 분리하고 Live Dashboard/Drive/Product Source와 함께 회사의 실제 기억으로 사용한다. 한 채팅에 영구 의존하지 않고 Sprint Review 또는 필요 시 새 채팅으로 인계한다.",
+      "date": "2026-09-30",
+      "command": "CMD-002",
+      "participantTeams": [
+        "COO"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -1485,6 +1508,29 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "status": "NEEDS_REVISION"
+    },
+    {
+      "id": "ART-016",
+      "title": "AI APP STUDIO Operating Context",
+      "app": "Company",
+      "team": "COO",
+      "type": "Company Memory",
+      "date": "2026-09-30",
+      "summary": "회사 역할·운영원칙·Source of Truth·Saytence 장기 Product 원칙·Chat Handoff 규칙을 보존하는 안정적 장기 컨텍스트. 자주 변하는 실행 상태와 분리.",
+      "url": "https://github.com/journeymin79/ai-app-studio-hq/blob/main/docs/AI_APP_STUDIO_OPERATING_CONTEXT.md",
+      "command": "CMD-002"
+    },
+    {
+      "id": "ART-017",
+      "title": "AI APP STUDIO Current State",
+      "app": "Company",
+      "team": "COO",
+      "type": "Company Memory",
+      "date": "2026-09-30",
+      "summary": "현재 Release·Sprint·Active Task·Metric·Blocker·Next Action을 보존하는 자주 갱신되는 인수인계 문서.",
+      "url": "https://github.com/journeymin79/ai-app-studio-hq/blob/main/docs/AI_APP_STUDIO_CURRENT_STATE.md",
+      "command": "CMD-002",
+      "sprintId": "SPR-001"
     }
   ],
   "experiments": [
@@ -1932,5 +1978,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.3"
+  "dashboardVersion": "3.4"
 }
