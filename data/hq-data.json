@@ -649,9 +649,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-001",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Product",
         "Growth",
@@ -669,9 +669,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Data",
         "Growth",
@@ -708,9 +708,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-001",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Product",
         "Growth",
@@ -727,9 +727,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
+      "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Revenue",
         "Product",
@@ -761,6 +761,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Saytence",
+      "team": "COO / Product / Data / Red Team / Revenue",
+      "title": "상태 복구 및 Growth 실행 검토 착수",
+      "summary": "HQ JSON·Drive 최신 계획/마감 문서·Saytence main 1.0.6+13·GitHub Releases 빈 목록 확인. PRD-005/DAT-002/RED-002/REV-001을 IN_PROGRESS로 전환. 측정값 미확인과 과거 OPEN validation gate를 유지하며 제품 약속·측정 기준 검토 기록.",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-30",
       "time": "09/30",
@@ -1600,6 +1609,33 @@
       "authorRole": "CEO / COO",
       "type": "INPUT",
       "content": "Threads Growth는 @journeymin.creator 계정을 사용한다. 오늘은 세부 대안을 확정하지 않고, 다음 업무 시작 시 Growth·Discovery·Product·Data·Red Team이 동일 계정을 먼저 검토한 뒤 Round Table에서 실행안을 수렴한다."
+    },
+    {
+      "id": "DISC-008",
+      "taskId": "PRD-005",
+      "date": "2026-09-30",
+      "team": "COO / Product / UX / Engineering",
+      "authorRole": "COO",
+      "type": "FINDING",
+      "content": "상태 복구: GitHub main 0aa3b61e288e1f5d0f7de1963a450cb34d26f8b8의 pubspec 변경과 release note에서 1.0.6+13 확인. HQ REL-002는 RELEASED이나 GitHub Releases API는 빈 목록. Google Drive 9/28 Daily Summary와 Growth Sprint 본문 접근 확인. 9/30 HQ의 적응형 Threads 실행을 최신 기준으로 사용하며 공개 Store 배포/실기기 동작은 이번 읽기로 검증되지 않음."
+    },
+    {
+      "id": "DISC-009",
+      "taskId": "RED-002",
+      "date": "2026-09-30",
+      "team": "Growth / Product / Red Team / Revenue",
+      "authorRole": "COO cross-functional review",
+      "type": "REVIEW",
+      "content": "오늘 공통 검토 기준: 개발자/1인개발 채널 톤과 JLPT 실제 학습 문제를 연결한다. 5분·10분·20장 선택과 약한 카드 복습은 제품 기록 근거로 소개 가능하나 암기 효과 보장·공식 JLPT 전체 어휘·검증되지 않은 사용자 후기는 제외. 광고비·수익화 변경 없이 첫 콘텐츠 반응으로 다음 소재를 결정한다. 게시 완료 근거는 아직 없음."
+    },
+    {
+      "id": "DISC-010",
+      "taskId": "DAT-002",
+      "date": "2026-09-30",
+      "team": "Data / Growth / COO",
+      "authorRole": "Data review",
+      "type": "FINDING",
+      "content": "설치 8은 9/28 baseline 및 HQ 기록값이며 오늘 신규 측정값 아님. link click/첫 학습/세션 완료의 null은 미확인으로 유지. 일일 측정에 KST 기간·수집 시각·원본 출처·앱 버전·raw count를 기록하고 첫 학습 시작과 First Card Rated를 별도 구분한다. 채널 귀속 증거 없이 설치 증가를 Threads 성과로 단정하지 않는다."
     }
   ],
   "releases": [
