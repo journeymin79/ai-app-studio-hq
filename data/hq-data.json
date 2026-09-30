@@ -1472,6 +1472,18 @@
       "summary": "Source Audit·구현검증·1.0.5 출시·Analytics 확인·100 Install Growth Sprint 전환·Threads @journeymin.creator 계정 채널 확정까지 오늘 업무 마감 정리",
       "url": "https://docs.google.com/document/d/1as1jNRQ-XcofVjDw4xMrdNZnPZtoD_87TdcihF3J23o/edit",
       "command": "CMD-002"
+    },
+    {
+      "id": "ART-015",
+      "title": "Tistory 첫 유입 글·팀 검토·측정 메모",
+      "app": "Saytence",
+      "team": "Growth / Discovery / Product / Data / Red Team / COO",
+      "type": "Content Draft",
+      "date": "2026-09-30",
+      "summary": "독립 팀 검토 후 Growth 본문 작성, COO 편집. 20장 첫 세션과 헷갈린 카드 복습 중심. CEO 게시 검토용, 발행 및 성과 미확인.",
+      "url": "https://drive.google.com/file/d/1q9SoCFy11JmOHsa6VJQw5L1z3HmMKTh6/view?usp=drivesdk",
+      "command": "CMD-002",
+      "sprintId": "SPR-001"
     }
   ],
   "experiments": [
@@ -1780,6 +1792,15 @@
       "authorRole": "독립 AI 팀 검토자",
       "type": "DISCUSSION",
       "content": "독립 AI 검토: 학습상황 하나·기능 하나·행동 요청 하나로 좁힌 첫 실험 권고. 학습 고민은 가설. 5분 학습 효과 보장 대신 5분 세션 선택 경험 제시. 게시 직전 baseline와 24/72시간 비교, 이벤트 정의 통일, 미확인 null 유지."
+    },
+    {
+      "id": "DISC-022",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "Growth / Discovery / Product / Data / Red Team / COO",
+      "authorRole": "독립 팀 리뷰 / Growth 작성 / COO 편집",
+      "type": "REVIEW",
+      "content": "Tistory 첫 게시용 글 작성. Discovery는 학습자 검색의도와 제작담 보조 권고. Product/Data/Red Team은 실제 기능·구체 첫 행동·측정 구분 검토. Growth 초안의 반복 면책문구를 COO가 줄이고 20장 학습→세션결과→헷갈린카드재복습 흐름으로 편집. main release note 및 home_screen에서 해당 기능 확인. ART-015에 본문·캡처배치·측정메모 저장. 게시 및 성과 아직 없음."
     }
   ],
   "releases": [
