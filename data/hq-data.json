@@ -630,15 +630,15 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
-      "progress": 0,
-      "updated": "2026-09-28",
+      "status": "IN_PROGRESS",
+      "progress": 30,
+      "updated": "2026-09-30",
       "participants": [
         "Discovery",
         "Growth",
         "Product"
       ],
-      "summary": "JLPT N5/N4/N3 학습자의 실제 암기·복습·회독 고민을 매일 수집해 게시물 소재와 댓글 참여 대상을 Growth에 공급"
+      "summary": "JLPT N5/N4/N3 학습자의 실제 암기·복습·회독 고민을 수집 중. 2026-09-30 초기 외부 신호에서 '외운 단어가 자꾸 빠짐', '전체 교재 재복습 부담', '플래시카드 제작 번거로움', '랜덤 단어 반복 피로'가 반복 확인됨. Growth 첫 Adaptive 콘텐츠의 사용자 문제 원재료로 전달."
     },
     {
       "id": "PRD-005",
