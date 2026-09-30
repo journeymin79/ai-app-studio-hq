@@ -1480,10 +1480,11 @@
       "team": "Growth / Discovery / Product / Data / Red Team / COO",
       "type": "Content Draft",
       "date": "2026-09-30",
-      "summary": "독립 팀 검토 후 Growth 본문 작성, COO 편집. 20장 첫 세션과 헷갈린 카드 복습 중심. CEO 게시 검토용, 발행 및 성과 미확인.",
+      "summary": "초안 보존. CEO가 첫 유입 글로서 채널 적합성과 읽을 이유 부족을 지적했고 COO도 부적합 판정. 게시 승인 없음·발행/성과 미확인. 기능 안내 자료로는 재활용 가능하나 첫 유입 콘텐츠로 추천하지 않음. 운영 컨텍스트 기준 Tistory는 개발/AI/1인개발의 긴 기록·실제 데이터·시행착오를 중심으로 재검토.",
       "url": "https://drive.google.com/file/d/1q9SoCFy11JmOHsa6VJQw5L1z3HmMKTh6/view?usp=drivesdk",
       "command": "CMD-002",
-      "sprintId": "SPR-001"
+      "sprintId": "SPR-001",
+      "status": "NEEDS_REVISION"
     }
   ],
   "experiments": [
@@ -1801,6 +1802,15 @@
       "authorRole": "독립 팀 리뷰 / Growth 작성 / COO 편집",
       "type": "REVIEW",
       "content": "Tistory 첫 게시용 글 작성. Discovery는 학습자 검색의도와 제작담 보조 권고. Product/Data/Red Team은 실제 기능·구체 첫 행동·측정 구분 검토. Growth 초안의 반복 면책문구를 COO가 줄이고 20장 학습→세션결과→헷갈린카드재복습 흐름으로 편집. main release note 및 home_screen에서 해당 기능 확인. ART-015에 본문·캡처배치·측정메모 저장. 게시 및 성과 아직 없음."
+    },
+    {
+      "id": "DISC-023",
+      "taskId": "GRO-004",
+      "date": "2026-09-30",
+      "team": "CEO / COO",
+      "authorRole": "운영 컨텍스트 재검토",
+      "type": "REVIEW",
+      "content": "첨부 AI_APP_STUDIO_OPERATING_CONTEXT.md 전체와 live HQ 대조. Tistory를 JLPT 사용법/SEO 블로그로 전환하는 방향은 기존 채널 원칙에서 이탈. Threads는 개발자·Creator 정체성 및 반응 기반 실행, Tistory는 긴 기록·실제 데이터·시행착오·검색 자산. ART-015 유입용 초안은 NEEDS_REVISION으로 기록. 제작이야기를 버리는 방향이 아니라 실제 제품 경험과 연결하되 개발자 호기심과 실제 JLPT 사용자 신호를 분리. 새 시장전략 재시작 없이 현재 Sprint 범위에서 재검토."
     }
   ],
   "releases": [
