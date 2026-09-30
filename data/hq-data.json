@@ -588,9 +588,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-001",
-      "status": "TODO",
+      "status": "REVIEW",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Growth",
         "Product",
@@ -598,7 +598,7 @@
         "Data",
         "Engineering"
       ],
-      "summary": "앱명·간단한 설명·전체 설명 상단·첫 3개 스크린샷을 JLPT N5/N4/N3·짧은 회독·약한 카드 복습 중심으로 개편"
+      "summary": "앱명·간단한 설명·전체 설명 상단·첫 3개 스크린샷을 JLPT N5/N4/N3·짧은 회독·약한 카드 복습 중심으로 개편 2026-09-30 CEO가 기존 제안에 따른 Store 문구·설명 수정 완료를 보고. 스크린샷 변경 및 공개 listing 반영 여부는 별도 미확인."
     },
     {
       "id": "GRO-004",
@@ -761,6 +761,15 @@
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Saytence",
+      "team": "CEO / Growth",
+      "title": "Store ASO 문구·설명 수정 완료 보고",
+      "summary": "CEO가 기존 제안에 따른 Store 문구·설명 수정 완료를 보고. GRO-003 REVIEW 전환, 스크린샷·공개 반영은 별도 확인.",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-30",
       "time": "09/30",
@@ -1735,6 +1744,15 @@
       "authorRole": "CEO decision / COO execution",
       "type": "DECISION",
       "content": "콘텐츠 실행 채널은 Tistory와 개인 Threads. Brunch 활용안은 종료. Threads에서 작은 콘텐츠 실험으로 문제·메시지 반응을 관찰하고 Tistory는 설명·실제 사용법·데이터 기반 회고로 연결하는 역할안을 구체화한다. Store ASO는 기존 Sprint의 설치 전환 작업으로 유지."
+    },
+    {
+      "id": "DISC-018",
+      "taskId": "GRO-003",
+      "date": "2026-09-30",
+      "team": "CEO / Growth / Product",
+      "authorRole": "CEO report",
+      "type": "FINDING",
+      "content": "CEO 보고: 기존 제안대로 Store ASO 문구·설명을 수정 완료. 수정된 정확한 최종 문구·공개 listing 노출·스크린샷 변경은 이번 보고로 확인되지 않아 GRO-003 전체는 REVIEW로 전환. 같은 문구 개편 작업을 중복 수행하지 않고 콘텐츠 유입 실행을 우선한다."
     }
   ],
   "releases": [
