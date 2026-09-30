@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-09-28 업무 마감. Saytence 1.0.5 출시와 Analytics 정상 수집을 확인했고, 2026-09-29~10-12 100 Install Growth Sprint를 준비했습니다. Baseline 8 → Target 100, 집중축은 Store ASO와 Threads입니다. Threads는 @journeymin.creator 계정을 사용하며, 세부 운영안은 오늘 확정하지 않고 다음 업무 시작 시 전 팀 Round Table에서 수렴합니다."
+    "todaySummary": "2026-09-30 Saytence 1.0.6 (13) hotfix 출시 완료. JLPT 학습 진입 오류와 기존 설치 Base 데이터 누락 문제를 수정했습니다. 제품 개발은 다시 동결하고 100 Install Growth Sprint를 ACTIVE로 전환합니다. 다음 실행은 @journeymin.creator에서 첫 Growth 콘텐츠 1개를 게시하고 실제 반응·설치·첫 학습 데이터를 확인한 뒤 다음 콘텐츠를 결정하는 것입니다."
   },
   "apps": [
     {
@@ -602,16 +602,16 @@
     },
     {
       "id": "GRO-004",
-      "title": "Threads 14일 유입 실행",
+      "title": "Threads 적응형 유입 실행",
       "app": "Saytence",
       "team": "Growth",
       "role": "Content Marketing",
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
-      "progress": 0,
-      "updated": "2026-09-28",
+      "status": "IN_PROGRESS",
+      "progress": 10,
+      "updated": "2026-09-30",
       "participants": [
         "Growth",
         "Discovery",
@@ -619,7 +619,7 @@
         "Data",
         "COO"
       ],
-      "summary": "1일 1개 핵심 게시물+관련 대화 참여를 기본 cadence로 14일간 실행하고 링크 클릭·설치 변화를 기록"
+      "summary": "@journeymin.creator의 기존 개발자/1인개발 결을 유지하며 7일치 고정 게시물 대신 핵심 4개 콘텐츠를 순차 실행한다. 첫 게시 후 실제 반응이 다음 게시물을 결정하며, 앱 광고성 반복 게시와 커뮤니티 침투는 하지 않는다."
     },
     {
       "id": "RES-004",
@@ -689,15 +689,15 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
+      "status": "WAITING",
       "progress": 0,
-      "updated": "2026-09-28",
+      "updated": "2026-09-30",
       "participants": [
         "Engineering",
         "Data",
         "Growth"
       ],
-      "summary": "Analytics가 이미 정상 수집되는 상태를 유지하고 유입/링크/스토어 측정에 기술 blocker가 생길 때만 지원; 신규 제품 기능 개발은 하지 않음"
+      "summary": "1.0.6 hotfix 출시 후 신규 제품 개발은 중단. Growth blocker 또는 치명적 오류가 발생할 때만 지원."
     },
     {
       "id": "RED-002",
@@ -746,9 +746,9 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
-      "progress": 0,
-      "updated": "2026-09-28",
+      "status": "COMPLETED",
+      "progress": 100,
+      "updated": "2026-09-30",
       "participants": [
         "Growth",
         "Discovery",
@@ -757,10 +757,28 @@
         "COO",
         "Red Team"
       ],
-      "summary": "@journeymin.creator의 기존 계정 톤·콘텐츠·반응을 공통 입력으로 검토하고, 각 팀이 독립 의견을 준비한 뒤 Round Table에서 Threads 실행안을 수렴한다. 오늘은 세부 대안을 확정하지 않는다."
+      "summary": "@journeymin.creator, Journey Coach Tistory와 Saytence 현재 Product를 기준으로 Growth·Discovery·Product·Data·Red Team 의견을 수렴. Threads는 개발자 Build-in-Public 서사를 입구로 쓰되 JLPT 실제 학습 문제와 Product 화면을 빠르게 연결하는 방향으로 합의."
     }
   ],
   "activities": [
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Saytence",
+      "team": "COO / Growth / Discovery / Product / Data",
+      "title": "Growth Sprint 실행 단계 전환",
+      "summary": "1.0.6 hotfix 출시로 제품 수정 단계를 종료하고, @journeymin.creator를 중심으로 고정 7일 콘텐츠가 아닌 반응 기반 적응형 Threads 실행으로 전환. Tistory는 첫 주 결과를 데이터 기반 장문으로 정리하는 채널로 사용.",
+      "command": "CMD-002"
+    },
+    {
+      "date": "2026-09-30",
+      "time": "09/30",
+      "app": "Saytence",
+      "team": "Engineering / Product",
+      "title": "Saytence 1.0.6 (13) Hotfix 출시",
+      "summary": "1.0.5에서 발견된 JLPT 학습 진입 오류를 수정. 급수 선택 후 Home으로 정상 진입하고 기존 설치에서 누락된 JLPT Base 데이터를 재시드하도록 보강한 1.0.6(13)을 출시.",
+      "command": "CMD-002"
+    },
     {
       "date": "2026-09-28",
       "time": "09/28",
@@ -1462,7 +1480,7 @@
     }
   ],
   "schemaVersion": "2.0",
-  "updatedAt": "2026-09-28",
+  "updatedAt": "2026-09-30",
   "operatingModel": {
     "mode": "SPRINT_BASED",
     "sprintLength": "1~2주",
@@ -1490,10 +1508,10 @@
       "id": "SPR-001",
       "app": "Saytence",
       "title": "100 Install Growth Sprint",
-      "goal": "Store ASO와 Threads 유입에 전 팀이 집중해 누적 설치 8 → 100을 만든다.",
+      "goal": "출시 안정화가 완료된 Saytence 1.0.6을 기준으로, 기존 채널 자산을 활용해 실제 신규 사용자를 확보하고 누적 설치 8 → 100을 검증한다.",
       "startDate": "2026-09-29",
       "endDate": "2026-10-12",
-      "status": "PLANNED",
+      "status": "ACTIVE",
       "command": "CMD-002",
       "owner": "COO",
       "target": "누적 설치 100 (+92)",
@@ -1595,6 +1613,17 @@
       "command": "CMD-002",
       "summary": "일본어 JLPT N5/N4/N3 또는 내 자료 학습 진입, 5분·10분·20장 세션, 세션 결과 분리, 세션 약한 카드 즉시 복습, Home/Library 복습 기준 통합, custom 일본어 사용자의 JLPT fallback 방지, 세션 기록 정합성 개선",
       "analyticsStatus": "VERIFIED"
+    },
+    {
+      "id": "REL-002",
+      "app": "Saytence",
+      "version": "1.0.6 (13)",
+      "title": "JLPT 학습 진입 오류 수정",
+      "date": "2026-09-30",
+      "status": "RELEASED",
+      "command": "CMD-002",
+      "summary": "JLPT N5/N4/N3 선택 후 학습 홈 진입 오류를 수정하고, 기존 설치에서 누락된 JLPT 기본 자료를 baseSeedVersion 7로 재시드하도록 보강. JLPT 목표 급수와 기본 Pack 연결 안정성을 개선하고 내 자료 학습 흐름은 유지.",
+      "sourceCommit": "0aa3b61e288e1f5d0f7de1963a450cb34d26f8b8"
     }
   ],
   "metrics": [
@@ -1683,5 +1712,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.2"
+  "dashboardVersion": "3.3"
 }
