@@ -1,6 +1,6 @@
 {
   "company": {
-    "name": "AI APP STUDIO",
+    "name": "79's Labs",
     "mission": "시장 검증 → 제품 개선 → 성장 → 수익화를 반복하는 AI 기반 앱 스튜디오",
     "apps": "1 / 3",
     "activeTeams": 7,
@@ -8,7 +8,8 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Saytence 1.0.6 출시 후 100 Install Growth Sprint를 진행 중입니다. 회사 기억 구조를 OPERATING_CONTEXT(장기 운영 규칙) + CURRENT_STATE(현재 실행 상태) + Live Dashboard/Drive로 분리했고, Sprint 종료 또는 대화 장기화 시 이 구조로 새 Chat에 인계합니다."
+    "todaySummary": "Saytence 1.0.6 출시 후 100 Install Growth Sprint를 진행 중입니다. 회사 기억 구조를 OPERATING_CONTEXT(장기 운영 규칙) + CURRENT_STATE(현재 실행 상태) + Live Dashboard/Drive로 분리했고, Sprint 종료 또는 대화 장기화 시 이 구조로 새 Chat에 인계합니다.",
+    "website": "https://journey-min-79.github.io/index.html"
   },
   "apps": [
     {
