@@ -3,7 +3,7 @@
 > 현재 회사의 실행 상태.  
 > 장기 운영 규칙은 `AI_APP_STUDIO_OPERATING_CONTEXT.md`.
 >
-> **Last reconciled: 2026-09-30**
+> **Last reconciled: 2026-10-01**
 >
 > Live Dashboard/Product Source가 더 최신이면 Live Source를 우선하고 이 파일을 갱신한다.
 
@@ -113,12 +113,13 @@ https://www.threads.com/@journeymin.creator
 
 - 기존 개발자 / AI / 1인개발 결 유지
 - JLPT 전문가 계정처럼 전환하지 않음
-- Fixed 7-day / 14-day content calendar 폐기
-- Adaptive:
-  - 게시
-  - 실제 반응
-  - qualified signal 구분
-  - 다음 콘텐츠 결정
+- 고정 게시 캘린더는 사용하지 않음
+- TH-001~TH-007 7개 게시 준비본은 사전 작성 완료
+- TH-001만 첫 글로 고정
+- TH-002~007은 실제 반응에 따라 순서 조정
+- Topic / Community는 글의 실제 주제에 맞는 1개를 우선 사용
+- TH-001: 1인개발 → 앱개발 우선
+- TH-004/005: 일본어 / JLPT 학습자 신호 탐색
 - 광고성 반복 게시 금지
 - 8→100 숫자를 매 글 반복하지 않음
 
@@ -197,10 +198,17 @@ Next:
 Status: IN_PROGRESS
 Progress: 10%
 
+Prepared:
+- ART-019 — TH-001~TH-007 7일 게시 준비본
+- 계정 본체: 개발자 / AI / 1인개발
+- Saytence는 실제 제품 사례로만 연결
+- 글별 Topic/Community 우선순위와 Tistory bridge 정의
+- TH-001만 첫 게시로 고정
+
 Next:
-- 첫 Growth 콘텐츠 실행
-- 실제 반응 확인
-- 다음 콘텐츠는 반응 후 결정
+- TH-001 실제 게시
+- 답글/프로필 이동/Store 행동 관찰
+- 이후 TH-002~007 순서는 반응 기반 결정
 
 ### RES-004 — JLPT Threads 대화·문제 신호 발굴
 Status: TODO
@@ -219,14 +227,20 @@ Next:
 ### DAT-002 — 100 Install Daily Funnel
 Status: IN_PROGRESS
 
+Measurement Contract:
+- ART-018 — SPR-001 Acquisition Measurement Plan
+- Threads/Tistory 링크는 실제 게시 시 콘텐츠 ID별 UTM 생성
+- GA4 Funnel 구축은 콘텐츠 실행 이후 진행
+
 Track:
 
 ```
-Source / Content
-→ Store action
+Threads / Tistory
+→ Google Play Store visit (UTM)
 → Install
-→ First learning
-→ Session complete
+→ first_open
+→ study_session_started
+→ study_session_completed
 ```
 
 항상 raw count 포함.
@@ -265,13 +279,16 @@ baseline: 8
 target: 100
 current: 8
 
-MET-002 Threads 링크 클릭
+MET-002 Threads → Store 방문
 not yet recorded
 
 MET-003 첫 학습 시작
 not yet recorded
 
 MET-004 세션 완료
+not yet recorded
+
+MET-005 Tistory → Store 방문
 not yet recorded
 ```
 
@@ -303,28 +320,14 @@ Status: NEEDS_REVISION
 
 ## 10. Immediate Next Actions
 
-### 1. 최신 숫자 동기화
+### 1. TH-001 게시
 
-- Google Play 최신 누적 설치
-- First learning
-- Session complete
-- Threads 실행 전 baseline
+- 내용: 1인개발로 Saytence JLPT 단어 암기 앱을 출시한 뒤 첫 사용자를 찾는 경험
+- Topic/Community: `1인개발` 우선, 없으면 `앱개발`
+- 본문 링크 없음
+- 게시 후 실제 반응을 먼저 관찰
 
-Dashboard Metrics 업데이트.
-
-### 2. Store ASO REVIEW 닫기
-
-- Screenshots
-- Public listing reflection
-
-확인 후 GRO-003 상태 결정.
-
-### 3. Threads 첫 Adaptive 콘텐츠 실행
-
-- Existing developer account context 안에서 시작
-- 첫 게시 후 다음 글 자동 실행 금지
-
-### 4. Reaction Classification
+### 2. Reaction Classification
 
 ```
 Developer-support engagement
@@ -332,21 +335,44 @@ vs
 Qualified JLPT/user signal
 ```
 
-분리.
+- Reply quality
+- Profile / link action
+- Store action
+- 조회수/좋아요는 diagnostic
 
-### 5. Next Content Decision
+### 3. 다음 Threads 선택
 
-실제 반응 기반으로 Growth + Discovery + Product + Data + Red Team 판단.
+- 개발자 반응 강함 → TH-002 / TH-003
+- 일본어/JLPT 학습자 신호 → TH-004 / TH-005
+- 광고 피로 신호 → TH-006 / TH-007
 
-### 6. Tistory
+### 4. Tistory TI-001 결정
 
-Threads에서 실제 이야기/데이터가 생긴 후 장문으로 확장.
+우선 장문 후보:
+- TH-001 — 첫 100명 Growth 실험
+- TH-003 — 기능 개발을 멈춘 이유
+- TH-006 — AI 시대 Distribution 문제
+
+Threads 실제 반응을 확인한 후 TI-001 주제를 최종 선택.
+
+### 5. 측정 실행
+
+- 링크가 필요한 게시물 작성 시 콘텐츠 ID별 UTM 생성
+- 콘텐츠 실행 이후 GA4 Funnel 생성
+- Notion Metric Log 하루 1회 raw count 기록
+
+### 6. Store ASO REVIEW 닫기
+
+- Screenshots
+- Public listing reflection
+- 확인 후 GRO-003 상태 결정.
 
 ## 11. Current Blockers / Unknowns
 
 - 최신 실제 설치수 미동기화
 - Store screenshot/public listing 최종 반영 미확인
-- Threads 첫 Growth 콘텐츠 실제 실행/성과 미기록
+- TH-001 실제 게시/성과 아직 없음
+- GA4 Funnel 실제 구축 전
 - ART-015 NEEDS_REVISION / 발행 미확인
 - Brunch는 범위 밖
 
@@ -432,3 +458,47 @@ Daily:
 
 Measurement artifact:
 - Notion: SPR-001 Acquisition Measurement Plan — Threads + Tistory
+
+
+## 17. 2026-10-01 Threads Content Operating Set
+
+Artifact:
+- ART-019 — Threads 7일 콘텐츠 세트 — TH-001~TH-007
+- Notion: https://app.notion.com/p/3ec5b7c4aa3081b0bdc2fec46672f644
+- Status: REVIEW
+
+Operating rule:
+- 계정의 본체는 개발자 / AI / 1인개발
+- Saytence는 실제 제품 사례
+- 7개 게시물은 사전 준비하지만 고정 캘린더는 아님
+- TH-001만 첫 게시로 고정
+- 이후 순서는 실제 반응 기반 조정
+
+Topic / Community:
+- TH-001: 1인개발 → 앱개발
+- TH-002: AI → 바이브코딩 → 개발자
+- TH-003: 1인개발 → 앱개발
+- TH-004: 일본어 → JLPT → 일본어공부
+- TH-005: JLPT → 일본어 → 일본어공부
+- TH-006: AI → 앱개발 → 1인개발
+- TH-007: 1인개발 → 개발자 → 앱개발
+
+Tistory bridge candidates:
+1. TH-001 — 앱 출시 후 첫 100명 Growth 실험
+2. TH-003 — 기능 개발을 멈춘 이유
+3. TH-006 — AI로 앱 만드는 것보다 사용자를 찾는 일이 어려운 이유
+
+## 18. 2026-10-01 Measurement Execution Rule
+
+Artifact:
+- ART-018 — SPR-001 Acquisition Measurement Plan — Threads + Tistory
+- Notion: https://app.notion.com/p/3ec5b7c4aa3081cdbd18dec358941f04
+
+Execution order:
+1. 콘텐츠 게시
+2. 링크가 필요할 때 콘텐츠 ID별 UTM 생성
+3. 반응/Store 행동 기록
+4. 콘텐츠 실행 이후 GA4 Funnel 구축
+5. Notion Metric Log에 Daily Raw Count 기록
+
+현재는 측정 도구 추가 개발보다 Threads 실제 실행이 우선이다.
