@@ -8,7 +8,7 @@
     "completedToday": 6,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "Saytence 1.0.6 이후 100 Install Growth Sprint 진행 중. Notion을 79's Labs Company OS로 구성했으며 CEO/Company HQ에 Live Dashboard 링크, 전사 Kanban, 조직도, 부서 상태, 핵심 Metric, CEO Decision Queue를 배치했다. 9개 부서별 홈과 전용 업무 보드를 구성했다.",
+    "todaySummary": "SPR-001 측정체계를 Threads/Tistory 중심으로 확정. UTM 콘텐츠 ID, Play Store UTM 방문, Tistory GA4, Firebase first_open→study_session_started→study_session_completed Funnel, Notion Daily Raw Count를 기준으로 운영한다. 다음 단계는 Threads/Tistory 실제 콘텐츠 실행.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -616,7 +616,7 @@
       "featureId": "FEAT-002",
       "status": "IN_PROGRESS",
       "progress": 10,
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "participants": [
         "Growth",
         "Discovery",
@@ -624,7 +624,7 @@
         "Data",
         "COO"
       ],
-      "summary": "@journeymin.creator의 기존 개발자/1인개발 결을 유지하며 7일치 고정 게시물 대신 핵심 4개 콘텐츠를 순차 실행한다. 첫 게시 후 실제 반응이 다음 게시물을 결정하며, 앱 광고성 반복 게시와 커뮤니티 침투는 하지 않는다. CEO 결정에 따라 콘텐츠 채널은 Tistory와 개인 Threads로 제한하며 Brunch는 제외."
+      "summary": "Threads와 Tistory를 핵심 Owned Channel로 집중 운영. Threads는 개발자/AI/1인개발 Build-in-Public 기반 빠른 실험, Tistory는 긴 기록·검색 자산. 각 콘텐츠에 TH-001/TI-001 ID와 UTM을 적용하고 다음 콘텐츠는 실제 반응·Store 행동 기준으로 결정."
     },
     {
       "id": "RES-004",
@@ -676,14 +676,14 @@
       "featureId": "FEAT-002",
       "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "participants": [
         "Data",
         "Growth",
         "Product",
         "COO"
       ],
-      "summary": "현재 설치 8을 baseline으로 Store 방문·Threads link click·신규 설치·첫 학습·session complete를 매일 같은 정의로 기록"
+      "summary": "Threads/Tistory별 UTM Store 방문 → Install → first_open → study_session_started → study_session_completed를 같은 정의로 기록. 콘텐츠 ID는 TH-001/TI-001 형식으로 관리하고 하루 1회 Raw Count를 Metric Log에 기록."
     },
     {
       "id": "ENG-002",
@@ -1914,11 +1914,11 @@
       "id": "MET-002",
       "app": "Saytence",
       "sprintId": "SPR-001",
-      "name": "Threads 링크 클릭",
+      "name": "Threads → Store 방문",
       "baseline": null,
       "target": null,
       "current": null,
-      "unit": "clicks",
+      "unit": "users",
       "owner": "Growth / Data",
       "status": "TRACKING"
     },
@@ -1944,6 +1944,18 @@
       "current": null,
       "unit": "users",
       "owner": "Data",
+      "status": "TRACKING"
+    },
+    {
+      "id": "MET-005",
+      "app": "Saytence",
+      "sprintId": "SPR-001",
+      "name": "Tistory → Store 방문",
+      "baseline": null,
+      "target": null,
+      "current": null,
+      "unit": "users",
+      "owner": "Growth / Data",
       "status": "TRACKING"
     }
   ],
