@@ -376,6 +376,13 @@ Engineering 재가동 조건:
 5. 장기 Decision만 OPERATING_CONTEXT 갱신
 6. 새 Chat은 두 문서 + Live Dashboard로 시작
 
-## 14. Current Direction
+## 14. Knowledge / Reporting System
+
+- Notion: 79's Labs Company OS — Strategy, Product, Sprint, Task, Decision, Research, Experiment, Metric, Report
+- Google Drive: historical documents and file-based artifacts
+- New Daily / Weekly / Sprint / Strategy reports default to Notion
+- GitHub Dashboard / CURRENT_STATE remain live execution-state sources
+
+## 15. Current Direction
 
 > **Saytence 1.0.6은 출시 완료. 지금은 더 만드는 단계가 아니라, 기존 Owned Channel을 이용해 실제 첫 사용자를 찾고 설치 후 실제 학습으로 이어지는지 검증하는 단계다.**
