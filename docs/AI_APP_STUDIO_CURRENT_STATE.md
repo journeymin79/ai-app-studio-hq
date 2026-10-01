@@ -386,3 +386,13 @@ Engineering 재가동 조건:
 ## 15. Current Direction
 
 > **Saytence 1.0.6은 출시 완료. 지금은 더 만드는 단계가 아니라, 기존 Owned Channel을 이용해 실제 첫 사용자를 찾고 설치 후 실제 학습으로 이어지는지 검증하는 단계다.**
+
+
+## Notion Company HQ UX
+
+- 79's Labs Notion Home: https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d
+- CEO / Company HQ: https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d
+- Departments: https://app.notion.com/p/3ec5b7c4aa308167aa3fdd7c23cd3555
+- Live Company Dashboard: https://journeymin79.github.io/ai-app-studio-hq/
+- Company HQ includes Current Sprint, Company Kanban, Department Status, Key Metrics, CEO Decision Queue and organization chart.
+- Department pages: COO/HQ, Strategy, Discovery, Product/UX, Engineering/QA, Growth/ASO/Content, Data, Revenue, Red Team. Each department has its own filtered work view.
