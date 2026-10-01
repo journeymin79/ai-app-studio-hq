@@ -1,4 +1,4 @@
-# AI APP STUDIO — OPERATING CONTEXT
+# 79's Labs — OPERATING CONTEXT
 
 > 장기 운영 규칙과 변하지 않는 기준을 보존하는 문서.
 > 자주 바뀌는 Release/Sprint/Metric/Active Task는 `AI_APP_STUDIO_CURRENT_STATE.md`에서 관리한다.
@@ -16,7 +16,9 @@ Live Product Source / Live Company Dashboard
 
 ## 1. Company
 
-**Name:** AI APP STUDIO
+**Website:** https://journey-min-79.github.io/index.html
+
+**Name:** 79's Labs
 
 **Mission:** 시장 검증 → 제품 개선 → 성장 → 수익화를 반복하는 AI 기반 앱 스튜디오
 
