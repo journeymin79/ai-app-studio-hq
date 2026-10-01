@@ -396,3 +396,39 @@ Engineering 재가동 조건:
 - Live Company Dashboard: https://journeymin79.github.io/ai-app-studio-hq/
 - Company HQ includes Current Sprint, Company Kanban, Department Status, Key Metrics, CEO Decision Queue and organization chart.
 - Department pages: COO/HQ, Strategy, Discovery, Product/UX, Engineering/QA, Growth/ASO/Content, Data, Revenue, Red Team. Each department has its own filtered work view.
+
+
+## 16. Acquisition Measurement Contract
+
+Focus channels:
+- Threads
+- Tistory
+
+Measurement flow:
+```
+Threads / Tistory
+→ Google Play Store visit (UTM)
+→ Install
+→ first_open
+→ study_session_started
+→ study_session_completed
+```
+
+UTM:
+- Threads: source=threads / medium=organic_social / campaign=spr001_thNNN
+- Tistory: source=tistory / medium=owned_content / campaign=spr001_tiNNN
+
+Metrics:
+- MET-001 누적 설치
+- MET-002 Threads → Store 방문
+- MET-003 첫 학습 시작
+- MET-004 세션 완료
+- MET-005 Tistory → Store 방문
+
+Daily:
+- Notion Metric Log에 하루 1회 raw count 기록
+- Views/Likes는 diagnostic only
+- Growth 판단은 Store visit → Install → Learning → Complete 기준
+
+Measurement artifact:
+- Notion: SPR-001 Acquisition Measurement Plan — Threads + Tistory
