@@ -7,10 +7,10 @@
 
 ```
 Live Product Source / Live Company Dashboard
-→ Current Drive artifact
 → CURRENT_STATE
+→ Current Notion workspace
 → OPERATING_CONTEXT
-→ Historical docs
+→ Historical Drive artifacts
 → Conversation memory
 ```
 
@@ -214,9 +214,13 @@ Release/Sprint/중요 Metric 변화 시 갱신.
 
 `data/hq-data.json` — 업무 상태의 최신 구조화 데이터.
 
-### Layer 4 — Drive Artifacts
+### Layer 4 — Notion Company OS
 
-Research / Specs / Audits / Sprint Plans / Daily / Weekly 상세 근거.
+Strategy / Product / Sprint / Task / Decision / Research / Experiment / Metric / Daily / Weekly / Sprint Review의 Human Knowledge & Operating System.
+
+### Layer 5 — Drive Artifacts
+
+기존 Research / Specs / Audits / Sprint Plans / Daily / Weekly의 historical 원본 및 파일형 산출물 보관. 신규 보고서는 기본적으로 Notion에 작성하고 Drive는 필요한 원본 파일 보관에 사용한다.
 
 ## 6. Chat Handoff / Rotation
 
