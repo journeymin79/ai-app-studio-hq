@@ -5,10 +5,10 @@
     "apps": "1 / 3",
     "activeTeams": 7,
     "activeTasks": 8,
-    "completedToday": 6,
+    "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "SPR-001 측정체계를 Threads/Tistory 중심으로 확정. UTM 콘텐츠 ID, Play Store UTM 방문, Tistory GA4, Firebase first_open→study_session_started→study_session_completed Funnel, Notion Daily Raw Count를 기준으로 운영한다. 다음 단계는 Threads/Tistory 실제 콘텐츠 실행.",
+    "todaySummary": "2026-10-01: Threads/Tistory Growth 실행 전 측정 계약을 확정하고, @journeymin.creator 계정 정체성에 맞춘 TH-001~TH-007 7일 적응형 콘텐츠 세트를 게시 준비 상태로 정리했다. TH-001은 1인개발/앱개발 Topic 우선, 이후 게시 순서는 실제 반응에 따라 조정한다. 다음 액션은 TH-001 실제 게시와 반응 기록이며, Tistory는 Threads 반응과 연계해 TI-001 주제를 결정한다.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -26,7 +26,7 @@
       "active": 8,
       "experiments": 1,
       "decisions": 2,
-      "updated": "2026-09-28",
+      "updated": "2026-10-01",
       "description": "JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"
     }
   ],
@@ -624,7 +624,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads와 Tistory를 핵심 Owned Channel로 집중 운영. Threads는 개발자/AI/1인개발 Build-in-Public 기반 빠른 실험, Tistory는 긴 기록·검색 자산. 각 콘텐츠에 TH-001/TI-001 ID와 UTM을 적용하고 다음 콘텐츠는 실제 반응·Store 행동 기준으로 결정."
+      "summary": "Threads/Tistory를 핵심 Owned Channel로 운영. @journeymin.creator의 개발자·AI·1인개발 정체성을 유지한 TH-001~TH-007 게시 준비본과 Topic/Community 우선순위를 확정했다. TH-001만 첫 글로 고정하고 이후 순서는 실제 반응에 따라 조정. 링크 사용 시 콘텐츠 ID별 UTM 적용."
     },
     {
       "id": "RES-004",
@@ -656,14 +656,14 @@
       "featureId": "FEAT-001",
       "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "participants": [
         "Product",
         "Growth",
         "Discovery",
         "Red Team"
       ],
-      "summary": "Store/Threads/Tistory 메시지가 실제 Saytence 1.0.6 기능과 정확히 일치하도록 검토하고 JLPT-first 포지셔닝을 유지한다."
+      "summary": "TH-001~TH-007 문구를 실제 Saytence 1.0.6 기능 범위 안에서 검토. JLPT/N5·N4·N3/자유 회독/알아요·헷갈려요·다시 볼래요/약한 카드 복습 표현은 실제 기능과 일치하도록 유지하고 과장 표현은 배제."
     },
     {
       "id": "DAT-002",
@@ -683,7 +683,7 @@
         "Product",
         "COO"
       ],
-      "summary": "Threads/Tistory별 UTM Store 방문 → Install → first_open → study_session_started → study_session_completed를 같은 정의로 기록. 콘텐츠 ID는 TH-001/TI-001 형식으로 관리하고 하루 1회 Raw Count를 Metric Log에 기록."
+      "summary": "측정 계약 확정: Threads/Tistory UTM → Store 방문 → Install → first_open → study_session_started → study_session_completed. 실제 링크는 게시 시 생성하고 GA4 Funnel 구축은 콘텐츠 실행 이후 진행. 하루 1회 Raw Count는 Notion Metric Log에 기록."
     },
     {
       "id": "ENG-002",
@@ -715,13 +715,13 @@
       "featureId": "FEAT-001",
       "status": "IN_PROGRESS",
       "progress": 0,
-      "updated": "2026-09-30",
+      "updated": "2026-10-01",
       "participants": [
         "Product",
         "Growth",
         "Discovery"
       ],
-      "summary": "과장·오해·경쟁사와의 비차별 메시지를 공격적으로 검토하고 실제 설치 동기가 약한 카피를 제거"
+      "summary": "첫 7일 콘텐츠를 광고 계정화 위험, 설치 8명 반복 피로, 개발자 반응을 Growth로 오인할 위험 관점에서 검토. 개발자 정체성을 본체로 유지하고 Saytence 직접 제품 글은 제한적으로 배치."
     },
     {
       "id": "REV-001",
@@ -1536,17 +1536,43 @@
       "url": "https://github.com/journeymin79/ai-app-studio-hq/blob/main/docs/AI_APP_STUDIO_CURRENT_STATE.md",
       "command": "CMD-002",
       "sprintId": "SPR-001"
+    },
+    {
+      "id": "ART-018",
+      "title": "SPR-001 Acquisition Measurement Plan — Threads + Tistory",
+      "app": "Saytence",
+      "team": "Data / Growth / COO",
+      "type": "Growth Measurement Plan",
+      "date": "2026-10-01",
+      "summary": "Threads/Tistory UTM 규칙, Google Play Store 방문, Firebase/GA4 first_open→study_session_started→study_session_completed Funnel, Daily Raw Count 기록 규칙을 확정. Funnel 실제 구축은 콘텐츠 실행 후 진행.",
+      "url": "https://app.notion.com/p/3ec5b7c4aa3081cdbd18dec358941f04",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ART-019",
+      "title": "Threads 7일 콘텐츠 세트 — TH-001~TH-007",
+      "app": "Saytence",
+      "team": "Growth / Strategy / Discovery / Product / Data / Red Team / COO",
+      "type": "Content Draft",
+      "date": "2026-10-01",
+      "summary": "@journeymin.creator의 개발자·AI·1인개발 정체성을 유지하면서 Saytence를 실제 제품 사례로 연결한 7개 Threads 게시 준비본. 글별 Topic/Community, 링크 여부, Tistory bridge, 적응형 게시 규칙 포함.",
+      "url": "https://app.notion.com/p/3ec5b7c4aa3081b0bdc2fec46672f644",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "status": "REVIEW"
     }
   ],
   "experiments": [
     {
       "id": "EXP-001",
       "app": "Saytence",
-      "title": "Threads 문제/메시지 2주 파일럿",
+      "title": "Threads/Tistory Owned Channel Growth Pilot",
       "team": "Growth",
       "date": "2026-09-29",
       "status": "ACTIVE",
-      "summary": "Store ASO 개편과 연결해 Threads 14일 동안 문제/학습법/개발이유/실사용 흐름 메시지를 테스트하고 link clicks→install 변화를 관찰한다.",
+      "summary": "개발자·AI·1인개발 개인브랜드를 유지하면서 Threads를 빠른 대화/반응 실험 채널로, Tistory를 긴 기록·검색 자산으로 운영한다. Threads TH-001~TH-007은 사전 작성하되 실제 게시 순서는 반응 기반으로 조정하고, 링크가 필요한 콘텐츠에만 UTM을 적용한다.",
       "command": "CMD-002",
       "sprintId": "SPR-001"
     }
@@ -1871,6 +1897,24 @@
       "authorRole": "독립 AI 팀 Round Table",
       "type": "DISCUSSION",
       "content": "운영 컨텍스트를 공통 입력으로 독립 의견/반론 수행. Growth: 제작자의 사용자찾기 고민+실제제품장면 후보. Discovery: 기존독자 중 학습관심 교집합과 지인전달은 별도 가설, Tistory는 관측후 작성 권고. Product/Data: 제작자 공감과 학습목적 응답/체험 구분. Red Team: Tistory를 반드시 뒤로 미룰 근거 없음, 실제 기록 유무로 판단. Growth 재조정: 결과 없어도 후보비교·선택/기각이유·실험측정이 독자에게 가치있으면 사전기록 가능. COO: 마케팅 일반고민보다 실제 제품선택과학습장면을 중심에 연결하는 후보가 더 구체적이라는 잠정의견. 주제·게시순서 아직 결정아님, 게시/성과 없음."
+    },
+    {
+      "id": "DISC-025",
+      "taskId": "DAT-002",
+      "date": "2026-10-01",
+      "team": "Data / Growth / COO",
+      "authorRole": "Measurement Contract",
+      "type": "DECISION",
+      "content": "측정 실행 순서 확정. 게시물 링크는 실제 글 작성/연결 시 TH-001/TI-001 ID에 맞춰 UTM 생성. GA4 Funnel은 콘텐츠 실행 이후 first_open→study_session_started→study_session_completed로 구축. 지금은 측정 도구 구축보다 Threads 콘텐츠 실행을 우선."
+    },
+    {
+      "id": "DISC-026",
+      "taskId": "GRO-004",
+      "date": "2026-10-01",
+      "team": "Strategy / Growth / Discovery / Product / Data / Red Team / COO",
+      "authorRole": "Cross-team Round Table",
+      "type": "REVIEW",
+      "content": "Threads 7일 전략 확정. 계정 본체는 개발자/AI/1인개발이며 Saytence는 실제 제품 사례로 등장. TH-001은 1인개발→앱개발 Topic 우선. TH-004/005는 일본어/JLPT 학습자 신호 탐색. 7개 초안은 사전 준비하되 TH-001 이후 순서는 실제 반응에 따라 조정. Tistory는 TH-001/003/006을 우선 장문 후보로 두고 Threads 반응 후 TI-001 최종 결정."
     }
   ],
   "releases": [
@@ -1995,5 +2039,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.4"
+  "dashboardVersion": "3.5"
 }
