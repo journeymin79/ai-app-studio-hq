@@ -1,4 +1,4 @@
-# AI APP STUDIO — CURRENT STATE
+# 79's Labs — CURRENT STATE
 
 > 현재 회사의 실행 상태.  
 > 장기 운영 규칙은 `AI_APP_STUDIO_OPERATING_CONTEXT.md`.
@@ -10,7 +10,7 @@
 ## 1. Executive Snapshot
 
 ```
-Company: AI APP STUDIO
+Company: 79's Labs
 Current App: Saytence
 
 Current Command:
