@@ -3,7 +3,7 @@
 > 현재 회사의 실행 상태.  
 > 장기 운영 규칙은 `AI_APP_STUDIO_OPERATING_CONTEXT.md`.
 >
-> **Last reconciled: 2026-10-01**
+> **Last reconciled: 2026-10-02**
 >
 > Live Dashboard/Product Source가 더 최신이면 Live Source를 우선하고 이 파일을 갱신한다.
 
@@ -142,6 +142,13 @@ https://journeylabs.tistory.com
 - 실제 데이터/시행착오
 - 검색에 남는 evidence
 - Journey Coach 개발/AI/커리어 정체성 유지
+
+Current execution:
+- ART-020 — TI-001~TI-007 Tistory 7개 운영안 ACTIVE
+- TI-001 — 2026-10-02 등록 완료
+- TI-001 핵심: 계속 만드는 개발자 → 이미 출시된 Saytence 하나를 실제로 키우는 8→100 실험
+- TI-002~TI-007은 계획에 따라 순차 실행
+- 단일 게시물 반응으로 전략 변경하지 않음
 
 금지:
 
@@ -346,14 +353,14 @@ Qualified JLPT/user signal
 - 일본어/JLPT 학습자 신호 → TH-004 / TH-005
 - 광고 피로 신호 → TH-006 / TH-007
 
-### 4. Tistory TI-001 결정
+### 4. Tistory 실행
 
-우선 장문 후보:
-- TH-001 — 첫 100명 Growth 실험
-- TH-003 — 기능 개발을 멈춘 이유
-- TH-006 — AI 시대 Distribution 문제
-
-Threads 실제 반응을 확인한 후 TI-001 주제를 최종 선택.
+- TI-001: 2026-10-02 등록 완료
+- TI-002: AI로 앱 개발은 빨라졌는데, 출시 후가 더 어려웠다
+- TI-003: 사용자가 거의 없을 때 기능을 더 만들까, 먼저 검증할까
+- TI-004/005: JLPT 학습자 콘텐츠 — 누적 신호를 보고 우선순위 조정
+- TI-006: 실제 Funnel/Raw Count 확보 후
+- TI-007: 1~2주 Growth 실험 결과 확보 후
 
 ### 5. 측정 실행
 
@@ -371,7 +378,8 @@ Threads 실제 반응을 확인한 후 TI-001 주제를 최종 선택.
 
 - 최신 실제 설치수 미동기화
 - Store screenshot/public listing 최종 반영 미확인
-- TH-001 실제 게시/성과 아직 없음
+- Threads/Tistory 콘텐츠 성과는 아직 초기 관찰 단계
+- TI-001은 2026-10-02 등록 완료, 공개 URL은 Company OS에 아직 미기록
 - GA4 Funnel 실제 구축 전
 - ART-015 NEEDS_REVISION / 발행 미확인
 - Brunch는 범위 밖
@@ -502,3 +510,22 @@ Execution order:
 5. Notion Metric Log에 Daily Raw Count 기록
 
 현재는 측정 도구 추가 개발보다 Threads 실제 실행이 우선이다.
+
+
+## 19. 2026-10-02 Tistory Execution
+
+Artifacts:
+- ART-020 — Tistory 7개 콘텐츠 기획 — TI-001~TI-007
+- ART-021 — TI-001 — Tistory 첫 100명 실험 글
+
+TI-001:
+- Status: PUBLISHED / content record FINAL
+- Date: 2026-10-02
+- Core message: AI를 활용해 계속 제품을 만드는 개발자가, 이번에는 이미 출시된 Saytence 하나를 골라 실제 사용자 수를 8→100으로 늘리는 Growth 실험에 집중
+- Public post URL: 아직 Company OS에 미기록
+- Performance: 관찰 중
+
+Decision rule:
+- 개별 댓글/단일 게시물 반응은 참고 신호
+- 7개 콘텐츠 운영안은 유지
+- 반복 패턴과 실제 Store/Install/Learning 행동 데이터가 쌓일 때 전략 변경 검토
