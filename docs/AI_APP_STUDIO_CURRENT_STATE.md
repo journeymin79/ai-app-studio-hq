@@ -115,8 +115,9 @@ https://www.threads.com/@journeymin.creator
 - JLPT 전문가 계정처럼 전환하지 않음
 - 고정 게시 캘린더는 사용하지 않음
 - TH-001~TH-007 7개 게시 준비본은 사전 작성 완료
-- TH-001만 첫 글로 고정
-- TH-002~007은 실제 반응에 따라 순서 조정
+- TH-001 게시 완료
+- TH-002 2026-10-02 게시 완료
+- TH-003~007은 기존 기획 축을 유지하며 순차 실행
 - Topic / Community는 글의 실제 주제에 맞는 1개를 우선 사용
 - TH-001: 1인개발 → 앱개발 우선
 - TH-004/005: 일본어 / JLPT 학습자 신호 탐색
@@ -205,17 +206,17 @@ Next:
 Status: IN_PROGRESS
 Progress: 10%
 
-Prepared:
-- ART-019 — TH-001~TH-007 7일 게시 준비본
+Prepared / Executed:
+- ART-019 — TH-001~TH-007 7일 운영 세트 ACTIVE
 - 계정 본체: 개발자 / AI / 1인개발
 - Saytence는 실제 제품 사례로만 연결
-- 글별 Topic/Community 우선순위와 Tistory bridge 정의
-- TH-001만 첫 게시로 고정
+- TH-001 게시 완료
+- TH-002 2026-10-02 게시 완료
+- 현재 TH-001/TH-002 반응 관찰 중
 
 Next:
-- TH-001 실제 게시
-- 답글/프로필 이동/Store 행동 관찰
-- 이후 TH-002~007 순서는 반응 기반 결정
+- TH-003~TH-007 계획에 따라 순차 실행
+- 개별 댓글이 아니라 누적 반응과 Store 행동을 기준으로 판단
 
 ### RES-004 — JLPT Threads 대화·문제 신호 발굴
 Status: TODO
@@ -529,3 +530,12 @@ Decision rule:
 - 개별 댓글/단일 게시물 반응은 참고 신호
 - 7개 콘텐츠 운영안은 유지
 - 반복 패턴과 실제 Store/Install/Learning 행동 데이터가 쌓일 때 전략 변경 검토
+
+
+## 20. 2026-10-02 Threads Execution
+
+- TH-001: PUBLISHED / reaction monitoring
+- TH-002: PUBLISHED on 2026-10-02 / reaction monitoring
+- ART-019 status: ACTIVE
+- Decision rule: 개별 댓글이나 단일 게시 반응으로 콘텐츠 전략을 바꾸지 않는다.
+- Next: TH-003~TH-007을 기존 기획 축에 따라 순차 실행하고 누적 반응 및 Store/Install/Learning 데이터를 확인한다.
