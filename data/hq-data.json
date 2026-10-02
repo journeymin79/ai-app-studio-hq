@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-02: Tistory 7개 장문 콘텐츠 운영안을 확정하고 TI-001을 실제 등록했다. TI-001은 '계속 만드는 개발자'에서 '이미 출시된 Saytence 하나를 실제로 키워보는 실험'으로 포지셔닝했으며, 누적 설치 8→100 Growth 실험의 첫 Tistory 실행이다. 단일 게시물 반응으로 전략을 흔들지 않고 Threads/Tistory 누적 패턴과 Store→Install→First Learning→Session Complete 행동 데이터를 기준으로 판단한다.",
+    "todaySummary": "2026-10-02: TI-001 Tistory 등록에 이어 Threads TH-002도 게시 완료. TH-001/TH-002는 현재 반응 관찰 단계이며 개별 반응으로 전략을 흔들지 않고 7개 콘텐츠 계획을 유지한다. 다음 실행은 TH-003~TH-007 및 TI-002 이후 콘텐츠를 계획에 따라 진행하면서 누적 반응과 Store→Install→First Learning→Session Complete 행동 데이터를 확인하는 것.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -624,7 +624,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads/Tistory Owned Channel 실행 단계. TH-001~TH-007과 TI-001~TI-007 운영안을 준비했고, TI-001은 2026-10-02 Tistory에 실제 등록 완료. 이후 개별 댓글/단일 게시 반응이 아니라 누적 반응과 Store 행동 데이터를 기준으로 다음 콘텐츠와 우선순위를 조정한다."
+      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 게시 완료, TH-002는 2026-10-02 게시 완료, TI-001도 등록 완료. 나머지 콘텐츠는 기존 7개 기획 축을 유지하며 누적 반응과 실제 Store/Install/Learning 행동 데이터 기준으로 순차 실행."
     },
     {
       "id": "RES-004",
@@ -1950,6 +1950,15 @@
       "authorRole": "Execution Update",
       "type": "DECISION",
       "content": "TI-001 Tistory 등록 완료. 단일 게시물 반응이나 개별 댓글은 참고 신호로만 기록하고 7개 콘텐츠 운영안과 Sprint 가설을 유지한다. 전략 변경은 반복 패턴, Store 행동, Install, First Learning, Session Complete 등 누적 데이터가 확인될 때 검토한다."
+    },
+    {
+      "id": "DISC-028",
+      "taskId": "GRO-004",
+      "date": "2026-10-02",
+      "team": "CEO / Growth / COO",
+      "authorRole": "Execution Update",
+      "type": "UPDATE",
+      "content": "TH-002 Threads 게시 완료. TH-001/TH-002 모두 반응 관찰 중이며 개별 댓글이나 단일 게시 성과로 전략을 변경하지 않는다. 7개 콘텐츠 계획을 유지하고 누적 반응과 실제 행동 데이터를 기준으로 다음 실행을 판단한다."
     }
   ],
   "releases": [
@@ -2074,5 +2083,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.6"
+  "dashboardVersion": "3.7"
 }
