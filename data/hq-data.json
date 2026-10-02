@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-01: Threads/Tistory Growth 실행 전 측정 계약을 확정하고, @journeymin.creator 계정 정체성에 맞춘 TH-001~TH-007 7일 적응형 콘텐츠 세트를 게시 준비 상태로 정리했다. TH-001은 1인개발/앱개발 Topic 우선, 이후 게시 순서는 실제 반응에 따라 조정한다. 다음 액션은 TH-001 실제 게시와 반응 기록이며, Tistory는 Threads 반응과 연계해 TI-001 주제를 결정한다.",
+    "todaySummary": "2026-10-02: Tistory 7개 장문 콘텐츠 운영안을 확정하고 TI-001을 실제 등록했다. TI-001은 '계속 만드는 개발자'에서 '이미 출시된 Saytence 하나를 실제로 키워보는 실험'으로 포지셔닝했으며, 누적 설치 8→100 Growth 실험의 첫 Tistory 실행이다. 단일 게시물 반응으로 전략을 흔들지 않고 Threads/Tistory 누적 패턴과 Store→Install→First Learning→Session Complete 행동 데이터를 기준으로 판단한다.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -26,7 +26,7 @@
       "active": 8,
       "experiments": 1,
       "decisions": 2,
-      "updated": "2026-10-01",
+      "updated": "2026-10-02",
       "description": "JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"
     }
   ],
@@ -616,7 +616,7 @@
       "featureId": "FEAT-002",
       "status": "IN_PROGRESS",
       "progress": 10,
-      "updated": "2026-10-01",
+      "updated": "2026-10-02",
       "participants": [
         "Growth",
         "Discovery",
@@ -624,7 +624,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads/Tistory를 핵심 Owned Channel로 운영. @journeymin.creator의 개발자·AI·1인개발 정체성을 유지한 TH-001~TH-007 게시 준비본과 Topic/Community 우선순위를 확정했다. TH-001만 첫 글로 고정하고 이후 순서는 실제 반응에 따라 조정. 링크 사용 시 콘텐츠 ID별 UTM 적용."
+      "summary": "Threads/Tistory Owned Channel 실행 단계. TH-001~TH-007과 TI-001~TI-007 운영안을 준비했고, TI-001은 2026-10-02 Tistory에 실제 등록 완료. 이후 개별 댓글/단일 게시 반응이 아니라 누적 반응과 Store 행동 데이터를 기준으로 다음 콘텐츠와 우선순위를 조정한다."
     },
     {
       "id": "RES-004",
@@ -1562,6 +1562,32 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "status": "REVIEW"
+    },
+    {
+      "id": "ART-020",
+      "title": "Tistory 7개 콘텐츠 기획 — TI-001~TI-007",
+      "app": "Saytence",
+      "team": "Growth / Strategy / Discovery / Product / Data / Red Team / COO",
+      "type": "Growth Plan",
+      "date": "2026-10-02",
+      "summary": "Tistory 장문 7개 운영안. 1인개발·앱 출시·AI·사용자 확보를 본체로 하고 Saytence/JLPT는 실제 제품 경험으로 연결. TI-001은 2026-10-02 등록 완료.",
+      "url": "https://app.notion.com/p/3ed5b7c4aa308122bc03fa21523fe40d",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "ART-021",
+      "title": "TI-001 — Tistory 첫 100명 실험 글",
+      "app": "Saytence",
+      "team": "Growth / COO",
+      "type": "Content Draft",
+      "date": "2026-10-02",
+      "summary": "AI로 계속 제품을 만드는 개발자가 이번에는 이미 출시된 Saytence 하나를 골라 실제 사용자 수 8→100을 검증하기 시작한 첫 Tistory 실행 글. 2026-10-02 등록 완료, 성과 관찰 중.",
+      "url": "https://app.notion.com/p/3ed5b7c4aa3081bfb7c7ecb8513b3e3c",
+      "command": "CMD-002",
+      "sprintId": "SPR-001",
+      "status": "FINAL"
     }
   ],
   "experiments": [
@@ -1915,6 +1941,15 @@
       "authorRole": "Cross-team Round Table",
       "type": "REVIEW",
       "content": "Threads 7일 전략 확정. 계정 본체는 개발자/AI/1인개발이며 Saytence는 실제 제품 사례로 등장. TH-001은 1인개발→앱개발 Topic 우선. TH-004/005는 일본어/JLPT 학습자 신호 탐색. 7개 초안은 사전 준비하되 TH-001 이후 순서는 실제 반응에 따라 조정. Tistory는 TH-001/003/006을 우선 장문 후보로 두고 Threads 반응 후 TI-001 최종 결정."
+    },
+    {
+      "id": "DISC-027",
+      "taskId": "GRO-004",
+      "date": "2026-10-02",
+      "team": "CEO / Growth / Data / COO",
+      "authorRole": "Execution Update",
+      "type": "DECISION",
+      "content": "TI-001 Tistory 등록 완료. 단일 게시물 반응이나 개별 댓글은 참고 신호로만 기록하고 7개 콘텐츠 운영안과 Sprint 가설을 유지한다. 전략 변경은 반복 패턴, Store 행동, Install, First Learning, Session Complete 등 누적 데이터가 확인될 때 검토한다."
     }
   ],
   "releases": [
@@ -2039,5 +2074,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.5"
+  "dashboardVersion": "3.6"
 }
