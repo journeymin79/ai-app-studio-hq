@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-02: TI-001 Tistory 등록에 이어 Threads TH-002도 게시 완료. TH-001/TH-002는 현재 반응 관찰 단계이며 개별 반응으로 전략을 흔들지 않고 7개 콘텐츠 계획을 유지한다. 다음 실행은 TH-003~TH-007 및 TI-002 이후 콘텐츠를 계획에 따라 진행하면서 누적 반응과 Store→Install→First Learning→Session Complete 행동 데이터를 확인하는 것.",
+    "todaySummary": "2026-10-05: 첫 콘텐츠 성과 스냅샷 기록. Threads TH-001은 조회 339/좋아요 3/댓글 3, TH-002는 조회 495/좋아요 15/댓글 8로 TH-002가 조회 약 46% 높고 상호작용도 더 강했다. Tistory TI-001은 조회 1로 아직 원인 판정 불가. 단일 게시물 결과로 전략을 바꾸지 않고 7개 콘텐츠 계획을 유지하며 누적 패턴을 본다.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -616,7 +616,7 @@
       "featureId": "FEAT-002",
       "status": "IN_PROGRESS",
       "progress": 10,
-      "updated": "2026-10-02",
+      "updated": "2026-10-05",
       "participants": [
         "Growth",
         "Discovery",
@@ -624,7 +624,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 게시 완료, TH-002는 2026-10-02 게시 완료, TI-001도 등록 완료. 나머지 콘텐츠는 기존 7개 기획 축을 유지하며 누적 반응과 실제 Store/Install/Learning 행동 데이터 기준으로 순차 실행."
+      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 339 views/3 likes/3 comments, TH-002 495 views/15 likes/8 comments, TI-001 Tistory 1 view. TH-002가 초기 반응은 우세하지만 2개 게시물만으로 전략 변경하지 않고 기존 7개 기획을 계속 실행하며 누적 패턴을 확인."
     },
     {
       "id": "RES-004",
@@ -1959,6 +1959,15 @@
       "authorRole": "Execution Update",
       "type": "UPDATE",
       "content": "TH-002 Threads 게시 완료. TH-001/TH-002 모두 반응 관찰 중이며 개별 댓글이나 단일 게시 성과로 전략을 변경하지 않는다. 7개 콘텐츠 계획을 유지하고 누적 반응과 실제 행동 데이터를 기준으로 다음 실행을 판단한다."
+    },
+    {
+      "id": "DISC-029",
+      "taskId": "GRO-004",
+      "date": "2026-10-05",
+      "team": "CEO / Growth / Data / COO",
+      "authorRole": "Performance Snapshot",
+      "type": "FINDING",
+      "content": "CEO 제공 초기 성과: TH-001 조회 339/좋아요 3/댓글 3, TH-002 조회 495/좋아요 15/댓글 8, TI-001 Tistory 조회 1. TH-002가 조회와 상호작용에서 우세하나 표본은 Threads 2건, Tistory 1건뿐이므로 채널/주제 전략 변경 근거로 사용하지 않고 방향성 신호로만 기록."
     }
   ],
   "releases": [
@@ -2083,5 +2092,5 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.7"
+  "dashboardVersion": "3.8"
 }
