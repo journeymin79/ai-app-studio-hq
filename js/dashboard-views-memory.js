@@ -11,52 +11,63 @@ H.views.metrics=()=>{H.head('DATA','Metrics','실제 수치만 표시하고 미�
 
 
 H.views.organization=()=>{
-  H.head('COMPANY','Organization','CEO → COO → 전문 조직의 역할·현재 참여 업무·보고서·인력 구성을 한눈에 확인');
-  const teams=D().teams||[], agents=D().agents||[];
-  const coo=teams.find(x=>x.name==='COO');
-  const departments=teams.filter(x=>x.name!=='COO');
-  const red=agents.find(x=>x.id==='red-team');
+  H.head('COMPANY','Organization','현재 실행조직·Product Owner·Governance·Capabilities를 역할 유형별로 분리해 표시');
+  const teams=D().teams||[], agents=D().agents||[], caps=D().capabilities||[];
+  const coo=teams.find(x=>x.id==='coo'||x.name==='COO');
+  const departments=teams.filter(x=>x!==coo);
+  const governance=D().governance||{};
   const activeCommand=H.cmd();
+  const ownerAgents=agents.filter(x=>x.roleType==='owner');
+  const specialistAgents=agents.filter(x=>x.roleType!=='owner');
+  const productOwners=(D().apps||[]).map(a=>a.productOwner?{app:a.name,...a.productOwner}:null).filter(Boolean);
   const orgCard=t=>{
     const people=agents.filter(a=>a.team===t.name);
+    const teamCaps=caps.filter(a=>a.team===t.name);
     const tasks=D().tasks.filter(x=>x.team===t.name && H.isOpenTask(x));
-    const reports=D().artifacts.filter(x=>String(x.team).includes(t.name));
     return `<article class="org-team-card clickable" data-team="${H.e(t.id)}">
-      <div class="org-team-top"><div class="org-icon">${H.e(t.icon||'•')}</div><div class="grow"><span class="card-label">${H.e(t.ai||'')}</span><strong>${H.e(t.name)}</strong><p>${H.e(t.role||'')}</p></div>${H.badge(t.status||'','blue')}</div>
-      <div class="mini-stats"><div class="mini-stat"><span>Roles</span><strong>${people.length}</strong></div><div class="mini-stat"><span>Open Tasks</span><strong>${tasks.length}</strong></div><div class="mini-stat"><span>Reports</span><strong>${reports.length}</strong></div></div>
-      <div class="org-members">${people.slice(0,4).map(a=>`<span>${H.e(a.name)}</span>`).join('')||'<span>등록 역할 없음</span>'}</div>
+      <div class="org-team-top"><div class="org-icon">${H.e(t.icon||'•')}</div><div class="grow"><span class="card-label">${H.e(t.ai||'')}</span><strong>${H.e(t.name)}</strong><p>${H.e(t.role||'')}</p></div>${H.badge(t.evidenceMaturity||'STRONG','green')}</div>
+      <div class="mini-stats"><div class="mini-stat"><span>Owners / Specialists</span><strong>${people.length}</strong></div><div class="mini-stat"><span>Capabilities</span><strong>${teamCaps.length}</strong></div><div class="mini-stat"><span>Open Tasks</span><strong>${tasks.length}</strong></div></div>
+      <div class="org-members">${people.slice(0,5).map(a=>`<span>${H.e(a.name)}</span>`).join('')||'<span>Task별 Specialist 지정</span>'}</div>
     </article>`;
   };
+  const govItems=[
+    {name:'Strategy & Portfolio',icon:'🧭',desc:'CEO의 Portfolio Bet·Resource Allocation 의사결정 지원',obj:governance.strategyPortfolio},
+    {name:'Red Team',icon:'🛡️',desc:'중요한 가정·계획·해석을 독립적으로 Challenge',obj:governance.redTeam},
+    {name:'Security / Privacy / Compliance',icon:'🔐',desc:'위험이 있는 변경에만 작동하는 Release Governance Gate',obj:governance.securityPrivacyCompliance}
+  ];
+  const capGroups=teams.map(t=>({team:t,caps:caps.filter(x=>x.team===t.name)})).filter(x=>x.caps.length);
   H.el.root.innerHTML=`<div class="page-enter">
-    <section class="hero"><div class="hero-grid"><div><span class="kicker">COMPANY ORGANIZATION</span><h2>한 조직이 하나의 Sprint 목표를 향해 같이 움직입니다.</h2><p>조직도는 보고 체계만 보여주는 화면이 아니라, 각 조직이 현재 어떤 역할로 참여하고 어떤 Task·Report를 만들고 있는지 연결해서 보여줍니다.</p><div class="mission"><strong>현재 회사 운영</strong><br>${H.e(activeCommand?.id||'NO COMMAND')} · ${H.e(activeCommand?.title||'Active Command 없음')}</div></div><div class="metric-grid">${H.metric('Teams',teams.length)}${H.metric('Roles',agents.length)}${H.metric('Open Tasks',D().tasks.filter(H.isOpenTask).length)}${H.metric('Reports',D().artifacts.length)}${H.metric('Apps',D().apps.length)}${H.metric('Sprint',H.sprint()?.id||'Planning')}</div></div></section>
+    <section class="hero"><div class="hero-grid"><div><span class="kicker">CURRENT ORGANIZATION · V2</span><h2>조직원과 Capability를 분리한 현재 회사 구조</h2><p>Owner는 결과를 책임지고, Specialist는 전문적 진실을 소유하며, Capability는 필요할 때 호출합니다. Governance는 전략·독립검토·위험 상황에서만 개입합니다.</p><div class="mission"><strong>현재 운영</strong><br>${H.e(activeCommand?.id||'NO COMMAND')} · ${H.e(activeCommand?.title||'Active Command 없음')}</div></div><div class="metric-grid">${H.metric('Execution Teams',teams.length)}${H.metric('Owners',ownerAgents.length)}${H.metric('Specialists',specialistAgents.length)}${H.metric('Capabilities',caps.length)}${H.metric('Governance',govItems.length)}${H.metric('Active Products',(D().apps||[]).filter(x=>x.status==='active'||x.status==='ACTIVE').length||D().apps.length)}</div></div></section>
 
     <section class="org-chart">
       <div class="org-level org-level-top">
-        <article class="org-node org-ceo"><span class="org-role">CEO</span><strong>Founder / Final Decision</strong><p>제품·일정·공개·비용의 최종 의사결정</p></article>
+        <article class="org-node org-ceo"><span class="org-role">CEO</span><strong>Company Final Decision</strong><p>Mission · Portfolio · Major Resource · Major Pivot의 최종 책임</p></article>
       </div>
       <div class="org-connector"></div>
       <div class="org-level">
-        <article class="org-node org-coo clickable" data-team="${H.e(coo?.id||'coo')}"><span class="org-role">COO · ChatGPT</span><strong>Company Operations</strong><p>CEO와 Sprint를 계획하고, Task별 협업·쟁점·의존성·보고를 조율</p></article>
-      </div>
-      <div class="org-branch"></div>
-      <div class="org-departments stagger">${departments.map(orgCard).join('')}
-        ${red?`<article class="org-team-card special"><div class="org-team-top"><div class="org-icon">🛡️</div><div class="grow"><span class="card-label">INDEPENDENT CHALLENGE</span><strong>Red Team</strong><p>전략·제품·Growth 가정을 반박하고 리스크와 대안을 제시</p></div>${H.badge(red.status||'reviewing','violet')}</div><div class="org-members"><span>${H.e(red.name)}</span><span>${H.e(red.ai)}</span></div></article>`:''}
+        <article class="org-node org-coo clickable" data-team="${H.e(coo?.id||'coo')}"><span class="org-role">COO / COMPANY HQ</span><strong>Company Operating System DRI</strong><p>CEO Intent를 실행 구조로 바꾸고 Sprint·Dependency·Escalation을 조율</p></article>
       </div>
     </section>
 
-    ${section('How the company works','부서별 독립 프로젝트가 아니라 같은 Task에서 협의',`<div class="org-operating-flow">
-      <div><span>01</span><strong>CEO + COO</strong><p>Sprint Goal·기간·Feature 합의</p></div>
-      <div><span>02</span><strong>Round Table</strong><p>관련 팀 의견·반론·검증</p></div>
-      <div><span>03</span><strong>Task Collaboration</strong><p>Task 안에서 합의와 Action 도출</p></div>
-      <div><span>04</span><strong>Build / QA / Growth</strong><p>하나의 결과물로 실행</p></div>
-      <div><span>05</span><strong>Review</strong><p>Metric·사용자 반응을 다음 Sprint로 환류</p></div>
-    </div>`)}
+    ${section('Product Ownership','1 Active Product = 1 Accountable PO',`<div class="grid-3">${productOwners.map(po=>`<article class="card"><div class="card-title"><div><span class="card-label">PRODUCT MINI CEO</span><h3>👑 ${H.e(po.name)}</h3></div>${H.badge('OWNER','violet')}</div><p class="big-summary">${H.e(po.app)} · ${H.e(po.accountability||'End-to-end product/business outcome')}</p><p class="section-note">Portfolio Guardrail 안에서 Product Goal·Priority·Roadmap·Launch·Outcome 책임</p></article>`).join('')||H.empty('지정 Product Owner 없음')}</div>`)}
 
+    ${section('Execution Teams','현재 실제 운영팀 7개',`<div class="org-departments stagger">${departments.map(orgCard).join('')}</div>`)}
+
+    ${section('Governance','실행조직이 아니라 Strategy / Challenge / Risk Gate',`<div class="grid-3">${govItems.map(g=>`<article class="card"><div class="card-title"><div><span class="card-label">GOVERNANCE</span><h3>${g.icon} ${H.e(g.name)}</h3></div>${H.badge(g.obj?.evidenceMaturity||'STRONG','green')}</div><p class="big-summary">${H.e(g.desc)}</p><p class="section-note">${H.e(g.obj?.type||'strategy-triggered')}</p></article>`).join('')}</div>`)}
+
+    ${section('Capability Library','직원 수가 아니라 필요할 때 호출하는 전문 방법론·채널 Skill',`<div class="grid-3">${capGroups.map(g=>`<article class="card"><div class="card-title"><h3>${H.e(g.team.icon||'')} ${H.e(g.team.name)}</h3>${H.badge(g.caps.length+' CAP','blue')}</div><div class="org-members">${g.caps.map(x=>`<span>${H.e(x.name)}</span>`).join('')}</div></article>`).join('')}</div>`)}
+
+    ${section('Operating Flow','하나의 Decision에는 하나의 DRI',`<div class="org-operating-flow">
+      <div><span>01</span><strong>CEO / Current State</strong><p>방향과 현재 사실 확인</p></div>
+      <div><span>02</span><strong>DRI</strong><p>결과 책임자 1명 명확화</p></div>
+      <div><span>03</span><strong>Specialists / Capabilities</strong><p>판단을 바꿀 역할만 호출</p></div>
+      <div><span>04</span><strong>Decision & Execution</strong><p>Evidence·Trade-off 기반 실행</p></div>
+      <div><span>05</span><strong>Measure & Learn</strong><p>결과 측정 후 다음 판단으로 환류</p></div>
+    </div>`)}
   </div>`;
   H.el.root.querySelectorAll('[data-team]').forEach(x=>x.onclick=()=>H.openTeam(x.dataset.team));
   H.anim();
 };
-
 H.openTeam=id=>{
   const t=D().teams.find(x=>x.id===id||x.name===id); if(!t)return;
   const allTeams=D().teams||[], allAgents=D().agents||[];
@@ -211,8 +222,7 @@ H.openTeam=id=>{
   H.anim();
 };
 
-H.views.teams=()=>{H.head('ORGANIZATION','Teams','조직도가 아니라 각 팀이 어떤 일에 참여했고 무엇을 보고했는지 확인');const xs=D().teams;H.el.root.innerHTML=`<div class="page-enter"><section class="grid-3">${xs.map(t=>{const ts=D().tasks.filter(x=>x.team===t.name),rp=D().artifacts.filter(x=>String(x.team).includes(t.name)),ac=D().activities.filter(x=>String(x.team).includes(t.name));return `<article class="card clickable" data-team="${H.e(t.id)}"><div class="card-title"><div><div class="card-label">${H.e(t.ai)}</div><h3>${H.e(t.icon||'')} ${H.e(t.name)}</h3></div>${H.badge(t.status||'','blue')}</div><p class="big-summary">${H.e(t.summary)}</p><div class="mini-stats"><div class="mini-stat"><span>Tasks</span><strong>${ts.length}</strong></div><div class="mini-stat"><span>Reports</span><strong>${rp.length}</strong></div><div class="mini-stat"><span>History</span><strong>${ac.length}</strong></div></div></article>`}).join('')}</section></div>`;H.el.root.querySelectorAll('[data-team]').forEach(x=>x.onclick=()=>H.openTeam(x.dataset.team))};
-
+H.views.teams=()=>{H.head('ORGANIZATION','Execution Teams','현재 실행팀만 표시합니다. Capability와 Governance는 조직원 수에 포함하지 않습니다.');const xs=D().teams||[],agents=D().agents||[],caps=D().capabilities||[];H.el.root.innerHTML=`<div class="page-enter"><section class="grid-3">${xs.map(t=>{const people=agents.filter(a=>a.team===t.name),cp=caps.filter(a=>a.team===t.name),ts=D().tasks.filter(x=>x.team===t.name),rp=D().artifacts.filter(x=>String(x.team).includes(t.name));return `<article class="card clickable" data-team="${H.e(t.id)}"><div class="card-title"><div><div class="card-label">${H.e(t.ai||'')}</div><h3>${H.e(t.icon||'')} ${H.e(t.name)}</h3></div>${H.badge(t.evidenceMaturity||'STRONG','green')}</div><p class="big-summary">${H.e(t.role||t.summary||'')}</p><div class="mini-stats"><div class="mini-stat"><span>People Roles</span><strong>${people.length}</strong></div><div class="mini-stat"><span>Capabilities</span><strong>${cp.length}</strong></div><div class="mini-stat"><span>Tasks</span><strong>${ts.length}</strong></div><div class="mini-stat"><span>Reports</span><strong>${rp.length}</strong></div></div></article>`}).join('')}</section></div>`;H.el.root.querySelectorAll('[data-team]').forEach(x=>x.onclick=()=>H.openTeam(x.dataset.team));H.anim()};
 H.views.timeline=()=>{H.head('MEMORY','Timeline','Command · Activity · Decision · Report · Sprint · Release를 날짜순으로 통합');const xs=H.timelineData();H.el.root.innerHTML=`<div class="page-enter"><section class="hero"><div class="hero-grid"><div><span class="kicker">COMPANY MEMORY</span><h2>회사의 모든 일을 시간축으로 추적합니다.</h2><p>현재 상태는 Overview에서, 왜 그렇게 되었는지는 Timeline에서 확인합니다. 과거 기록을 오늘 상태로 덮어쓰지 않습니다.</p></div><div class="metric-grid">${H.metric('Events',xs.length)}${H.metric('Activities',H.visible(D().activities).length)}${H.metric('Reports',H.visible(D().artifacts).length)}${H.metric('Decisions',H.visible(D().decisions).length)}</div></div></section>${H.timeline(xs)}</div>`};
 
 H.views.releases=()=>{H.head('DELIVERY','Releases','실제 앱에 나간 변경만 Release 기록으로 남김');const xs=H.visible(D().releases);H.el.root.innerHTML=`<div class="page-enter"><section class="hero"><div class="hero-grid"><div><span class="kicker">RELEASE HISTORY</span><h2>설계 완료와 실제 출시를 구분합니다.</h2><p>문서나 계획이 끝났다고 Release로 기록하지 않습니다. 실제 배포된 버전과 포함 Feature, QA 결과, Store/Growth 연결을 기록합니다.</p></div><div class="metric-grid">${H.metric('Releases',xs.length)}${H.metric('Current app','Saytence')}${H.metric('Next Release','PREPARING')}</div></div></section>${xs.length?section('Release History','실제 배포 이력',`<div class="grid-2">${xs.map(x=>`<article class="card"><div class="card-title"><h3>${H.e(x.title)}</h3>${H.badge(x.status||'RELEASED','green')}</div><p class="big-summary">${H.e(x.summary)}</p><p class="section-note">${H.e(x.date||'')}</p></article>`).join('')}</div>`):H.empty('신규 운영모델 기준 Release 기록은 아직 없습니다.','Saytence는 이미 출시된 앱이지만, 이 운영판에서 추적할 다음 Release부터 버전 단위로 누적합니다.')}</div>`};
