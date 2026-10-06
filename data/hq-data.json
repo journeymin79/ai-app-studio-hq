@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-06: TI-001은 10/2 발행·Google 색인 등록 상태지만 Search Console 노출 0/클릭 0. 발행 4일 시점이라 콘텐츠 실패로 판정하지 않되, 10/12 종료인 SPR-001에서 Tistory Organic Search는 즉시 설치 확보 채널로 시간축이 맞지 않는다고 판단. Threads를 Primary Acquisition으로 유지하고 Tistory는 Secondary/Long-term Search Asset으로 조정. TI-001/002는 최소 7일 관찰, TI-003은 Query/SERP/Intent 검증 후 재설계.",
+    "todaySummary": "2026-10-06: Threads 최신 게시물은 168 views. 잠재사용자 댓글에서 Anki 대비 Saytence 전환 이유가 불명확하고 JLPT 타깃 Store에 영문 스크린샷이 섞여 메시지가 흐린다는 신호 확보. 단일 댓글로 제품 기능을 바꾸지 않고 GRO-003 Store ASO를 재검토한다. Threads는 Primary Acquisition, Tistory는 주 1~2회 Long-term Search Asset 운영.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -783,7 +783,7 @@
       "featureId": "FEAT-001",
       "status": "REVIEW",
       "progress": 0,
-      "updated": "2026-09-30",
+      "updated": "2026-10-06",
       "participants": [
         "Growth",
         "Product",
@@ -791,7 +791,7 @@
         "Data",
         "Engineering"
       ],
-      "summary": "앱명·간단한 설명·전체 설명 상단·첫 3개 스크린샷을 JLPT N5/N4/N3·짧은 회독·약한 카드 복습 중심으로 개편 2026-09-30 CEO가 기존 제안에 따른 Store 문구·설명 수정 완료를 보고. 스크린샷 변경 및 공개 listing 반영 여부는 별도 미확인."
+      "summary": "Store ASO 재검토. Threads 잠재사용자 피드백에서 'Anki 대비 전환 이유가 한눈에 안 보임', 'JLPT 타깃인데 영문 스크린샷이 메시지를 흐림' 신호 확인. 단일 댓글이므로 제품 개발은 유지 동결하고, 첫 3개 스크린샷/한 줄 가치제안에서 JLPT 대상·빠른 회독·약한 카드 반복의 차별점을 더 명확히 보여주는 방향을 검토."
     },
     {
       "id": "GRO-004",
