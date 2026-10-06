@@ -27,7 +27,15 @@
       "experiments": 1,
       "decisions": 2,
       "updated": "2026-10-02",
-      "description": "JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱"
+      "description": "JLPT 단어·문장을 중심으로 카드 회독, 듣기, 녹음, 복습을 제공하며 개인 자료를 다른 언어에도 적용할 수 있는 언어 학습 앱",
+      "productOwner": {
+        "role": "Product Owner",
+        "agentId": "pm",
+        "name": "Saytence Product Owner",
+        "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081fd9bbef96a2e7d8703",
+        "siloOperatingModelUrl": "https://app.notion.com/p/3f15b7c4aa30810b9be1f4d4959f1945",
+        "accountability": "End-to-end Saytence product and business outcomes within CEO/portfolio guardrails"
+      }
     }
   ],
   "teams": [
@@ -77,7 +85,7 @@
       "id": "product",
       "name": "Product",
       "icon": "🧠",
-      "role": "Product strategy, opportunity discovery, 0→1/new product, existing-product improvement, UX/design, PRD, launch, and outcome ownership",
+      "role": "Product Owner-led Product Silo: product/business strategy, discovery, UX, delivery alignment, launch, and measurable outcome ownership",
       "ai": "ChatGPT",
       "status": "reviewing",
       "apps": [
@@ -89,7 +97,7 @@
       "summary": "카드 플레이어는 유지 가치가 높다. 문제 후보는 기능 부족보다 가치 전달, 학습 진입, 단기 목표와 성과 체감이다.",
       "currentGoal": "Saytence의 빠른 학습 장점을 보존하면서 자유 회독·세션 완료·약한 카드 재진입을 구현 가능한 제품 경험으로 구체화한다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
-      "operatingInstruction": "Product is the Product Decision Engine, not a feature/PRD factory. Every meaningful product change starts with Opportunity and Evidence. Existing-product improvement and 0→1 new product follow separate flows. New apps require Strategy & Portfolio / CEO Explore Gate before Product Discovery. Significant Product Discovery uses PM + Product Design + Tech Lead as the core trio, adding Discovery/Data/Growth/Revenue/Red Team only as needed.",
+      "operatingInstruction": "Each active product has exactly one accountable Product Owner. The PO acts as the product mini-CEO inside CEO/portfolio guardrails: owns product/business goals, KPIs, priorities, monetization direction, roadmap logic, cross-functional alignment, launch and outcome review. PO does not override specialist professional truth. Product lifecycle skills are capabilities the PO invokes, not separate product owners.",
       "specialistSkills": {
         "productManagement": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
         "uxWriting": "https://app.notion.com/p/3f15b7c4aa3081dda0e0caebfbd05e6a",
@@ -106,6 +114,51 @@
         "existingImprovement": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d",
         "prd": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1",
         "launchOutcome": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b"
+      },
+      "productOwnerModelUrl": "https://app.notion.com/p/3f15b7c4aa3081fd9bbef96a2e7d8703",
+      "productSiloModelUrl": "https://app.notion.com/p/3f15b7c4aa30810b9be1f4d4959f1945",
+      "silo": {
+        "ownerAgentId": "pm",
+        "owner": "Product Owner — Saytence",
+        "coreRoles": [
+          {
+            "team": "Product",
+            "role": "Product Owner",
+            "agentId": "pm"
+          },
+          {
+            "team": "Product",
+            "role": "Interaction / Product Design",
+            "agentId": "ux"
+          },
+          {
+            "team": "Engineering",
+            "role": "Tech Lead",
+            "agentId": "tech-lead"
+          },
+          {
+            "team": "Data",
+            "role": "Product Analytics",
+            "agentId": "product-analytics"
+          }
+        ],
+        "elasticRoles": [
+          "Discovery / Research",
+          "Growth",
+          "Revenue",
+          "QA / Release",
+          "UX Writing",
+          "Accessibility & Localization",
+          "Red Team"
+        ],
+        "decisionRights": {
+          "productOwner": "Integrated product/business decision within approved guardrails; product goals, priorities, scope, roadmap, product-level business and monetization recommendations, lifecycle decisions.",
+          "productDesign": "Final professional judgment on UX/design quality; PO may challenge and resolve trade-offs but should not casually override domain truth.",
+          "engineering": "Technical truth, architecture safety, feasibility and implementation integrity.",
+          "data": "Metric definition, analytical validity and experiment interpretation.",
+          "qaRelease": "Critical release/quality gates.",
+          "ceoStrategy": "New app, major pivot, major resource reallocation, major business-model change, large spend, explicit CEO-decision reversal."
+        }
       }
     },
     {
@@ -249,14 +302,17 @@
     },
     {
       "id": "pm",
-      "name": "Product Manager",
+      "name": "Product Owner — Saytence",
       "team": "Product",
       "ai": "ChatGPT",
-      "mission": "리서치를 제품 전략과 우선순위로 변환",
+      "mission": "Saytence의 고객문제·Product Strategy·핵심지표·우선순위·사업/수익화 방향·Silo 정렬·출시·성과를 End-to-End로 책임지는 Mini CEO",
       "status": "reviewing",
       "app": "Saytence",
       "task": "제품 포지셔닝 가설 정리",
-      "opinion": "Primary는 'JLPT 단어·문장을 실제로 외워지게 만드는 회독 앱', 다국어는 개인 자료를 같은 방식으로 학습하는 확장 가치로 두는 방향이 가장 일관적이다."
+      "opinion": "Primary는 'JLPT 단어·문장을 실제로 외워지게 만드는 회독 앱', 다국어는 개인 자료를 같은 방식으로 학습하는 확장 가치로 두는 방향이 가장 일관적이다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081fd9bbef96a2e7d8703",
+      "operatingInstruction": "Act as the single accountable PO for Saytence. Own outcomes, not documents. Use Product lifecycle capabilities and cross-functional specialists as needed; make product decisions within delegated authority and escalate only portfolio/CEO boundary decisions.",
+      "roleType": "owner"
     },
     {
       "id": "ux",
@@ -502,12 +558,15 @@
     },
     {
       "id": "product-lead",
-      "name": "Product Lead / Strategy",
+      "name": "Product Strategy — PO Support",
       "team": "Product",
       "ai": "ChatGPT",
-      "mission": "Product strategy·goal·outcome·prioritization·roadmap logic·product lifecycle 판단",
+      "mission": "PO의 Product Strategy·Goal·Outcome·Prioritization 판단을 지원하는 전문 Capability",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     },
     {
       "id": "product-discovery",
@@ -516,7 +575,10 @@
       "ai": "ChatGPT",
       "mission": "의미 있는 Product Bet 전 문제·Value·Usability·Feasibility·Viability 검증",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     },
     {
       "id": "new-product-0to1",
@@ -525,7 +587,10 @@
       "ai": "ChatGPT",
       "mission": "Portfolio Explore Gate 통과 후 신규 앱의 문제검증·제품 Thesis·MVP·Launch Validation 주도",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     },
     {
       "id": "existing-product-improvement",
@@ -534,7 +599,10 @@
       "ai": "ChatGPT",
       "mission": "운영중 앱의 데이터·VOC·Growth·Usability·Reliability 신호를 근거로 개선 우선순위와 반복학습 주도",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     },
     {
       "id": "prd-definition",
@@ -543,7 +611,10 @@
       "ai": "ChatGPT",
       "mission": "Discovery를 통과한 Product Bet을 실행 가능한 Product Definition/PRD로 변환",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     },
     {
       "id": "product-launch-outcome",
@@ -552,7 +623,10 @@
       "ai": "ChatGPT",
       "mission": "출시 준비·GTM 정합·출시후 Product Outcome/Learning 판정",
       "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b"
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b",
+      "roleType": "capability",
+      "ownerAgentId": "pm",
+      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     }
   ],
   "commands": [
@@ -1705,6 +1779,26 @@
         "Red Team"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-016",
+      "app": "Company",
+      "title": "앱별 Product Owner(Mini CEO) 및 Product Silo 도입",
+      "team": "Product",
+      "status": "DECIDED",
+      "summary": "각 Active Product에 단일 Product Owner를 지정한다. PO는 CEO/Portfolio Guardrail 안에서 고객문제, 제품전략, 목표/KPI, 우선순위, 사업·수익화 방향, Cross-functional Silo 정렬, 출시와 Outcome까지 End-to-End로 책임지는 Product Mini CEO다. Saytence의 기존 Product Manager 역할을 Saytence Product Owner로 승격한다. UX·Engineering·Data·QA 등 각 전문 직군의 전문적 진실과 Gate는 독립적으로 유지하며 PO는 이를 통합해 제품 의사결정을 내린다. 0→1/Discovery/PRD/Launch 등은 별도 오너가 아닌 PO가 호출하는 Product Capability로 분류한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "Product",
+        "Engineering",
+        "Data",
+        "Growth",
+        "Discovery",
+        "Revenue",
+        "COO",
+        "Red Team"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2454,7 +2548,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.2",
+  "dashboardVersion": "4.3",
   "teamOperatingSystem": {
     "version": "1.0",
     "status": "ACTIVE",
