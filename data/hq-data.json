@@ -53,7 +53,7 @@
       "id": "discovery",
       "name": "Discovery",
       "icon": "🔬",
-      "role": "시장·경쟁서비스·사용자 문제 탐색",
+      "role": "Market/user/competitor research plus current trend and signal intelligence",
       "ai": "ChatGPT Research + Gemini",
       "status": "reviewing",
       "apps": [
@@ -65,13 +65,19 @@
       "summary": "JLPT 시장은 충분히 크지만 경쟁도 강하다. N3는 좋은 진입점이나 기존 강자의 기능을 모두 따라가면 안 된다.",
       "currentGoal": "현재 Sprint의 핵심 가설을 시장·경쟁·사용자 신호로 검증하고, Product와 Growth가 바로 사용할 수 있는 근거를 제공한다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081dca527e2b27701147a",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Frame the decision first, then load only the relevant Discovery specialist Skill. Current-time trend/competitor questions require fresh external evidence; qualitative evidence must not be generalized into prevalence.",
+      "specialistSkills": {
+        "marketResearch": "https://app.notion.com/p/3f15b7c4aa3081dca527e2b27701147a",
+        "trendSignalIntelligence": "https://app.notion.com/p/3f15b7c4aa308181a2d6ea10195584df",
+        "userResearchVOC": "https://app.notion.com/p/3f15b7c4aa30819b9da5f7d66cf49497",
+        "competitiveIntelligence": "https://app.notion.com/p/3f15b7c4aa3081958b37db12c16f3f87"
+      }
     },
     {
       "id": "product",
       "name": "Product",
       "icon": "🧠",
-      "role": "제품 전략, 기능 우선순위, UX와 리뉴얼 설계",
+      "role": "Product strategy, problem definition, interaction/UX design, UX writing, accessibility/localization, and Product Guard",
       "ai": "ChatGPT",
       "status": "reviewing",
       "apps": [
@@ -83,13 +89,20 @@
       "summary": "카드 플레이어는 유지 가치가 높다. 문제 후보는 기능 부족보다 가치 전달, 학습 진입, 단기 목표와 성과 체감이다.",
       "currentGoal": "Saytence의 빠른 학습 장점을 보존하면서 자유 회독·세션 완료·약한 카드 재진입을 구현 가능한 제품 경험으로 구체화한다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Start from live product truth and user problem. Select PM/UX Writing/Interaction/Accessibility/Red Team expertise according to the decision; do not turn requests directly into features.",
+      "specialistSkills": {
+        "productManagement": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
+        "uxWriting": "https://app.notion.com/p/3f15b7c4aa3081dda0e0caebfbd05e6a",
+        "interactionProductDesign": "https://app.notion.com/p/3f15b7c4aa3081f3b3d8c50cfde1f203",
+        "accessibilityLocalization": "https://app.notion.com/p/3f15b7c4aa30812ca0bdeef4d2dc03b9",
+        "redTeam": "https://app.notion.com/p/3f15b7c4aa30811386efc07d1a516398"
+      }
     },
     {
       "id": "engineering",
       "name": "Engineering",
       "icon": "💻",
-      "role": "기술 설계, 개발, 테스트와 릴리스",
+      "role": "Source-grounded technical design, architecture, implementation, QA, release, and reliability",
       "ai": "Codex + ChatGPT",
       "status": "waiting",
       "apps": [
@@ -101,7 +114,13 @@
       "summary": "기존 카드·음성·녹음·통계·import 기반은 재사용 가치가 높다. 제품 방향 확정 전 대규모 변경은 하지 않는다.",
       "currentGoal": "Saytence 소스를 확인해 기존 상태·저장·복습 로직을 검증하고, 합의된 Feature를 안전하게 구현·릴리스할 기술 경로를 만든다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814ca954f70453dadd84",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Inspect live source first. Route architecture/state/integration work to Architecture, verification to QA, and production/release risk to Release & Reliability. Technical complexity must be proportional to current scale.",
+      "specialistSkills": {
+        "engineering": "https://app.notion.com/p/3f15b7c4aa30814ca954f70453dadd84",
+        "architecture": "https://app.notion.com/p/3f15b7c4aa30817b9069d822a012d07a",
+        "qaTestStrategy": "https://app.notion.com/p/3f15b7c4aa3081358337ed1ae0bb3d45",
+        "releaseReliability": "https://app.notion.com/p/3f15b7c4aa30819abef5c70e8a72f34b"
+      }
     },
     {
       "id": "growth",
@@ -136,7 +155,7 @@
       "id": "data",
       "name": "Data",
       "icon": "📊",
-      "role": "제품·성장 지표 분석과 실험 판정",
+      "role": "Product analytics, growth/marketing attribution, metric governance, and experimentation",
       "ai": "ChatGPT",
       "status": "waiting",
       "apps": [
@@ -148,13 +167,19 @@
       "summary": "사용자가 적은 지금은 감으로 기능을 늘리기보다 첫 학습, 세션 완료, D1/D7, 카드 평가와 음성 기능 사용을 측정해야 한다.",
       "currentGoal": "Growth 유입부터 학습·완료·약한 카드 복습·D1/D7까지 동일한 정의로 측정해 Sprint 결과를 판단 가능하게 만든다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8439d940224b8117",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Choose the analysis specialty by decision. Preserve metric definitions, denominators and uncertainty. Marketing attribution and product behavior are separate analysis problems; small-sample tests use directional evidence without fake significance.",
+      "specialistSkills": {
+        "dataGovernance": "https://app.notion.com/p/3f15b7c4aa3081ed8439d940224b8117",
+        "productAnalytics": "https://app.notion.com/p/3f15b7c4aa30813298d7cb440116007e",
+        "marketingAttribution": "https://app.notion.com/p/3f15b7c4aa308145827dcbd7f6b93069",
+        "experimentation": "https://app.notion.com/p/3f15b7c4aa3081fdb529c591a3a77fe8"
+      }
     },
     {
       "id": "revenue",
       "name": "Revenue",
       "icon": "💰",
-      "role": "AdMob 및 수익화 최적화",
+      "role": "Pricing/packaging, ads monetization, subscription economics, and monetization guardrails",
       "ai": "ChatGPT",
       "status": "waiting",
       "apps": [
@@ -166,7 +191,13 @@
       "summary": "현재는 광고 노출 극대화보다 활성 사용자와 반복 세션 확보가 우선이며 회독 리듬을 깨는 광고는 피해야 한다.",
       "currentGoal": "학습 흐름을 해치지 않는 수익화 가드레일을 유지하고, 활성화와 반복 사용이 확보된 뒤 수익화를 최적화한다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30816e99d6c66fe4083a5f",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Match monetization depth to product lifecycle. Route pricing/paywall questions to Pricing, ad experience/eCPM to Ads Monetization, and LTV/CAC/churn to Unit Economics. Current Sprint freezes still override monetization experimentation.",
+      "specialistSkills": {
+        "revenue": "https://app.notion.com/p/3f15b7c4aa30816e99d6c66fe4083a5f",
+        "pricingPackaging": "https://app.notion.com/p/3f15b7c4aa3081798e17f04eb98967f3",
+        "adsMonetization": "https://app.notion.com/p/3f15b7c4aa3081339d98cbf56e4f6970",
+        "subscriptionUnitEconomics": "https://app.notion.com/p/3f15b7c4aa3081598305eebc03272aaf"
+      }
     }
   ],
   "agents": [
@@ -175,33 +206,36 @@
       "name": "Market Research",
       "team": "Discovery",
       "ai": "ChatGPT Research",
-      "mission": "시장 규모, 수요와 트렌드 조사",
+      "mission": "시장 구조·수요·규모·세그먼트·타이밍을 의사결정 관점에서 조사",
       "status": "completed",
       "app": "Saytence",
       "task": "2025 JLPT 시장 조사 완료",
-      "opinion": "2025 JLPT 신청자는 약 194만 명이고 전년보다 증가했다. N3는 7월과 12월 모두 신청자가 가장 많아 현재 N3 콘텐츠는 시장 진입점으로 유지 가치가 높다."
+      "opinion": "2025 JLPT 신청자는 약 194만 명이고 전년보다 증가했다. N3는 7월과 12월 모두 신청자가 가장 많아 현재 N3 콘텐츠는 시장 진입점으로 유지 가치가 높다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081dca527e2b27701147a"
     },
     {
       "id": "competitor",
-      "name": "Competitor Intelligence",
+      "name": "Competitive Intelligence",
       "team": "Discovery",
       "ai": "ChatGPT Research",
-      "mission": "경쟁 앱 기능·포지셔닝 비교",
+      "mission": "경쟁 앱의 현재 제품·포지셔닝·가격·리뷰·변화를 분석하고 복제보다 시장 기대와 공백을 도출",
       "status": "completed",
       "app": "Saytence",
       "task": "주요 경쟁군 분석 완료",
-      "opinion": "Migii의 시험, renshuu/Bunpo의 종합성, Kanji Study의 깊이, Anki의 범용성을 모두 따라가면 안 된다. 빠른 JLPT 회독과 약한 카드 집중 경험으로 좁히는 것을 강하게 권고한다."
+      "opinion": "Migii의 시험, renshuu/Bunpo의 종합성, Kanji Study의 깊이, Anki의 범용성을 모두 따라가면 안 된다. 빠른 JLPT 회독과 약한 카드 집중 경험으로 좁히는 것을 강하게 권고한다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081958b37db12c16f3f87"
     },
     {
       "id": "user-research",
-      "name": "User & Review Research",
+      "name": "User Research & VOC",
       "team": "Discovery",
       "ai": "ChatGPT",
-      "mission": "사용자 문제와 리뷰 근거 분석",
+      "mission": "인터뷰·리뷰·VOC·커뮤니티에서 문제·동기·맥락·사용자 언어를 분석",
       "status": "reviewing",
       "app": "Saytence",
       "task": "자체 사용자 근거 부족 확인",
-      "opinion": "Saytence 자체 리뷰가 충분하지 않아 사용자 요구를 확정할 수 없다. 경쟁 리뷰는 참고하고 실제 행동 데이터를 우선 확보해야 한다."
+      "opinion": "Saytence 자체 리뷰가 충분하지 않아 사용자 요구를 확정할 수 없다. 경쟁 리뷰는 참고하고 실제 행동 데이터를 우선 확보해야 한다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819b9da5f7d66cf49497"
     },
     {
       "id": "pm",
@@ -216,14 +250,15 @@
     },
     {
       "id": "ux",
-      "name": "UX",
+      "name": "Interaction / Product Design",
       "team": "Product",
       "ai": "ChatGPT",
-      "mission": "핵심 사용 흐름과 학습 경험 개선",
+      "mission": "사용자 흐름·화면상태·Interaction·정보계층·모바일 경험 설계",
       "status": "reviewing",
       "app": "Saytence",
       "task": "현행 화면 분석 완료",
-      "opinion": "카드 플레이어는 유지 가치가 높다. 홈 개편부터 확정하지 말고 앱 실행→학습 시작→세션 종료→복습의 전체 흐름을 먼저 설계해야 한다."
+      "opinion": "카드 플레이어는 유지 가치가 높다. 홈 개편부터 확정하지 말고 앱 실행→학습 시작→세션 종료→복습의 전체 흐름을 먼저 설계해야 한다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081f3b3d8c50cfde1f203"
     },
     {
       "id": "red-team",
@@ -243,11 +278,12 @@
       "name": "Tech Lead",
       "team": "Engineering",
       "ai": "ChatGPT",
-      "mission": "구현 범위와 기술 영향 분석",
+      "mission": "소스 기준 구현범위·기술영향·대안·Architecture 판단",
       "status": "waiting",
       "app": "Saytence",
       "task": "제품 방향 확정 대기",
-      "opinion": "현재 화면 기준 기존 카드·음성·녹음·통계·import 기반은 재사용 가치가 높다. 실제 소스 분석 전 재작성 결론을 내리면 안 된다."
+      "opinion": "현재 화면 기준 기존 카드·음성·녹음·통계·import 기반은 재사용 가치가 높다. 실제 소스 분석 전 재작성 결론을 내리면 안 된다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30817b9069d822a012d07a"
     },
     {
       "id": "developer",
@@ -262,14 +298,15 @@
     },
     {
       "id": "qa",
-      "name": "QA",
+      "name": "QA / Test Strategy",
       "team": "Engineering",
       "ai": "ChatGPT",
-      "mission": "기능 검증, 회귀 테스트, 릴리스 점검",
+      "mission": "위험기반 기능 검증·Regression·Release confidence·결함 재현",
       "status": "waiting",
       "app": "Saytence",
       "task": "회귀 기준 후보 정리",
-      "opinion": "카드 뒤집기, 세 방향 스와이프, 오디오, 녹음, 이어서 학습, 다시 볼 카드, 언어 전환, import/백업은 리뉴얼 시 반드시 보존 검증해야 한다."
+      "opinion": "카드 뒤집기, 세 방향 스와이프, 오디오, 녹음, 이어서 학습, 다시 볼 카드, 언어 전환, import/백업은 리뉴얼 시 반드시 보존 검증해야 한다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081358337ed1ae0bb3d45"
     },
     {
       "id": "growth-lead",
@@ -362,6 +399,96 @@
       "mission": "설치 후 First Value·재방문·Retention을 위한 lifecycle 성장 전략",
       "status": "waiting",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308182ad16f35d890f8a68"
+    },
+    {
+      "id": "trend-intelligence",
+      "name": "Trend & Signal Intelligence",
+      "team": "Discovery",
+      "ai": "ChatGPT Research",
+      "mission": "검색·플랫폼·시장·경쟁의 최신 변화 신호를 탐지하고 일시적 노이즈와 구조적 변화 분리",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308181a2d6ea10195584df"
+    },
+    {
+      "id": "ux-writing",
+      "name": "UX Writing & Content Design",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "버튼·온보딩·오류·Empty State·알림 등 제품 언어와 이해/행동 설계",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081dda0e0caebfbd05e6a"
+    },
+    {
+      "id": "accessibility-localization",
+      "name": "Accessibility & Localization",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "접근성·다국어·현지화·플랫폼 사용성 리스크 검토",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30812ca0bdeef4d2dc03b9"
+    },
+    {
+      "id": "release-reliability",
+      "name": "Release & Reliability",
+      "team": "Engineering",
+      "ai": "ChatGPT",
+      "mission": "Release readiness·Production verification·Crash/Incident·Reliability 운영",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819abef5c70e8a72f34b"
+    },
+    {
+      "id": "product-analytics",
+      "name": "Product Analytics",
+      "team": "Data",
+      "ai": "ChatGPT",
+      "mission": "Activation·Funnel·Feature usage·Cohort·Retention 행동 분석",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30813298d7cb440116007e"
+    },
+    {
+      "id": "marketing-attribution",
+      "name": "Marketing Analytics & Attribution",
+      "team": "Data",
+      "ai": "ChatGPT",
+      "mission": "SEO/Social/Ads→Store→Install→Activation의 UTM·플랫폼·GA/Firebase 데이터 연결과 Attribution 한계 분석",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308145827dcbd7f6b93069"
+    },
+    {
+      "id": "experimentation",
+      "name": "Experimentation & Measurement",
+      "team": "Data",
+      "ai": "ChatGPT",
+      "mission": "실험 설계·성공기준·소표본 판단·인과해석·결과 판정",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081fdb529c591a3a77fe8"
+    },
+    {
+      "id": "pricing-packaging",
+      "name": "Pricing & Packaging",
+      "team": "Revenue",
+      "ai": "ChatGPT",
+      "mission": "무료/유료 가치경계·가격·Subscription/IAP Package 설계",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081798e17f04eb98967f3"
+    },
+    {
+      "id": "ads-monetization",
+      "name": "Ads Monetization",
+      "team": "Revenue",
+      "ai": "ChatGPT",
+      "mission": "AdMob 배치·Format·빈도·eCPM과 사용자경험 Trade-off 최적화",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081339d98cbf56e4f6970"
+    },
+    {
+      "id": "unit-economics",
+      "name": "Subscription & Unit Economics",
+      "team": "Revenue",
+      "ai": "ChatGPT",
+      "mission": "구독·Churn·LTV/CAC·Payback·Channel economics 판단",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081598305eebc03272aaf"
     }
   ],
   "commands": [
@@ -1474,6 +1601,26 @@
         "Discovery"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-014",
+      "app": "Company",
+      "title": "전사 Specialist Role Operating System 보강",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "Growth 보강에 이어 Discovery는 Trend&Signal/User Research/Competitive Intelligence, Product는 UX Writing/Interaction/Accessibility, Engineering은 Architecture/QA/Release Reliability, Data는 Product Analytics/Marketing Attribution/Experimentation, Revenue는 Pricing/Ads Monetization/Unit Economics 전문 Role로 세분화한다. Strategy & Portfolio에는 별도 Governance Skill을 두되 실행팀 수는 7개로 유지한다. COO는 업무별 최소 필요한 전문 Role Skill만 로드한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue",
+        "Red Team"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2223,13 +2370,13 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.0",
+  "dashboardVersion": "4.1",
   "teamOperatingSystem": {
     "version": "1.0",
     "status": "ACTIVE",
     "effectiveDate": "2026-10-06",
     "notionUrl": "https://app.notion.com/p/3f15b7c4aa308129ad5af191a1e5d970",
-    "runtimeRule": "COO frames the business question, selects only relevant teams, then loads each selected team's Operating Skill before independent work. Team skills define durable reasoning/quality rules; live Dashboard/Product Source define current facts.",
+    "runtimeRule": "COO frames the business question, selects relevant execution team(s), then loads the team Operating Skill and only the necessary specialist Skill(s). Durable skills define reasoning/quality; live Dashboard/Product Source and fresh external evidence define current facts.",
     "executionTeams": [
       "COO",
       "Discovery",
@@ -2253,6 +2400,8 @@
       "Data": "https://app.notion.com/p/3f15b7c4aa3081ed8439d940224b8117",
       "Revenue": "https://app.notion.com/p/3f15b7c4aa30816e99d6c66fe4083a5f",
       "Red Team": "https://app.notion.com/p/3f15b7c4aa30811386efc07d1a516398"
-    }
+    },
+    "strategyPortfolioSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081d8888de21ed0920fa4",
+    "specialistRolePolicy": "Do not invoke every specialist. Select the minimum expert roles whose judgment can materially change the decision. Channel/trend/platform work must refresh current evidence at execution time."
   }
 }
