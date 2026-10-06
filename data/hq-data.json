@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-06: TI-001은 Google Search Console에서 색인 등록 확인. 따라서 조회 1의 우선 원인은 색인 실패가 아니라 검색 노출(Impression) 부족, 검색어 적합성/순위, CTR 가능성으로 전환. TI-002는 최근 발행으로 색인 대기 가능성이 있어 재크롤링을 기다리되, TI-003 발행은 TI-001 Search Console 실적(노출/검색어/평균순위/CTR) 확인 후 재개.",
+    "todaySummary": "2026-10-06: TI-001은 10/2 발행·Google 색인 등록 상태지만 Search Console 노출 0/클릭 0. 발행 4일 시점이라 콘텐츠 실패로 판정하지 않되, 10/12 종료인 SPR-001에서 Tistory Organic Search는 즉시 설치 확보 채널로 시간축이 맞지 않는다고 판단. Threads를 Primary Acquisition으로 유지하고 Tistory는 Secondary/Long-term Search Asset으로 조정. TI-001/002는 최소 7일 관찰, TI-003은 Query/SERP/Intent 검증 후 재설계.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads는 TH-001 339 views, TH-002 495 views로 주력 유입 실험 지속. Tistory TI-001은 Google 색인 등록 확인에도 조회 1이라 색인 문제가 아닌 검색 노출/검색어/순위/CTR 진단 단계로 전환. TI-002는 최근 발행으로 색인 대기 가능. TI-003은 Search Console 실적 확인 전 일시 중지."
+      "summary": "SPR-001 Acquisition 운영 조정. Threads는 Primary Acquisition Channel로 계속 실행. Tistory TI-001은 Google 색인 등록에도 발행 4일 시점 Search Console 노출 0/클릭 0; TI-002는 신규 게시. Tistory는 이번 Sprint의 즉시 설치 유입 수단이 아니라 Secondary/Long-term Search Asset으로 역할을 낮춘다. TI-001/002 최소 7일 관찰 후, TI-003은 Query/SERP/Intent 검증 기반으로 재설계."
     },
     {
       "id": "RES-004",
