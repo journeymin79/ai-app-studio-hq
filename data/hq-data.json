@@ -77,7 +77,7 @@
       "id": "product",
       "name": "Product",
       "icon": "🧠",
-      "role": "Product strategy, problem definition, interaction/UX design, UX writing, accessibility/localization, and Product Guard",
+      "role": "Product strategy, opportunity discovery, 0→1/new product, existing-product improvement, UX/design, PRD, launch, and outcome ownership",
       "ai": "ChatGPT",
       "status": "reviewing",
       "apps": [
@@ -89,13 +89,23 @@
       "summary": "카드 플레이어는 유지 가치가 높다. 문제 후보는 기능 부족보다 가치 전달, 학습 진입, 단기 목표와 성과 체감이다.",
       "currentGoal": "Saytence의 빠른 학습 장점을 보존하면서 자유 회독·세션 완료·약한 카드 재진입을 구현 가능한 제품 경험으로 구체화한다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
-      "operatingInstruction": "Start from live product truth and user problem. Select PM/UX Writing/Interaction/Accessibility/Red Team expertise according to the decision; do not turn requests directly into features.",
+      "operatingInstruction": "Product is the Product Decision Engine, not a feature/PRD factory. Every meaningful product change starts with Opportunity and Evidence. Existing-product improvement and 0→1 new product follow separate flows. New apps require Strategy & Portfolio / CEO Explore Gate before Product Discovery. Significant Product Discovery uses PM + Product Design + Tech Lead as the core trio, adding Discovery/Data/Growth/Revenue/Red Team only as needed.",
       "specialistSkills": {
         "productManagement": "https://app.notion.com/p/3f15b7c4aa308136a7fbe8ecc3228736",
         "uxWriting": "https://app.notion.com/p/3f15b7c4aa3081dda0e0caebfbd05e6a",
         "interactionProductDesign": "https://app.notion.com/p/3f15b7c4aa3081f3b3d8c50cfde1f203",
         "accessibilityLocalization": "https://app.notion.com/p/3f15b7c4aa30812ca0bdeef4d2dc03b9",
         "redTeam": "https://app.notion.com/p/3f15b7c4aa30811386efc07d1a516398"
+      },
+      "productOperatingModelUrl": "https://app.notion.com/p/3f15b7c4aa3081afba95ec764ed3ee1f",
+      "productLifecycleSkills": {
+        "model": "https://app.notion.com/p/3f15b7c4aa3081afba95ec764ed3ee1f",
+        "leadership": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95",
+        "discovery": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12",
+        "zeroToOne": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275",
+        "existingImprovement": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d",
+        "prd": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1",
+        "launchOutcome": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b"
       }
     },
     {
@@ -489,6 +499,60 @@
       "mission": "구독·Churn·LTV/CAC·Payback·Channel economics 판단",
       "status": "waiting",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081598305eebc03272aaf"
+    },
+    {
+      "id": "product-lead",
+      "name": "Product Lead / Strategy",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "Product strategy·goal·outcome·prioritization·roadmap logic·product lifecycle 판단",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95"
+    },
+    {
+      "id": "product-discovery",
+      "name": "Product Discovery & Opportunity",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "의미 있는 Product Bet 전 문제·Value·Usability·Feasibility·Viability 검증",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12"
+    },
+    {
+      "id": "new-product-0to1",
+      "name": "0→1 New Product",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "Portfolio Explore Gate 통과 후 신규 앱의 문제검증·제품 Thesis·MVP·Launch Validation 주도",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275"
+    },
+    {
+      "id": "existing-product-improvement",
+      "name": "Existing Product Improvement",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "운영중 앱의 데이터·VOC·Growth·Usability·Reliability 신호를 근거로 개선 우선순위와 반복학습 주도",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d"
+    },
+    {
+      "id": "prd-definition",
+      "name": "Product Definition / PRD",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "Discovery를 통과한 Product Bet을 실행 가능한 Product Definition/PRD로 변환",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1"
+    },
+    {
+      "id": "product-launch-outcome",
+      "name": "Product Launch & Outcome Review",
+      "team": "Product",
+      "ai": "ChatGPT",
+      "mission": "출시 준비·GTM 정합·출시후 Product Outcome/Learning 판정",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b"
     }
   ],
   "commands": [
@@ -1621,6 +1685,26 @@
         "Red Team"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-015",
+      "app": "Company",
+      "title": "Product Team을 Product Decision Engine으로 재정의",
+      "team": "Product",
+      "status": "DECIDED",
+      "summary": "Product를 기능기획/PRD 작성 조직이 아니라 Strategy와 사용자 문제를 제품 성과로 번역하는 핵심 조직으로 재정의한다. 기존 앱 개선과 신규 앱 0→1을 분리하고, 모든 의미 있는 Product Change는 Opportunity→Evidence→Discovery→Product Bet→Definition→Delivery→Launch→Outcome Review 흐름을 따른다. 신규 앱은 Strategy & Portfolio / CEO Explore Gate를 통과해야 Product Discovery에 진입한다. 주요 Discovery는 PM+Product Design+Tech Lead Core Trio가 공동 수행한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "Product",
+        "COO",
+        "Discovery",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue",
+        "Red Team"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2370,7 +2454,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.1",
+  "dashboardVersion": "4.2",
   "teamOperatingSystem": {
     "version": "1.0",
     "status": "ACTIVE",
