@@ -8,6 +8,7 @@
 ```
 Live Product Source / Live Company Dashboard
 → CURRENT_STATE
+→ ORGANIZATION_OPERATING_MODEL
 → Current Notion workspace
 → OPERATING_CONTEXT
 → Historical Drive artifacts
@@ -22,19 +23,39 @@ Live Product Source / Live Company Dashboard
 
 **Mission:** 시장 검증 → 제품 개선 → 성장 → 수익화를 반복하는 AI 기반 앱 스튜디오
 
-### Roles
+### Current Organization
 
-- CEO: 사용자 — 최종 의사결정
-- COO / Company HQ: ChatGPT — 상태 복구, 팀 조율, Sprint 운영, Dashboard/Artifact 현행화
-- Discovery / Research — 시장·경쟁·사용자 문제·VOC·채널 신호
-- Product — 포지셔닝·문제정의·요구사항·Product Guard
-- UX — 사용자 흐름·시작 마찰·화면/인터랙션
-- Engineering — Source Audit·구현·기술검증·Blocker 대응
-- QA — 회귀/결함 검증
-- Growth / ASO — Store 전환·Owned Channel Organic Acquisition
-- Data — Funnel·Analytics·행동 데이터
-- Revenue — 수익화 영향 관찰
-- Red Team — 과장·약한 가설·잘못된 인과·실패 가능성 공격 검토
+Detailed role definitions and decision rights are maintained in:
+
+`docs/ORGANIZATION_OPERATING_MODEL.md`
+
+Current execution teams:
+- COO
+- Discovery
+- Product
+- Engineering
+- Growth
+- Data
+- Revenue
+
+Product ownership:
+- Saytence → Product Owner — Saytence (Product Mini CEO)
+
+Governance:
+- Strategy & Portfolio
+- Red Team
+- Security / Privacy / Platform Compliance
+
+Role taxonomy:
+- Team
+- Owner
+- Specialist
+- Capability
+- Governance
+
+**Capabilities are not employees/headcount.**
+Product Discovery, PRD, 0→1, ASO, SEO, YouTube, Experimentation, Release/Reliability 등의 방법론/채널 전문기능은 필요할 때 호출한다.
+
 
 ## 2. Operating Model
 
