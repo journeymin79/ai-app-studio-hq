@@ -3,7 +3,7 @@
 > 현재 회사의 실행 상태.  
 > 장기 운영 규칙은 `AI_APP_STUDIO_OPERATING_CONTEXT.md`.
 >
-> **Last reconciled: 2026-10-02**
+> **Last reconciled: 2026-10-06**
 >
 > Live Dashboard/Product Source가 더 최신이면 Live Source를 우선하고 이 파일을 갱신한다.
 
@@ -426,11 +426,22 @@ Engineering 재가동 조건:
 ## Notion Company HQ UX
 
 - 79's Labs Notion Home: https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d
-- CEO / Company HQ: https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d
-- Departments: https://app.notion.com/p/3ec5b7c4aa308167aa3fdd7c23cd3555
+- Current Organization: https://app.notion.com/p/3ec5b7c4aa308167aa3fdd7c23cd3555
+- Governance: https://app.notion.com/p/3f15b7c4aa3081e0909ae66494fe97c7
+- Team Operating System: https://app.notion.com/p/3f15b7c4aa308129ad5af191a1e5d970
 - Live Company Dashboard: https://journeymin79.github.io/ai-app-studio-hq/
-- Company HQ includes Current Sprint, Company Kanban, Department Status, Key Metrics, CEO Decision Queue and organization chart.
-- Department pages: COO/HQ, Strategy, Discovery, Product/UX, Engineering/QA, Growth/ASO/Content, Data, Revenue, Red Team. Each department has its own filtered work view.
+- Dashboard Organization Model: Current Organization v2 / Dashboard v4.7
+
+Current execution teams:
+`COO / Discovery / Product / Engineering / Growth / Data / Revenue`
+
+Current governance:
+`Strategy & Portfolio / Red Team / Security·Privacy·Platform Compliance`
+
+Current Product Owner:
+`Saytence Product Owner`
+
+Historical organization drafts are not used for current operations.
 
 
 ## 16. Acquisition Measurement Contract
