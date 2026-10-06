@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-06: Tistory TI-001 조회 1, TI-002 조회 0 확인. 현재 표본에서는 콘텐츠 품질보다 검색 색인·노출·초기 배포 부재 가능성을 우선 진단한다. TI-003 이후 추가 발행은 일시 중지하고 Discoverability Gate(검색 노출/색인 확인)를 먼저 통과한다. Threads는 기존 실험을 계속하며 주력 유입 채널로 유지.",
+    "todaySummary": "2026-10-06: TI-001은 Google Search Console에서 색인 등록 확인. 따라서 조회 1의 우선 원인은 색인 실패가 아니라 검색 노출(Impression) 부족, 검색어 적합성/순위, CTR 가능성으로 전환. TI-002는 최근 발행으로 색인 대기 가능성이 있어 재크롤링을 기다리되, TI-003 발행은 TI-001 Search Console 실적(노출/검색어/평균순위/CTR) 확인 후 재개.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 339 views/3 likes/3 comments, TH-002 495 views/15 likes/8 comments. Tistory TI-001 1 view, TI-002 0 view. Tistory는 콘텐츠 실패로 단정하지 않고 검색 색인·노출·초기 배포 상태를 우선 진단하며 TI-003 이후 신규 발행을 Discoverability Gate 확인 전까지 일시 중지. Threads는 주력 유입 실험으로 계속 진행."
+      "summary": "Threads는 TH-001 339 views, TH-002 495 views로 주력 유입 실험 지속. Tistory TI-001은 Google 색인 등록 확인에도 조회 1이라 색인 문제가 아닌 검색 노출/검색어/순위/CTR 진단 단계로 전환. TI-002는 최근 발행으로 색인 대기 가능. TI-003은 Search Console 실적 확인 전 일시 중지."
     },
     {
       "id": "RES-004",
