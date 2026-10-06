@@ -1375,6 +1375,14 @@
       "team": "COO",
       "title": "Team Operating System v1.0",
       "summary": "COO·Discovery·Product·Engineering·Growth·Data·Revenue·Red Team의 정밀 Operating Skill을 Notion에 생성하고 Live Dashboard에 런타임 참조 규칙과 Skill URL을 연결."
+    },
+    {
+      "date": "2026-10-06",
+      "time": "10/06",
+      "app": "Company",
+      "team": "COO",
+      "title": "Notion·Dashboard 조직구조 정리",
+      "summary": "Current Organization / Governance / Capability / Archive를 분리하고 Dashboard 조직 UI를 Current Organization v2에 맞춰 재구성."
     }
   ],
   "decisions": [
@@ -1689,6 +1697,25 @@
       "team": "COO / Company HQ",
       "status": "DECIDED",
       "summary": "현재 실행팀은 COO, Discovery, Product, Engineering, Growth, Data, Revenue 7개로 확정한다. Strategy & Portfolio, Red Team, Security/Privacy/Platform Compliance는 Governance로 분리한다. Product lifecycle 및 Growth channel 방법론은 Capability로 분류하여 Agent/Headcount에서 제외한다. 과거 조직 설계 Decisions는 SUPERSEDED 이력으로만 유지하고, 현재 조직 Source of Truth는 Organization Operating Model v2와 Team Operating System v2로 통합한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ],
+      "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-020",
+      "app": "Company",
+      "title": "Notion·Dashboard Current Organization 구조 통합",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "Notion과 Company Dashboard를 Current Organization v2 기준으로 통일한다. Notion에는 7개 실행팀만 Current Organization에 표시하고 Strategy/Red Team/Security를 Governance로 분리한다. Dashboard에는 Owner/Specialist와 Capability를 분리하며 Product Owner, Governance, Capability Library를 별도 레이어로 표시한다. 과거 조직설계 문서는 Archive에서만 보관한다.",
       "date": "2026-10-06",
       "participantTeams": [
         "COO",
@@ -2449,7 +2476,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.6",
+  "dashboardVersion": "4.7",
   "teamOperatingSystem": {
     "version": "2.1",
     "status": "ACTIVE",
@@ -2726,6 +2753,12 @@
       "specialist": "Professional role with domain judgment",
       "capability": "Reusable method/channel skill invoked as needed; not separate headcount",
       "governance": "Independent strategy/risk/challenge gate"
+    },
+    "notion": {
+      "currentOrganizationUrl": "https://app.notion.com/p/3ec5b7c4aa308167aa3fdd7c23cd3555",
+      "governanceUrl": "https://app.notion.com/p/3f15b7c4aa3081e0909ae66494fe97c7",
+      "teamOperatingSystemUrl": "https://app.notion.com/p/3f15b7c4aa308129ad5af191a1e5d970",
+      "archiveUrl": "https://app.notion.com/p/3f15b7c4aa30814e867fd994063392a9"
     }
   }
 }
