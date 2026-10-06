@@ -1754,6 +1754,19 @@
         "Revenue"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-022",
+      "app": "Company",
+      "title": "Company Resume Prompt 공식화",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "새 ChatGPT 대화에서 79's Labs 회사 운영을 이어갈 때 사용할 공식 Company Resume Prompt를 GitHub docs와 Notion Company HQ에 저장하고, Home Quick Links에서 바로 접근하도록 연결한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2503,7 +2516,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.8",
+  "dashboardVersion": "4.9",
   "teamOperatingSystem": {
     "version": "2.1",
     "status": "ACTIVE",
@@ -2806,5 +2819,11 @@
       "teamOperatingSystemUrl": "https://app.notion.com/p/3f15b7c4aa308129ad5af191a1e5d970",
       "archiveUrl": "https://app.notion.com/p/3f15b7c4aa30814e867fd994063392a9"
     }
+  },
+  "companyResumePrompt": {
+    "status": "CURRENT",
+    "notionUrl": "https://app.notion.com/p/3f15b7c4aa3081f9b706d3d8712bcef8",
+    "docsPath": "docs/COMPANY_RESUME_PROMPT.md",
+    "purpose": "Official new-chat startup prompt for restoring current organization, dashboard, Notion skills, and product source before continuing company operations."
   }
 }
