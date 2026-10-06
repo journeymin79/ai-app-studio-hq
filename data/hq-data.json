@@ -346,20 +346,6 @@
       "roleType": "specialist"
     },
     {
-      "id": "red-team",
-      "name": "Red Team",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "제품 전략과 가설을 적극 반박·검증",
-      "status": "reviewing",
-      "app": "Saytence",
-      "task": "JLPT 회독 포지셔닝 반박 검토",
-      "opinion": "메시지만 JLPT 회독으로 바꾸는 것은 부족하다. 사용자가 짧게 공부해도 무엇을 외웠고 약한 카드가 얼마나 줄었는지 체감하게 만들어야 한다. 그렇지 않으면 Anki의 단순 버전으로 보일 위험이 있다.",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30811386efc07d1a516398",
-      "operatingInstruction": "Run as an independent challenge role. Load the Red Team Operating Skill before material reviews.",
-      "roleType": "governance"
-    },
-    {
       "id": "tech-lead",
       "name": "Tech Lead",
       "team": "Engineering",
@@ -410,83 +396,6 @@
       "roleType": "owner"
     },
     {
-      "id": "aso",
-      "name": "ASO & Store Conversion",
-      "team": "Growth",
-      "ai": "ChatGPT + Gemini",
-      "mission": "Google Play/App Store 검색·Listing·Screenshot·Localization·Store Conversion 전문 Capability",
-      "status": "waiting",
-      "app": "Saytence",
-      "task": "JLPT 중심 ASO 가설",
-      "opinion": "JLPT를 중심 키워드로 검토하되 영어회화와 다국어를 같은 비중으로 전면 노출하지 않는 편이 낫다.",
-      "roleType": "capability",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819c8680e4a9df1491bb"
-    },
-    {
-      "id": "seo-content",
-      "name": "SEO & Blog Content",
-      "team": "Growth",
-      "ai": "ChatGPT",
-      "mission": "검색 수요·검색의도·SEO·Tistory/블로그 콘텐츠·색인/유입 문제 진단",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081de8dc0e03caeb2dc30",
-      "roleType": "capability"
-    },
-    {
-      "id": "social-community",
-      "name": "Social & Community",
-      "team": "Growth",
-      "ai": "ChatGPT",
-      "mission": "Threads·Instagram 중심의 플랫폼별 대화·도달·커뮤니티·소셜 유입 전략",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
-      "channelSkillUrls": {
-        "threads": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
-        "instagram": "https://app.notion.com/p/3f15b7c4aa3081c7a2e6d3e40f39cec9"
-      },
-      "roleType": "capability"
-    },
-    {
-      "id": "youtube",
-      "name": "YouTube Strategist",
-      "team": "Growth",
-      "ai": "ChatGPT",
-      "mission": "YouTube/Shorts 주제·검색/추천·제목·썸네일·Retention 전략",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819da11ff41c748bebc6",
-      "roleType": "capability"
-    },
-    {
-      "id": "creative-producer",
-      "name": "Creative Producer",
-      "team": "Growth",
-      "ai": "ChatGPT + Image",
-      "mission": "블로그·소셜·유튜브·광고용 이미지/영상/썸네일의 시각 전략과 제작",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30818c8aa2edc65ae8ed58",
-      "roleType": "capability"
-    },
-    {
-      "id": "performance-marketing",
-      "name": "Performance Marketing",
-      "team": "Growth",
-      "ai": "ChatGPT",
-      "mission": "CEO 승인 이후 Google/Meta 유료획득 캠페인 설계·측정·최적화",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308184b43ff59fdbea285d",
-      "roleType": "capability"
-    },
-    {
-      "id": "lifecycle-growth",
-      "name": "Lifecycle & Retention Growth",
-      "team": "Growth",
-      "ai": "ChatGPT",
-      "mission": "설치 후 First Value·재방문·Retention을 위한 lifecycle 성장 전략",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308182ad16f35d890f8a68",
-      "roleType": "capability"
-    },
-    {
       "id": "trend-intelligence",
       "name": "Trend & Signal Intelligence",
       "team": "Discovery",
@@ -507,26 +416,6 @@
       "roleType": "specialist"
     },
     {
-      "id": "accessibility-localization",
-      "name": "Accessibility & Localization",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "접근성·다국어·현지화·플랫폼 사용성 리스크 검토",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30812ca0bdeef4d2dc03b9",
-      "roleType": "capability"
-    },
-    {
-      "id": "release-reliability",
-      "name": "Release & Reliability",
-      "team": "Engineering",
-      "ai": "ChatGPT",
-      "mission": "Release readiness·Production verification·Crash/Incident·Reliability 운영",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819abef5c70e8a72f34b",
-      "roleType": "capability"
-    },
-    {
       "id": "product-analytics",
       "name": "Product Analytics",
       "team": "Data",
@@ -545,16 +434,6 @@
       "status": "waiting",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308145827dcbd7f6b93069",
       "roleType": "specialist"
-    },
-    {
-      "id": "experimentation",
-      "name": "Experimentation & Measurement",
-      "team": "Data",
-      "ai": "ChatGPT",
-      "mission": "실험 설계·성공기준·소표본 판단·인과해석·결과 판정",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081fdb529c591a3a77fe8",
-      "roleType": "capability"
     },
     {
       "id": "pricing-packaging",
@@ -585,78 +464,6 @@
       "status": "waiting",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081598305eebc03272aaf",
       "roleType": "specialist"
-    },
-    {
-      "id": "product-lead",
-      "name": "Product Strategy — PO Support",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "PO의 Product Strategy·Goal·Outcome·Prioritization 판단을 지원하는 전문 Capability",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
-    },
-    {
-      "id": "product-discovery",
-      "name": "Product Discovery & Opportunity",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "의미 있는 Product Bet 전 문제·Value·Usability·Feasibility·Viability 검증",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
-    },
-    {
-      "id": "new-product-0to1",
-      "name": "0→1 New Product",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "Portfolio Explore Gate 통과 후 신규 앱의 문제검증·제품 Thesis·MVP·Launch Validation 주도",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
-    },
-    {
-      "id": "existing-product-improvement",
-      "name": "Existing Product Improvement",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "운영중 앱의 데이터·VOC·Growth·Usability·Reliability 신호를 근거로 개선 우선순위와 반복학습 주도",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
-    },
-    {
-      "id": "prd-definition",
-      "name": "Product Definition / PRD",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "Discovery를 통과한 Product Bet을 실행 가능한 Product Definition/PRD로 변환",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
-    },
-    {
-      "id": "product-launch-outcome",
-      "name": "Product Launch & Outcome Review",
-      "team": "Product",
-      "ai": "ChatGPT",
-      "mission": "출시 준비·GTM 정합·출시후 Product Outcome/Learning 판정",
-      "status": "waiting",
-      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b",
-      "roleType": "capability",
-      "ownerAgentId": "pm",
-      "operatingInstruction": " This is a Product capability invoked by the Product Owner, not an independent product owner or final decision authority."
     }
   ],
   "commands": [
@@ -917,7 +724,7 @@
       "id": "RED-001",
       "title": "JLPT 회독 포지셔닝 반박 검토",
       "app": "Saytence",
-      "team": "Product",
+      "team": "Governance",
       "role": "Red Team",
       "command": "CMD-001",
       "status": "COMPLETED",
@@ -1089,7 +896,7 @@
       "id": "RED-002",
       "title": "ASO·Threads 메시지 반박 검토",
       "app": "Saytence",
-      "team": "Product",
+      "team": "Governance",
       "role": "Red Team",
       "command": "CMD-002",
       "sprintId": "SPR-001",
@@ -1738,7 +1545,7 @@
       "app": "Company",
       "title": "Team Operating System v1.0 도입",
       "team": "COO / Company HQ",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "각 실행팀의 Mission·판단기준·업무절차·Evidence Rule·Output Contract·Anti-pattern을 Notion reusable Operating Skill로 정의하고, COO가 팀 호출 전에 해당 Skill을 적용하도록 Company Dashboard에 연결한다. COO는 Chief of Staff·PMO 기능을 직접 겸하며 별도 하위 Agent를 두지 않는다. Red Team은 Product 내부 독립 Challenge Role로 유지한다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1751,14 +1558,15 @@
         "Revenue",
         "Red Team"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-013",
       "app": "Company",
       "title": "Growth 전문 Role·채널 Operating System 보강",
       "team": "Growth",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "Growth를 Growth Lead/ASO/일반 Content 수준에서 SEO&Blog, Social&Community(Threads/Instagram), YouTube, Creative Production, Performance Marketing, Lifecycle&Retention 전문 Role로 세분화한다. 채널 업무는 해당 시점의 검색/트렌드/플랫폼 공식 가이드와 실제 성과 데이터를 확인한 뒤 수행하며, 단순 게시량·조회수 같은 Vanity Metric을 Growth 성과로 간주하지 않는다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1768,14 +1576,15 @@
         "Product",
         "Discovery"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-014",
       "app": "Company",
       "title": "전사 Specialist Role Operating System 보강",
       "team": "COO / Company HQ",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "Growth 보강에 이어 Discovery는 Trend&Signal/User Research/Competitive Intelligence, Product는 UX Writing/Interaction/Accessibility, Engineering은 Architecture/QA/Release Reliability, Data는 Product Analytics/Marketing Attribution/Experimentation, Revenue는 Pricing/Ads Monetization/Unit Economics 전문 Role로 세분화한다. Strategy & Portfolio에는 별도 Governance Skill을 두되 실행팀 수는 7개로 유지한다. COO는 업무별 최소 필요한 전문 Role Skill만 로드한다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1788,14 +1597,15 @@
         "Revenue",
         "Red Team"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-015",
       "app": "Company",
       "title": "Product Team을 Product Decision Engine으로 재정의",
       "team": "Product",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "Product를 기능기획/PRD 작성 조직이 아니라 Strategy와 사용자 문제를 제품 성과로 번역하는 핵심 조직으로 재정의한다. 기존 앱 개선과 신규 앱 0→1을 분리하고, 모든 의미 있는 Product Change는 Opportunity→Evidence→Discovery→Product Bet→Definition→Delivery→Launch→Outcome Review 흐름을 따른다. 신규 앱은 Strategy & Portfolio / CEO Explore Gate를 통과해야 Product Discovery에 진입한다. 주요 Discovery는 PM+Product Design+Tech Lead Core Trio가 공동 수행한다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1808,14 +1618,15 @@
         "Revenue",
         "Red Team"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-016",
       "app": "Company",
       "title": "앱별 Product Owner(Mini CEO) 및 Product Silo 도입",
       "team": "Product",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "각 Active Product에 단일 Product Owner를 지정한다. PO는 CEO/Portfolio Guardrail 안에서 고객문제, 제품전략, 목표/KPI, 우선순위, 사업·수익화 방향, Cross-functional Silo 정렬, 출시와 Outcome까지 End-to-End로 책임지는 Product Mini CEO다. Saytence의 기존 Product Manager 역할을 Saytence Product Owner로 승격한다. UX·Engineering·Data·QA 등 각 전문 직군의 전문적 진실과 Gate는 독립적으로 유지하며 PO는 이를 통합해 제품 의사결정을 내린다. 0→1/Discovery/PRD/Launch 등은 별도 오너가 아닌 PO가 호출하는 Product Capability로 분류한다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1828,14 +1639,15 @@
         "COO",
         "Red Team"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-017",
       "app": "Company",
       "title": "Role Evidence Audit 제도 도입",
       "team": "COO / Company HQ",
-      "status": "DECIDED",
+      "status": "SUPERSEDED",
       "summary": "Operating Skill이 존재한다는 이유만으로 직군 정의가 완료된 것으로 간주하지 않는다. 각 핵심 역할은 복수의 공식/1차 자료, 실제 책임과 의사결정권, 성과 책임, 인접 역할 경계, 79's Labs 적용/제외 기준을 검증하고 STRONG/MEDIUM/PARTIAL/DRAFT Evidence Maturity를 표시한다. 공식 근거가 부족한 회사 운영방식은 해당 회사 사실로 일반화하지 않는다.",
       "date": "2026-10-06",
       "participantTeams": [
@@ -1847,7 +1659,8 @@
         "Data",
         "Revenue"
       ],
-      "decidedBy": "CEO"
+      "decidedBy": "CEO",
+      "supersededBy": "DEC-019"
     },
     {
       "id": "DEC-018",
@@ -1866,6 +1679,25 @@
         "Data",
         "Revenue",
         "Red Team"
+      ],
+      "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-019",
+      "app": "Company",
+      "title": "Current Organization v2 확정 및 과거 조직안 정리",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "현재 실행팀은 COO, Discovery, Product, Engineering, Growth, Data, Revenue 7개로 확정한다. Strategy & Portfolio, Red Team, Security/Privacy/Platform Compliance는 Governance로 분리한다. Product lifecycle 및 Growth channel 방법론은 Capability로 분류하여 Agent/Headcount에서 제외한다. 과거 조직 설계 Decisions는 SUPERSEDED 이력으로만 유지하고, 현재 조직 Source of Truth는 Organization Operating Model v2와 Team Operating System v2로 통합한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
       ],
       "decidedBy": "CEO"
     }
@@ -2617,13 +2449,13 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.5",
+  "dashboardVersion": "4.6",
   "teamOperatingSystem": {
-    "version": "2.0",
+    "version": "2.1",
     "status": "ACTIVE",
     "effectiveDate": "2026-10-06",
     "notionUrl": "https://app.notion.com/p/3f15b7c4aa308129ad5af191a1e5d970",
-    "runtimeRule": "COO frames the business question, identifies the DRI, selects relevant execution team(s), loads the Team Skill, then invokes only specialist/capability skills that can materially change the decision. Governance gates are risk/strategy-triggered. One decision must have one DRI.",
+    "runtimeRule": "Use CURRENT Organization v2 only. Identify one DRI, then invoke relevant Team/Owner/Specialist roles. Capabilities are reusable methods, not agents/headcount. Governance is invoked only by strategy/risk/challenge trigger.",
     "executionTeams": [
       "COO",
       "Discovery",
@@ -2709,7 +2541,9 @@
     "redTeam": {
       "status": "ACTIVE",
       "evidenceMaturity": "STRONG",
-      "agentId": "red-team",
+      "type": "independent-challenge-gate",
+      "name": "Red Team",
+      "mission": "제품 전략과 가설을 적극 반박·검증",
       "skillUrl": "https://app.notion.com/p/3f15b7c4aa30811386efc07d1a516398"
     },
     "securityPrivacyCompliance": {
@@ -2718,6 +2552,180 @@
       "type": "risk-triggered-gate",
       "skillUrl": "https://app.notion.com/p/3f15b7c4aa3081f4a431d6d380b271f8",
       "evidencePackUrl": "https://app.notion.com/p/3f15b7c4aa3081118953cc8eb66e0ae0"
+    }
+  },
+  "capabilities": [
+    {
+      "id": "aso",
+      "name": "ASO & Store Conversion",
+      "team": "Growth",
+      "mission": "Google Play/App Store 검색·Listing·Screenshot·Localization·Store Conversion 전문 Capability",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819c8680e4a9df1491bb",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "seo-content",
+      "name": "SEO & Blog Content",
+      "team": "Growth",
+      "mission": "검색 수요·검색의도·SEO·Tistory/블로그 콘텐츠·색인/유입 문제 진단",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081de8dc0e03caeb2dc30",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "social-community",
+      "name": "Social & Community",
+      "team": "Growth",
+      "mission": "Threads·Instagram 중심의 플랫폼별 대화·도달·커뮤니티·소셜 유입 전략",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Strategist",
+      "team": "Growth",
+      "mission": "YouTube/Shorts 주제·검색/추천·제목·썸네일·Retention 전략",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819da11ff41c748bebc6",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "creative-producer",
+      "name": "Creative Producer",
+      "team": "Growth",
+      "mission": "블로그·소셜·유튜브·광고용 이미지/영상/썸네일의 시각 전략과 제작",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30818c8aa2edc65ae8ed58",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "performance-marketing",
+      "name": "Performance Marketing",
+      "team": "Growth",
+      "mission": "CEO 승인 이후 Google/Meta 유료획득 캠페인 설계·측정·최적화",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308184b43ff59fdbea285d",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "lifecycle-growth",
+      "name": "Lifecycle & Retention Growth",
+      "team": "Growth",
+      "mission": "설치 후 First Value·재방문·Retention을 위한 lifecycle 성장 전략",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308182ad16f35d890f8a68",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "accessibility-localization",
+      "name": "Accessibility & Localization",
+      "team": "Product",
+      "mission": "접근성·다국어·현지화·플랫폼 사용성 리스크 검토",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30812ca0bdeef4d2dc03b9",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "release-reliability",
+      "name": "Release & Reliability",
+      "team": "Engineering",
+      "mission": "Release readiness·Production verification·Crash/Incident·Reliability 운영",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819abef5c70e8a72f34b",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "experimentation",
+      "name": "Experimentation & Measurement",
+      "team": "Data",
+      "mission": "실험 설계·성공기준·소표본 판단·인과해석·결과 판정",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081fdb529c591a3a77fe8",
+      "ownerAgentId": null,
+      "status": "ACTIVE"
+    },
+    {
+      "id": "product-lead",
+      "name": "Product Strategy — PO Support",
+      "team": "Product",
+      "mission": "PO의 Product Strategy·Goal·Outcome·Prioritization 판단을 지원하는 전문 Capability",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30814e9ea6ca2acb797f95",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "product-discovery",
+      "name": "Product Discovery & Opportunity",
+      "team": "Product",
+      "mission": "의미 있는 Product Bet 전 문제·Value·Usability·Feasibility·Viability 검증",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081419308f52a3c423e12",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "new-product-0to1",
+      "name": "0→1 New Product",
+      "team": "Product",
+      "mission": "Portfolio Explore Gate 통과 후 신규 앱의 문제검증·제품 Thesis·MVP·Launch Validation 주도",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b7bad3e2754e7c9275",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "existing-product-improvement",
+      "name": "Existing Product Improvement",
+      "team": "Product",
+      "mission": "운영중 앱의 데이터·VOC·Growth·Usability·Reliability 신호를 근거로 개선 우선순위와 반복학습 주도",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081ed8397e63823d6d01d",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "prd-definition",
+      "name": "Product Definition / PRD",
+      "team": "Product",
+      "mission": "Discovery를 통과한 Product Bet을 실행 가능한 Product Definition/PRD로 변환",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308144b525de7b426225f1",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "product-launch-outcome",
+      "name": "Product Launch & Outcome Review",
+      "team": "Product",
+      "mission": "출시 준비·GTM 정합·출시후 Product Outcome/Learning 판정",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308101b397c1a8df49357b",
+      "ownerAgentId": "pm",
+      "status": "ACTIVE"
+    }
+  ],
+  "organization": {
+    "version": "2.0",
+    "status": "CURRENT",
+    "effectiveDate": "2026-10-06",
+    "sourceOfTruthUrl": "https://app.notion.com/p/3f15b7c4aa30819f8c74ea916e14c15d",
+    "executionTeams": [
+      "COO",
+      "Discovery",
+      "Product",
+      "Engineering",
+      "Growth",
+      "Data",
+      "Revenue"
+    ],
+    "governance": [
+      "Strategy & Portfolio",
+      "Red Team",
+      "Security / Privacy / Platform Compliance"
+    ],
+    "principle": "Current organization shows Teams, Owners, and Specialists only. Reusable methods/channel skills are Capabilities, not headcount.",
+    "roleTaxonomy": {
+      "team": "Persistent functional home",
+      "owner": "Single DRI accountable for an outcome",
+      "specialist": "Professional role with domain judgment",
+      "capability": "Reusable method/channel skill invoked as needed; not separate headcount",
+      "governance": "Independent strategy/risk/challenge gate"
     }
   }
 }
