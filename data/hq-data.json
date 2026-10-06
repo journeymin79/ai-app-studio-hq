@@ -1799,6 +1799,25 @@
         "Red Team"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-017",
+      "app": "Company",
+      "title": "Role Evidence Audit 제도 도입",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "Operating Skill이 존재한다는 이유만으로 직군 정의가 완료된 것으로 간주하지 않는다. 각 핵심 역할은 복수의 공식/1차 자료, 실제 책임과 의사결정권, 성과 책임, 인접 역할 경계, 79's Labs 적용/제외 기준을 검증하고 STRONG/MEDIUM/PARTIAL/DRAFT Evidence Maturity를 표시한다. 공식 근거가 부족한 회사 운영방식은 해당 회사 사실로 일반화하지 않는다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Product",
+        "Discovery",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2548,7 +2567,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.3",
+  "dashboardVersion": "4.4",
   "teamOperatingSystem": {
     "version": "1.0",
     "status": "ACTIVE",
@@ -2581,5 +2600,32 @@
     },
     "strategyPortfolioSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081d8888de21ed0920fa4",
     "specialistRolePolicy": "Do not invoke every specialist. Select the minimum expert roles whose judgment can materially change the decision. Channel/trend/platform work must refresh current evidence at execution time."
+  },
+  "roleEvidenceAudit": {
+    "status": "ACTIVE",
+    "version": "1.0",
+    "notionUrl": "https://app.notion.com/p/3f15b7c4aa30815587f7f6d0839bf553",
+    "validationRule": "Operating Skill existence does not mean role validation. Material roles require primary-source evidence, decision-rights review, cross-role boundary review, 79's Labs adaptation, and explicit evidence maturity.",
+    "levels": [
+      "STRONG",
+      "MEDIUM",
+      "PARTIAL",
+      "DRAFT"
+    ],
+    "currentAssessment": {
+      "COO": "MEDIUM-STRONG",
+      "Product Owner / Product Silo": "STRONG",
+      "Product Design": "STRONG",
+      "Product lifecycle capabilities": "MEDIUM",
+      "Engineering / QA / Reliability": "MEDIUM-STRONG",
+      "Data / Experimentation": "STRONG",
+      "Marketing Attribution": "MEDIUM",
+      "Growth organization": "MEDIUM",
+      "Channel playbooks": "STRONG as methods; not validated as permanent headcount",
+      "Discovery organization": "MEDIUM",
+      "Revenue": "PARTIAL-MEDIUM",
+      "Strategy & Portfolio": "MEDIUM",
+      "Security / Privacy / Compliance": "MEDIUM governance gate"
+    }
   }
 }
