@@ -1383,6 +1383,14 @@
       "team": "COO",
       "title": "Notion·Dashboard 조직구조 정리",
       "summary": "Current Organization / Governance / Capability / Archive를 분리하고 Dashboard 조직 UI를 Current Organization v2에 맞춰 재구성."
+    },
+    {
+      "date": "2026-10-06",
+      "time": "10/06",
+      "app": "Company",
+      "team": "COO",
+      "title": "Operating Skill Completeness QA",
+      "summary": "핵심 Team/Owner/Specialist/Capability Skill의 역할·권한·산출물·인계·실패책임·재검증 기준을 점검하고 누락 항목 보강 완료."
     }
   ],
   "decisions": [
@@ -1716,6 +1724,25 @@
       "team": "COO / Company HQ",
       "status": "DECIDED",
       "summary": "Notion과 Company Dashboard를 Current Organization v2 기준으로 통일한다. Notion에는 7개 실행팀만 Current Organization에 표시하고 Strategy/Red Team/Security를 Governance로 분리한다. Dashboard에는 Owner/Specialist와 Capability를 분리하며 Product Owner, Governance, Capability Library를 별도 레이어로 표시한다. 과거 조직설계 문서는 Archive에서만 보관한다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Discovery",
+        "Product",
+        "Engineering",
+        "Growth",
+        "Data",
+        "Revenue"
+      ],
+      "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-021",
+      "app": "Company",
+      "title": "전사 Operating Skill 상세도 QA 완료",
+      "team": "COO / Company HQ",
+      "status": "DECIDED",
+      "summary": "7개 실행팀, Saytence Product Owner, 핵심 Specialist/Capability/Governance Skill을 문서 완전성 관점에서 점검하고 Mission, Scope, Decision Rights, Evidence, Working Method, Output Contract, Handoff, Failure Accountability, Anti-pattern, Source Basis/Revalidation이 명시적으로 부족한 문서만 보강했다. 상세 역할 지시는 Notion Skills를 Source of Truth로 유지하고 GitHub docs에는 조직·권한·Runtime 기준만 유지한다.",
       "date": "2026-10-06",
       "participantTeams": [
         "COO",
@@ -2476,7 +2503,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "4.7",
+  "dashboardVersion": "4.8",
   "teamOperatingSystem": {
     "version": "2.1",
     "status": "ACTIVE",
@@ -2516,6 +2543,25 @@
       "specialist": "Professional role with domain judgment",
       "capability": "Reusable method/channel skill invoked as needed; not separate headcount",
       "governance": "Independent strategy/risk/challenge gate"
+    },
+    "completenessQA": {
+      "status": "PASSED",
+      "version": "1.0",
+      "date": "2026-10-06",
+      "scope": "7 execution teams + Product Owner + major Product/Discovery/Engineering/Growth/Data/Revenue/Governance specialist capabilities",
+      "requiredDimensions": [
+        "Mission",
+        "Scope / Ownership",
+        "Decision Rights",
+        "Evidence Discipline",
+        "Working Method",
+        "Output Contract",
+        "Cross-team Handoff",
+        "Failure Accountability",
+        "Anti-patterns",
+        "Source Basis / Revalidation"
+      ],
+      "rule": "Detailed operating instructions remain in Notion Skills. GitHub docs define organization/decision rights and reference those Skills; do not duplicate full prompts into docs."
     }
   },
   "roleEvidenceAudit": {
