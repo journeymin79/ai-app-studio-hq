@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-05: 첫 콘텐츠 성과 스냅샷 기록. Threads TH-001은 조회 339/좋아요 3/댓글 3, TH-002는 조회 495/좋아요 15/댓글 8로 TH-002가 조회 약 46% 높고 상호작용도 더 강했다. Tistory TI-001은 조회 1로 아직 원인 판정 불가. 단일 게시물 결과로 전략을 바꾸지 않고 7개 콘텐츠 계획을 유지하며 누적 패턴을 본다.",
+    "todaySummary": "2026-10-06: Tistory TI-001 조회 1, TI-002 조회 0 확인. 현재 표본에서는 콘텐츠 품질보다 검색 색인·노출·초기 배포 부재 가능성을 우선 진단한다. TI-003 이후 추가 발행은 일시 중지하고 Discoverability Gate(검색 노출/색인 확인)를 먼저 통과한다. Threads는 기존 실험을 계속하며 주력 유입 채널로 유지.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -804,7 +804,7 @@
       "featureId": "FEAT-002",
       "status": "IN_PROGRESS",
       "progress": 10,
-      "updated": "2026-10-05",
+      "updated": "2026-10-06",
       "participants": [
         "Growth",
         "Discovery",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 339 views/3 likes/3 comments, TH-002 495 views/15 likes/8 comments, TI-001 Tistory 1 view. TH-002가 초기 반응은 우세하지만 2개 게시물만으로 전략 변경하지 않고 기존 7개 기획을 계속 실행하며 누적 패턴을 확인."
+      "summary": "Threads/Tistory Owned Channel 실행 중. TH-001 339 views/3 likes/3 comments, TH-002 495 views/15 likes/8 comments. Tistory TI-001 1 view, TI-002 0 view. Tistory는 콘텐츠 실패로 단정하지 않고 검색 색인·노출·초기 배포 상태를 우선 진단하며 TI-003 이후 신규 발행을 Discoverability Gate 확인 전까지 일시 중지. Threads는 주력 유입 실험으로 계속 진행."
     },
     {
       "id": "RES-004",
