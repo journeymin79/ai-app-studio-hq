@@ -107,7 +107,7 @@
       "id": "growth",
       "name": "Growth",
       "icon": "🚀",
-      "role": "ASO, 콘텐츠, 유입과 설치 전환 실험",
+      "role": "Growth strategy, ASO, SEO/content, social/community, YouTube, creative, lifecycle, and approved paid acquisition",
       "ai": "ChatGPT + Gemini",
       "status": "waiting",
       "apps": [
@@ -119,7 +119,18 @@
       "summary": "JLPT 유입 메시지와 앱 첫 경험이 연결되어야 한다. 다국어를 같은 비중으로 전면 노출하면 포지셔닝이 흐려질 수 있다.",
       "currentGoal": "실제 구현된 Saytence 경험과 사용자 문제를 연결해 Threads·Store에서 검증 가능한 유입 메시지와 실행안을 만든다.",
       "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b0a457c403a881f123",
-      "operatingInstruction": "Before performing material work for this team, load and follow the team's Notion Operating Skill. Use live Dashboard/Product Source for current facts."
+      "operatingInstruction": "Diagnose the funnel/channel problem first. Load Growth Marketing System, then only the relevant channel specialist Skill(s). Never treat content volume or vanity metrics as growth.",
+      "subRoleSystemUrl": "https://app.notion.com/p/3f15b7c4aa3081d49930c0d109cb6325",
+      "channelOperatingSkills": {
+        "system": "https://app.notion.com/p/3f15b7c4aa3081d49930c0d109cb6325",
+        "seo": "https://app.notion.com/p/3f15b7c4aa3081de8dc0e03caeb2dc30",
+        "threads": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
+        "instagram": "https://app.notion.com/p/3f15b7c4aa3081c7a2e6d3e40f39cec9",
+        "youtube": "https://app.notion.com/p/3f15b7c4aa30819da11ff41c748bebc6",
+        "creative": "https://app.notion.com/p/3f15b7c4aa30818c8aa2edc65ae8ed58",
+        "performance": "https://app.notion.com/p/3f15b7c4aa308184b43ff59fdbea285d",
+        "lifecycle": "https://app.notion.com/p/3f15b7c4aa308182ad16f35d890f8a68"
+      }
     },
     {
       "id": "data",
@@ -284,14 +295,73 @@
     },
     {
       "id": "content",
-      "name": "Content Marketing",
+      "name": "Content Marketing (General)",
       "team": "Growth",
       "ai": "ChatGPT",
-      "mission": "사용자 문제 중심 유입 콘텐츠 기획",
+      "mission": "채널 공통 콘텐츠 전략 조율. SEO·Threads/Instagram·YouTube·Creative는 전문 Role에 위임",
       "status": "waiting",
       "app": "Saytence",
       "task": "콘텐츠 타깃 가설",
-      "opinion": "'외워도 계속 잊어버리는 사람', '문제풀이 전에 어휘가 안 잡히는 사람'을 기능보다 먼저 이야기하는 콘텐츠가 적합하다."
+      "opinion": "'외워도 계속 잊어버리는 사람', '문제풀이 전에 어휘가 안 잡히는 사람'을 기능보다 먼저 이야기하는 콘텐츠가 적합하다.",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081b0a457c403a881f123"
+    },
+    {
+      "id": "seo-content",
+      "name": "SEO & Blog Content",
+      "team": "Growth",
+      "ai": "ChatGPT",
+      "mission": "검색 수요·검색의도·SEO·Tistory/블로그 콘텐츠·색인/유입 문제 진단",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081de8dc0e03caeb2dc30"
+    },
+    {
+      "id": "social-community",
+      "name": "Social & Community",
+      "team": "Growth",
+      "ai": "ChatGPT",
+      "mission": "Threads·Instagram 중심의 플랫폼별 대화·도달·커뮤니티·소셜 유입 전략",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
+      "channelSkillUrls": {
+        "threads": "https://app.notion.com/p/3f15b7c4aa3081d8a6f5e64879c8b4c3",
+        "instagram": "https://app.notion.com/p/3f15b7c4aa3081c7a2e6d3e40f39cec9"
+      }
+    },
+    {
+      "id": "youtube",
+      "name": "YouTube Strategist",
+      "team": "Growth",
+      "ai": "ChatGPT",
+      "mission": "YouTube/Shorts 주제·검색/추천·제목·썸네일·Retention 전략",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30819da11ff41c748bebc6"
+    },
+    {
+      "id": "creative-producer",
+      "name": "Creative Producer",
+      "team": "Growth",
+      "ai": "ChatGPT + Image",
+      "mission": "블로그·소셜·유튜브·광고용 이미지/영상/썸네일의 시각 전략과 제작",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa30818c8aa2edc65ae8ed58"
+    },
+    {
+      "id": "performance-marketing",
+      "name": "Performance Marketing",
+      "team": "Growth",
+      "ai": "ChatGPT",
+      "mission": "CEO 승인 이후 Google/Meta 유료획득 캠페인 설계·측정·최적화",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308184b43ff59fdbea285d"
+    },
+    {
+      "id": "lifecycle-growth",
+      "name": "Lifecycle & Retention Growth",
+      "team": "Growth",
+      "ai": "ChatGPT",
+      "mission": "설치 후 First Value·재방문·Retention을 위한 lifecycle 성장 전략",
+      "status": "waiting",
+      "operatingSkillUrl": "https://app.notion.com/p/3f15b7c4aa308182ad16f35d890f8a68"
     }
   ],
   "commands": [
@@ -1387,6 +1457,23 @@
         "Red Team"
       ],
       "decidedBy": "CEO"
+    },
+    {
+      "id": "DEC-013",
+      "app": "Company",
+      "title": "Growth 전문 Role·채널 Operating System 보강",
+      "team": "Growth",
+      "status": "DECIDED",
+      "summary": "Growth를 Growth Lead/ASO/일반 Content 수준에서 SEO&Blog, Social&Community(Threads/Instagram), YouTube, Creative Production, Performance Marketing, Lifecycle&Retention 전문 Role로 세분화한다. 채널 업무는 해당 시점의 검색/트렌드/플랫폼 공식 가이드와 실제 성과 데이터를 확인한 뒤 수행하며, 단순 게시량·조회수 같은 Vanity Metric을 Growth 성과로 간주하지 않는다.",
+      "date": "2026-10-06",
+      "participantTeams": [
+        "COO",
+        "Growth",
+        "Data",
+        "Product",
+        "Discovery"
+      ],
+      "decidedBy": "CEO"
     }
   ],
   "artifacts": [
@@ -2136,7 +2223,7 @@
       "date": "2026-09-28"
     }
   ],
-  "dashboardVersion": "3.9",
+  "dashboardVersion": "4.0",
   "teamOperatingSystem": {
     "version": "1.0",
     "status": "ACTIVE",
