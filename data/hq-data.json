@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-07: TH-004 published using real Saytence swipe video. Message focuses on immediate card judgment (up=알아요, down=몰라요, left=다시 볼래요) and asks for learner reaction. No body link. Next decision waits for 24h/72h evidence, prioritizing qualified learner replies and downstream interest over raw views.",
+    "todaySummary": "2026-10-07: CEO guardrail confirmed — Paid Ads/Paid Acquisition is excluded for now and requires separate CEO approval to reopen. Saytence Growth remains focused on organic acquisition, ASO/store conversion, activation, retention signals, and no-cost outreach/community learning.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "TH-004 published: real Saytence swipe interaction video + product behavior explanation + learner question. Gesture truth: up=알아요, down=몰라요, left=다시 볼래요. No body link. Review at 24h/72h using views plus qualified learner replies/profile/downstream signals; do not judge by views alone."
+      "summary": "TH-004 published: real Saytence swipe interaction video + product behavior explanation + learner question. Gesture truth: up=알아요, down=몰라요, left=다시 볼래요. No body link. Review at 24h/72h using views plus qualified learner replies/profile/downstream signals; do not judge by views alone. CEO Guardrail: Paid Ads/Paid Acquisition excluded until separately approved; continue organic acquisition and product/store conversion learning."
     },
     {
       "id": "RES-004",
@@ -1530,7 +1530,7 @@
       "title": "Growth 콘텐츠 채널을 Tistory·개인 Threads로 제한",
       "team": "CEO / COO / Growth",
       "status": "DECIDED",
-      "summary": "CEO 결정: Brunch는 이번 마케팅에 맞지 않아 실행 범위에서 제외. 보유한 Tistory https://journeylabs.tistory.com 과 개인 Threads https://www.threads.com/@journeymin.creator 를 사용. 기존 Store ASO는 설치 전환 지원으로 유지.",
+      "summary": "CEO 결정: Brunch 제외. 보유 Tistory와 개인 Threads를 중심으로 Organic Growth를 실행하고 Store ASO를 전환 지원으로 유지한다. Paid Ads / Paid Acquisition은 당분간 실행 범위에서 제외하며, 재개는 별도 CEO 승인 필요.",
       "date": "2026-09-30",
       "command": "CMD-002",
       "participantTeams": [
