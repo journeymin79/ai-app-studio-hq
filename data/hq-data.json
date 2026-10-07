@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-07: CEO guardrail confirmed — Paid Ads/Paid Acquisition is excluded for now and requires separate CEO approval to reopen. Saytence Growth remains focused on organic acquisition, ASO/store conversion, activation, retention signals, and no-cost outreach/community learning.",
+    "todaySummary": "2026-10-07: Operating model updated with explicit priority/auto-execution discipline. Saytence active WIP is limited to 3 items: NOW-1 Store ASO/7 screenshots, NOW-2 observe TH-004 at 24h/72h, NOW-3 JLPT user/VOC discovery. Product changes remain frozen; Paid Ads remain on CEO hold. New work must be classified NOW/NEXT/LATER/HOLD and low-risk reversible work inside guardrails should be executed immediately rather than merely suggested.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -783,7 +783,7 @@
       "featureId": "FEAT-001",
       "status": "REVIEW",
       "progress": 0,
-      "updated": "2026-10-06",
+      "updated": "2026-10-07",
       "participants": [
         "Growth",
         "Product",
@@ -791,7 +791,7 @@
         "Data",
         "Engineering"
       ],
-      "summary": "Store ASO 재검토. Threads 잠재사용자 피드백에서 'Anki 대비 전환 이유가 한눈에 안 보임', 'JLPT 타깃인데 영문 스크린샷이 메시지를 흐림' 신호 확인. 단일 댓글이므로 제품 개발은 유지 동결하고, 첫 3개 스크린샷/한 줄 가치제안에서 JLPT 대상·빠른 회독·약한 카드 반복의 차별점을 더 명확히 보여주는 방향을 검토."
+      "summary": "NOW-1. Complete Store ASO and 7-screenshot conversion story, prioritizing first 3 images and truthful live-product UI. Immediate execution within current Sprint."
     },
     {
       "id": "GRO-004",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "TH-004 published: real Saytence swipe interaction video + product behavior explanation + learner question. Gesture truth: up=알아요, down=몰라요, left=다시 볼래요. No body link. Review at 24h/72h using views plus qualified learner replies/profile/downstream signals; do not judge by views alone. CEO Guardrail: Paid Ads/Paid Acquisition excluded until separately approved; continue organic acquisition and product/store conversion learning."
+      "summary": "NOW-2. TH-004 already published; observe 24h/72h before another major post decision. Track views plus qualified learner replies/profile/downstream signals."
     },
     {
       "id": "RES-004",
@@ -823,15 +823,15 @@
       "command": "CMD-002",
       "sprintId": "SPR-001",
       "featureId": "FEAT-002",
-      "status": "TODO",
-      "progress": 0,
-      "updated": "2026-09-28",
+      "status": "IN_PROGRESS",
+      "progress": 5,
+      "updated": "2026-10-07",
       "participants": [
         "Discovery",
         "Growth",
         "Product"
       ],
-      "summary": "JLPT N5/N4/N3 학습자의 실제 암기·복습·회독 고민을 매일 수집해 게시물 소재와 댓글 참여 대상을 Growth에 공급"
+      "summary": "NOW-3. Start no-cost JLPT user/alternative/VOC signal collection immediately to strengthen Threads and Store messaging. Focus on actual study behavior and current alternatives, not hypothetical feature preferences."
     },
     {
       "id": "PRD-005",
