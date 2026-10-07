@@ -8,7 +8,7 @@
     "completedToday": 0,
     "experiments": 1,
     "ceoDecisions": 2,
-    "todaySummary": "2026-10-07: TH-003 180 views. Saytence PO gathered Product/Discovery/Growth/Data input and chose next Threads format: user feedback → actual swipe behavior → real learner behavior question. Anki comment remains a strong isolated signal, not generalized demand. Next post should preferably use a short real app swipe recording; no body link.",
+    "todaySummary": "2026-10-07: TH-004 published using real Saytence swipe video. Message focuses on immediate card judgment (up=알아요, down=몰라요, left=다시 볼래요) and asks for learner reaction. No body link. Next decision waits for 24h/72h evidence, prioritizing qualified learner replies and downstream interest over raw views.",
     "website": "https://journey-min-79.github.io/index.html",
     "notionHome": "https://app.notion.com/p/3ec5b7c4aa3081789dc0c217020e574d",
     "notionHQ": "https://app.notion.com/p/3ec5b7c4aa308110b821dfcccc19892d",
@@ -812,7 +812,7 @@
         "Data",
         "COO"
       ],
-      "summary": "Threads adaptive acquisition: TH-003 180 views. Saytence PO decision for next post: Feedback → Product Behavior → Actual Behavior Question. Use real swipe interaction (up=알아요, down=몰라요, left=다시 볼래요) as product proof and ask how learners actually handle partially remembered words. No body link; evaluate qualified learner replies/profile action, not views alone."
+      "summary": "TH-004 published: real Saytence swipe interaction video + product behavior explanation + learner question. Gesture truth: up=알아요, down=몰라요, left=다시 볼래요. No body link. Review at 24h/72h using views plus qualified learner replies/profile/downstream signals; do not judge by views alone."
     },
     {
       "id": "RES-004",
